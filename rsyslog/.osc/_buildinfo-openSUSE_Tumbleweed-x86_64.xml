@@ -1,0 +1,25 @@
+<buildinfo project="home:rainergerhards:branches:home:rgerhards" repository="openSUSE_Tumbleweed" package="rsyslog" downloadurl="https://download.opensuse.org/repositories">
+  <arch>x86_64</arch>
+  <error>unresolvable: nothing provides curl-devel &gt;= 7.40.0, (got version 7.15.5 provided by libcurl-devel)</error>
+  <debuginfo>1</debuginfo>
+  <subpack>rsyslog</subpack>
+  <subpack>rsyslog-diag-tools</subpack>
+  <subpack>rsyslog-doc</subpack>
+  <subpack>rsyslog-kafka</subpack>
+  <subpack>rsyslog-module-%1</subpack>
+  <subpack>rsyslog-module-dbi</subpack>
+  <subpack>rsyslog-module-elasticsearch</subpack>
+  <subpack>rsyslog-module-gcrypt</subpack>
+  <subpack>rsyslog-module-gssapi</subpack>
+  <subpack>rsyslog-module-gtls</subpack>
+  <subpack>rsyslog-module-mmnormalize</subpack>
+  <subpack>rsyslog-module-mysql</subpack>
+  <subpack>rsyslog-module-omhttp</subpack>
+  <subpack>rsyslog-module-omhttpfs</subpack>
+  <subpack>rsyslog-module-omtcl</subpack>
+  <subpack>rsyslog-module-openssl</subpack>
+  <subpack>rsyslog-module-pgsql</subpack>
+  <subpack>rsyslog-module-relp</subpack>
+  <subpack>rsyslog-module-snmp</subpack>
+  <subpack>rsyslog-module-udpspoof</subpack>
+</buildinfo>

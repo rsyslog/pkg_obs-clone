@@ -1,0 +1,21 @@
+diff --git a/rsyslog.service.in b/rsyslog.service.in
+index 8d0124951..74d2149ea 100644
+@@ -6,14 +6,13 @@ Documentation=http://www.rsyslog.com/doc/
+ 
+ [Service]
+ Type=notify
+-ExecStart=@sbindir@/rsyslogd -n -iNONE
++EnvironmentFile=-/etc/sysconfig/rsyslog
++ExecStart=@sbindir@/rsyslogd -n $SYSLOGD_OPTIONS
++Restart=on-failure
++UMask=0066
+ StandardOutput=null
+ Restart=on-failure
+ 
+-# Increase the default a bit in order to allow many simultaneous
+-# files to be monitored, we might need a lot of fds.
+-LimitNOFILE=16384
+-
+ [Install]
+ WantedBy=multi-user.target
+ Alias=syslog.service

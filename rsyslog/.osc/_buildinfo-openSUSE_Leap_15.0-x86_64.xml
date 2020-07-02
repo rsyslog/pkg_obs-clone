@@ -1,0 +1,246 @@
+<buildinfo project="home:rainergerhards:branches:home:rgerhards" repository="openSUSE_Leap_15.0" package="rsyslog" downloadurl="https://download.opensuse.org/repositories">
+  <arch>x86_64</arch>
+  <debuginfo>1</debuginfo>
+  <subpack>rsyslog</subpack>
+  <subpack>rsyslog-diag-tools</subpack>
+  <subpack>rsyslog-doc</subpack>
+  <subpack>rsyslog-module-dbi</subpack>
+  <subpack>rsyslog-module-elasticsearch</subpack>
+  <subpack>rsyslog-module-gcrypt</subpack>
+  <subpack>rsyslog-module-gssapi</subpack>
+  <subpack>rsyslog-module-gtls</subpack>
+  <subpack>rsyslog-module-mmnormalize</subpack>
+  <subpack>rsyslog-module-mysql</subpack>
+  <subpack>rsyslog-module-omhttp</subpack>
+  <subpack>rsyslog-module-omhttpfs</subpack>
+  <subpack>rsyslog-module-omtcl</subpack>
+  <subpack>rsyslog-module-openssl</subpack>
+  <subpack>rsyslog-module-pgsql</subpack>
+  <subpack>rsyslog-module-relp</subpack>
+  <subpack>rsyslog-module-snmp</subpack>
+  <subpack>rsyslog-module-updspoof</subpack>
+  <bdep name="liblua5_3-5" preinstall="1" notmeta="1" version="5.3.4" release="lp150.1.46" arch="x86_64" project="openSUSE:Leap:15.0" repository="standard"/>
+  <bdep name="aaa_base" preinstall="1" runscripts="1" notmeta="1" version="84.87+git20180409.04c9dae" release="lp150.1.1" arch="x86_64" project="openSUSE:Leap:15.0" repository="standard"/>
+  <bdep name="attr" preinstall="1" notmeta="1" version="2.4.47" release="lp150.2.16" arch="x86_64" project="openSUSE:Leap:15.0" repository="standard"/>
+  <bdep name="bash" preinstall="1" notmeta="1" version="4.4" release="lp150.7.8" arch="x86_64" project="openSUSE:Leap:15.0" repository="standard"/>
+  <bdep name="coreutils" preinstall="1" notmeta="1" version="8.29" release="lp150.2.2" arch="x86_64" project="openSUSE:Leap:15.0" repository="standard"/>
+  <bdep name="diffutils" preinstall="1" notmeta="1" version="3.6" release="lp150.2.2" arch="x86_64" project="openSUSE:Leap:15.0" repository="standard"/>
+  <bdep name="filesystem" preinstall="1" notmeta="1" version="15.0" release="lp150.7.1" arch="x86_64" project="openSUSE:Leap:15.0" repository="standard"/>
+  <bdep name="fillup" preinstall="1" notmeta="1" version="1.42" release="lp150.2.3" arch="x86_64" project="openSUSE:Leap:15.0" repository="standard"/>
+  <bdep name="glibc" preinstall="1" notmeta="1" version="2.26" release="lp150.10.13" arch="x86_64" project="openSUSE:Leap:15.0" repository="standard"/>
+  <bdep name="grep" preinstall="1" notmeta="1" version="3.1" release="lp150.2.10" arch="x86_64" project="openSUSE:Leap:15.0" repository="standard"/>
+  <bdep name="libbz2-1" preinstall="1" notmeta="1" version="1.0.6" release="lp150.3.17" arch="x86_64" project="openSUSE:Leap:15.0" repository="standard"/>
+  <bdep name="libgcc_s1" preinstall="1" notmeta="1" version="7.3.1+r258812" release="lp150.2.10" arch="x86_64" project="openSUSE:Leap:15.0" repository="standard"/>
+  <bdep name="libncurses6" preinstall="1" notmeta="1" version="6.1" release="lp150.3.14" arch="x86_64" project="openSUSE:Leap:15.0" repository="standard"/>
+  <bdep name="pam" preinstall="1" notmeta="1" version="1.3.0" release="lp150.4.6" arch="x86_64" project="openSUSE:Leap:15.0" repository="standard"/>
+  <bdep name="permissions" preinstall="1" notmeta="1" version="20180125" release="lp150.1.2" arch="x86_64" project="openSUSE:Leap:15.0" repository="standard"/>
+  <bdep name="libreadline7" preinstall="1" notmeta="1" version="7.0" release="lp150.7.8" arch="x86_64" project="openSUSE:Leap:15.0" repository="standard"/>
+  <bdep name="rpm" preinstall="1" notmeta="1" version="4.14.1" release="lp150.8.3" arch="x86_64" project="openSUSE:Leap:15.0" repository="standard"/>
+  <bdep name="sed" preinstall="1" notmeta="1" version="4.4" release="lp150.2.2" arch="x86_64" project="openSUSE:Leap:15.0" repository="standard"/>
+  <bdep name="tar" preinstall="1" notmeta="1" version="1.29" release="lp150.1.12" arch="x86_64" project="openSUSE:Leap:15.0" repository="standard"/>
+  <bdep name="libz1" preinstall="1" notmeta="1" version="1.2.11" release="lp150.1.49" arch="x86_64" project="openSUSE:Leap:15.0" repository="standard"/>
+  <bdep name="libselinux1" preinstall="1" notmeta="1" version="2.6" release="lp150.2.14" arch="x86_64" project="openSUSE:Leap:15.0" repository="standard"/>
+  <bdep name="liblzma5" preinstall="1" notmeta="1" version="5.2.3" release="lp150.2.16" arch="x86_64" project="openSUSE:Leap:15.0" repository="standard"/>
+  <bdep name="libcap2" preinstall="1" notmeta="1" version="2.25" release="lp150.2.19" arch="x86_64" project="openSUSE:Leap:15.0" repository="standard"/>
+  <bdep name="libacl1" preinstall="1" notmeta="1" version="2.2.52" release="lp150.2.46" arch="x86_64" project="openSUSE:Leap:15.0" repository="standard"/>
+  <bdep name="libattr1" preinstall="1" notmeta="1" version="2.4.47" release="lp150.2.16" arch="x86_64" project="openSUSE:Leap:15.0" repository="standard"/>
+  <bdep name="libpopt0" preinstall="1" notmeta="1" version="1.16" release="lp150.2.15" arch="x86_64" project="openSUSE:Leap:15.0" repository="standard"/>
+  <bdep name="libelf1" preinstall="1" notmeta="1" version="0.168" release="lp150.2.48" arch="x86_64" project="openSUSE:Leap:15.0" repository="standard"/>
+  <bdep name="libpcre1" preinstall="1" notmeta="1" version="8.41" release="lp150.4.15" arch="x86_64" project="openSUSE:Leap:15.0" repository="standard"/>
+  <bdep name="util-linux" vminstall="1" version="2.31.1" release="lp150.6.1" arch="x86_64" project="openSUSE:Leap:15.0" repository="standard"/>
+  <bdep name="libmount1" vminstall="1" version="2.31.1" release="lp150.6.1" arch="x86_64" project="openSUSE:Leap:15.0" repository="standard"/>
+  <bdep name="perl-base" vminstall="1" version="5.26.1" release="lp150.5.19" arch="x86_64" project="openSUSE:Leap:15.0" repository="standard"/>
+  <bdep name="libdb-4_8" vminstall="1" version="4.8.30" release="lp150.5.10" arch="x86_64" project="openSUSE:Leap:15.0" repository="standard"/>
+  <bdep name="libsepol1" vminstall="1" version="2.6" release="lp150.1.32" arch="x86_64" project="openSUSE:Leap:15.0" repository="standard"/>
+  <bdep name="libblkid1" vminstall="1" version="2.31.1" release="lp150.6.1" arch="x86_64" project="openSUSE:Leap:15.0" repository="standard"/>
+  <bdep name="libuuid1" vminstall="1" version="2.31.1" release="lp150.6.1" arch="x86_64" project="openSUSE:Leap:15.0" repository="standard"/>
+  <bdep name="libsmartcols1" vminstall="1" version="2.31.1" release="lp150.6.1" arch="x86_64" project="openSUSE:Leap:15.0" repository="standard"/>
+  <bdep name="kernel-obs-build" vminstall="1" notmeta="1" version="4.12.14" release="lp150.11.4" arch="x86_64" project="openSUSE:Leap:15.0" repository="standard"/>
+  <bdep name="net-tools-deprecated" vminstall="1" notmeta="1" version="2.0+git20170221.479bb4a" release="lp150.3.1" arch="x86_64" project="openSUSE:Leap:15.0" repository="standard"/>
+  <bdep name="autoconf" version="2.69" release="lp150.1.48" arch="noarch" project="openSUSE:Leap:15.0" repository="standard"/>
+  <bdep name="automake" version="1.15.1" release="lp150.2.41" arch="noarch" project="openSUSE:Leap:15.0" repository="standard"/>
+  <bdep name="libtool" version="2.4.6" release="lp150.1.47" arch="x86_64" project="openSUSE:Leap:15.0" repository="standard"/>
+  <bdep name="bison" version="3.0.4" release="lp150.1.48" arch="x86_64" project="openSUSE:Leap:15.0" repository="standard"/>
+  <bdep name="flex" version="2.6.4" release="lp150.2.48" arch="x86_64" project="openSUSE:Leap:15.0" repository="standard"/>
+  <bdep name="pcre-devel" version="8.41" release="lp150.4.15" arch="x86_64" project="openSUSE:Leap:15.0" repository="standard"/>
+  <bdep name="zlib-devel" version="1.2.11" release="lp150.1.49" arch="x86_64" project="openSUSE:Leap:15.0" repository="standard"/>
+  <bdep name="krb5-devel" version="1.15.2" release="lp150.4.4" arch="x86_64" project="openSUSE:Leap:15.0" repository="standard"/>
+  <bdep name="libgnutls-devel" version="3.6.2" release="lp150.3.2" arch="x86_64" project="openSUSE:Leap:15.0" repository="standard"/>
+  <bdep name="libgcrypt-devel" version="1.8.2" release="lp150.4.2" arch="x86_64" project="openSUSE:Leap:15.0" repository="standard"/>
+  <bdep name="libdbi-devel" version="0.9.0.g33" release="lp150.1.7" arch="x86_64" project="openSUSE:Leap:15.0" repository="standard"/>
+  <bdep name="net-snmp-devel" version="5.7.3" release="lp150.5.1" arch="x86_64" project="openSUSE:Leap:15.0" repository="standard"/>
+  <bdep name="postgresql-devel" version="10" release="lp150.4.4" arch="noarch" project="openSUSE:Leap:15.0" repository="standard"/>
+  <bdep name="libnet-devel" version="1.2~rc3" release="lp150.1.8" arch="x86_64" project="openSUSE:Leap:15.0" repository="standard"/>
+  <bdep name="rpm-build" version="4.14.1" release="lp150.8.3" arch="x86_64" project="openSUSE:Leap:15.0" repository="standard"/>
+  <bdep name="gcc-PIE" version="7" release="lp150.1.50" arch="x86_64" project="openSUSE:Leap:15.0" repository="standard"/>
+  <bdep name="libopenssl-devel" version="1.1.0h" release="lp150.1.1" arch="noarch" project="openSUSE:Leap:15.0" repository="standard"/>
+  <bdep name="pkg-config" version="0.29.2" release="lp150.1.49" arch="x86_64" project="openSUSE:Leap:15.0" repository="standard"/>
+  <bdep name="liblogging-devel" version="1.0.6" release="lp150.11.1" arch="x86_64" project="home:rainergerhards:branches:home:rgerhards" repository="openSUSE_Leap_15.0"/>
+  <bdep name="libmariadb-devel" version="3.0.3" release="lp150.1.2" arch="x86_64" project="openSUSE:Leap:15.0" repository="standard"/>
+  <bdep name="librelp-devel" version="1.6.0" release="lp150.2.1" arch="x86_64" project="home:rainergerhards:branches:home:rgerhards" repository="openSUSE_Leap_15.0"/>
+  <bdep name="liblognorm-devel" version="2.0.6" release="lp150.3.1" arch="x86_64" project="home:rainergerhards:branches:home:rgerhards" repository="openSUSE_Leap_15.0"/>
+  <bdep name="libestr-devel" version="0.1.11" release="lp150.3.1" arch="x86_64" project="home:rainergerhards:branches:home:rgerhards" repository="openSUSE_Leap_15.0"/>
+  <bdep name="libfastjson-devel" version="0.99.8" release="lp150.5.1" arch="x86_64" project="home:rainergerhards:branches:home:rgerhards" repository="openSUSE_Leap_15.0"/>
+  <bdep name="libuuid-devel" version="2.31.1" release="lp150.6.1" arch="x86_64" project="openSUSE:Leap:15.0" repository="standard"/>
+  <bdep name="tcl-devel" version="8.6.7" release="lp150.4.20" arch="x86_64" project="openSUSE:Leap:15.0" repository="standard"/>
+  <bdep name="info" version="6.5" release="lp150.4.14" arch="x86_64" project="openSUSE:Leap:15.0" repository="standard"/>
+  <bdep name="m4" version="1.4.18" release="lp150.2.41" arch="x86_64" project="openSUSE:Leap:15.0" repository="standard"/>
+  <bdep name="libltdl7" version="2.4.6" release="lp150.1.47" arch="x86_64" project="openSUSE:Leap:15.0" repository="standard"/>
+  <bdep name="libfl-devel" version="2.6.4" release="lp150.2.48" arch="x86_64" project="openSUSE:Leap:15.0" repository="standard"/>
+  <bdep name="libstdc++-devel" version="7" release="lp150.1.50" arch="x86_64" project="openSUSE:Leap:15.0" repository="standard"/>
+  <bdep name="libpcre16-0" version="8.41" release="lp150.4.15" arch="x86_64" project="openSUSE:Leap:15.0" repository="standard"/>
+  <bdep name="libpcrecpp0" version="8.41" release="lp150.4.15" arch="x86_64" project="openSUSE:Leap:15.0" repository="standard"/>
+  <bdep name="libpcreposix0" version="8.41" release="lp150.4.15" arch="x86_64" project="openSUSE:Leap:15.0" repository="standard"/>
+  <bdep name="glibc-devel" version="2.26" release="lp150.10.13" arch="x86_64" project="openSUSE:Leap:15.0" repository="standard"/>
+  <bdep name="libcom_err-devel" version="1.43.8" release="lp150.2.24" arch="x86_64" project="openSUSE:Leap:15.0" repository="standard"/>
+  <bdep name="keyutils-devel" version="1.5.10" release="lp150.3.19" arch="x86_64" project="openSUSE:Leap:15.0" repository="standard"/>
+  <bdep name="libverto-devel" version="0.2.6" release="lp150.3.15" arch="x86_64" project="openSUSE:Leap:15.0" repository="standard"/>
+  <bdep name="krb5" version="1.15.2" release="lp150.4.4" arch="x86_64" project="openSUSE:Leap:15.0" repository="standard"/>
+  <bdep name="libnettle-devel" version="3.4" release="lp150.2.3" arch="x86_64" project="openSUSE:Leap:15.0" repository="standard"/>
+  <bdep name="p11-kit-devel" version="0.23.2" release="lp150.2.2" arch="x86_64" project="openSUSE:Leap:15.0" repository="standard"/>
+  <bdep name="libtasn1-devel" version="4.13" release="lp150.2.2" arch="x86_64" project="openSUSE:Leap:15.0" repository="standard"/>
+  <bdep name="libgnutls30" version="3.6.2" release="lp150.3.2" arch="x86_64" project="openSUSE:Leap:15.0" repository="standard"/>
+  <bdep name="libgcrypt20" version="1.8.2" release="lp150.4.2" arch="x86_64" project="openSUSE:Leap:15.0" repository="standard"/>
+  <bdep name="libgpg-error0" version="1.29" release="lp150.1.2" arch="x86_64" project="openSUSE:Leap:15.0" repository="standard"/>
+  <bdep name="libgpg-error-devel" version="1.29" release="lp150.1.2" arch="x86_64" project="openSUSE:Leap:15.0" repository="standard"/>
+  <bdep name="libdbi3" version="0.9.0.g33" release="lp150.1.7" arch="x86_64" project="openSUSE:Leap:15.0" repository="standard"/>
+  <bdep name="rpm-devel" version="4.14.1" release="lp150.8.3" arch="x86_64" project="openSUSE:Leap:15.0" repository="standard"/>
+  <bdep name="tcpd-devel" version="7.6" release="lp150.1.48" arch="x86_64" project="openSUSE:Leap:15.0" repository="standard"/>
+  <bdep name="libsensors4-devel" version="3.4.0" release="lp150.2.7" arch="x86_64" project="openSUSE:Leap:15.0" repository="standard"/>
+  <bdep name="libsnmp30" version="5.7.3" release="lp150.5.1" arch="x86_64" project="openSUSE:Leap:15.0" repository="standard"/>
+  <bdep name="perl-SNMP" version="5.7.3" release="lp150.5.1" arch="x86_64" project="openSUSE:Leap:15.0" repository="standard"/>
+  <bdep name="libnet9" version="1.2~rc3" release="lp150.1.8" arch="x86_64" project="openSUSE:Leap:15.0" repository="standard"/>
+  <bdep name="findutils" version="4.6.0" release="lp150.2.18" arch="x86_64" project="openSUSE:Leap:15.0" repository="standard"/>
+  <bdep name="gcc" version="7" release="lp150.1.50" arch="x86_64" project="openSUSE:Leap:15.0" repository="standard"/>
+  <bdep name="xz" version="5.2.3" release="lp150.2.16" arch="x86_64" project="openSUSE:Leap:15.0" repository="standard"/>
+  <bdep name="file" version="5.32" release="lp150.5.17" arch="x86_64" project="openSUSE:Leap:15.0" repository="standard"/>
+  <bdep name="gawk" version="4.2.1" release="lp150.1.20" arch="x86_64" project="openSUSE:Leap:15.0" repository="standard"/>
+  <bdep name="bzip2" version="1.0.6" release="lp150.3.17" arch="x86_64" project="openSUSE:Leap:15.0" repository="standard"/>
+  <bdep name="cpio" version="2.12" release="lp150.1.48" arch="x86_64" project="openSUSE:Leap:15.0" repository="standard"/>
+  <bdep name="gzip" version="1.9" release="lp150.2.16" arch="x86_64" project="openSUSE:Leap:15.0" repository="standard"/>
+  <bdep name="binutils" version="2.29.1" release="lp150.4.25" arch="x86_64" project="openSUSE:Leap:15.0" repository="standard"/>
+  <bdep name="make" version="4.2.1" release="lp150.5.25" arch="x86_64" project="openSUSE:Leap:15.0" repository="standard"/>
+  <bdep name="which" version="2.21" release="lp150.2.15" arch="x86_64" project="openSUSE:Leap:15.0" repository="standard"/>
+  <bdep name="glibc-locale" version="2.26" release="lp150.10.13" arch="x86_64" project="openSUSE:Leap:15.0" repository="standard"/>
+  <bdep name="patch" version="2.7.6" release="lp150.2.7" arch="x86_64" project="openSUSE:Leap:15.0" repository="standard"/>
+  <bdep name="dwz" version="0.12" release="lp150.1.49" arch="x86_64" project="openSUSE:Leap:15.0" repository="standard"/>
+  <bdep name="systemd-rpm-macros" version="3" release="lp150.5.20" arch="noarch" project="openSUSE:Leap:15.0" repository="standard"/>
+  <bdep name="libopenssl-1_1-devel" version="1.1.0h" release="lp150.2.1" arch="x86_64" project="openSUSE:Leap:15.0" repository="standard"/>
+  <bdep name="libopenssl1_1" version="1.1.0h" release="lp150.2.1" arch="x86_64" project="openSUSE:Leap:15.0" repository="standard"/>
+  <bdep name="openssl" version="1.1.0h" release="lp150.1.1" arch="noarch" project="openSUSE:Leap:15.0" repository="standard"/>
+  <bdep name="liblogging0" version="1.0.6" release="lp150.11.1" arch="x86_64" project="home:rainergerhards:branches:home:rgerhards" repository="openSUSE_Leap_15.0"/>
+  <bdep name="libmariadb3" version="3.0.3" release="lp150.1.2" arch="x86_64" project="openSUSE:Leap:15.0" repository="standard"/>
+  <bdep name="librelp0" version="1.6.0" release="lp150.2.1" arch="x86_64" project="home:rainergerhards:branches:home:rgerhards" repository="openSUSE_Leap_15.0"/>
+  <bdep name="liblognorm5" version="2.0.6" release="lp150.3.1" arch="x86_64" project="home:rainergerhards:branches:home:rgerhards" repository="openSUSE_Leap_15.0"/>
+  <bdep name="libestr0" version="0.1.11" release="lp150.3.1" arch="x86_64" project="home:rainergerhards:branches:home:rgerhards" repository="openSUSE_Leap_15.0"/>
+  <bdep name="libfastjson4" version="0.99.8" release="lp150.5.1" arch="x86_64" project="home:rainergerhards:branches:home:rgerhards" repository="openSUSE_Leap_15.0"/>
+  <bdep name="tcl" version="8.6.7" release="lp150.4.20" arch="x86_64" project="openSUSE:Leap:15.0" repository="standard"/>
+  <bdep name="libzio1" version="1.06" release="lp150.2.15" arch="x86_64" project="openSUSE:Leap:15.0" repository="standard"/>
+  <bdep name="libgdbm4" version="1.12" release="lp150.1.49" arch="x86_64" project="openSUSE:Leap:15.0" repository="standard"/>
+  <bdep name="libfl2" version="2.6.4" release="lp150.2.48" arch="x86_64" project="openSUSE:Leap:15.0" repository="standard"/>
+  <bdep name="libstdc++6-devel-gcc7" version="7.3.1+r258812" release="lp150.2.10" arch="x86_64" project="openSUSE:Leap:15.0" repository="standard"/>
+  <bdep name="libstdc++6" version="7.3.1+r258812" release="lp150.2.10" arch="x86_64" project="openSUSE:Leap:15.0" repository="standard"/>
+  <bdep name="linux-glibc-devel" version="4.15" release="lp150.1.23" arch="noarch" project="openSUSE:Leap:15.0" repository="standard"/>
+  <bdep name="libcom_err2" version="1.43.8" release="lp150.2.24" arch="x86_64" project="openSUSE:Leap:15.0" repository="standard"/>
+  <bdep name="libkeyutils1" version="1.5.10" release="lp150.3.19" arch="x86_64" project="openSUSE:Leap:15.0" repository="standard"/>
+  <bdep name="libverto1" version="0.2.6" release="lp150.3.15" arch="x86_64" project="openSUSE:Leap:15.0" repository="standard"/>
+  <bdep name="gmp-devel" version="6.1.2" release="lp150.2.20" arch="x86_64" project="openSUSE:Leap:15.0" repository="standard"/>
+  <bdep name="libhogweed4" version="3.4" release="lp150.2.3" arch="x86_64" project="openSUSE:Leap:15.0" repository="standard"/>
+  <bdep name="libnettle6" version="3.4" release="lp150.2.3" arch="x86_64" project="openSUSE:Leap:15.0" repository="standard"/>
+  <bdep name="libp11-kit0" version="0.23.2" release="lp150.2.2" arch="x86_64" project="openSUSE:Leap:15.0" repository="standard"/>
+  <bdep name="libtasn1-6" version="4.13" release="lp150.2.2" arch="x86_64" project="openSUSE:Leap:15.0" repository="standard"/>
+  <bdep name="libgmp10" version="6.1.2" release="lp150.2.20" arch="x86_64" project="openSUSE:Leap:15.0" repository="standard"/>
+  <bdep name="libunistring2" version="0.9.9" release="lp150.1.1" arch="x86_64" project="openSUSE:Leap:15.0" repository="standard"/>
+  <bdep name="libidn2-0" version="2.0.4" release="lp150.1.10" arch="x86_64" project="openSUSE:Leap:15.0" repository="standard"/>
+  <bdep name="popt-devel" version="1.16" release="lp150.2.15" arch="x86_64" project="openSUSE:Leap:15.0" repository="standard"/>
+  <bdep name="libwrap0" version="7.6" release="lp150.1.48" arch="x86_64" project="openSUSE:Leap:15.0" repository="standard"/>
+  <bdep name="libsensors4" version="3.4.0" release="lp150.2.7" arch="x86_64" project="openSUSE:Leap:15.0" repository="standard"/>
+  <bdep name="snmp-mibs" version="5.7.3" release="lp150.5.1" arch="x86_64" project="openSUSE:Leap:15.0" repository="standard"/>
+  <bdep name="net-snmp" version="5.7.3" release="lp150.5.1" arch="x86_64" project="openSUSE:Leap:15.0" repository="standard"/>
+  <bdep name="libaudit1" version="2.8.1" release="lp150.3.17" arch="x86_64" project="openSUSE:Leap:15.0" repository="standard"/>
+  <bdep name="libcap-ng0" version="0.7.9" release="lp150.1.19" arch="x86_64" project="openSUSE:Leap:15.0" repository="standard"/>
+  <bdep name="libutempter0" version="1.1.6" release="lp150.3.19" arch="x86_64" project="openSUSE:Leap:15.0" repository="standard"/>
+  <bdep name="libfdisk1" version="2.31.1" release="lp150.6.1" arch="x86_64" project="openSUSE:Leap:15.0" repository="standard"/>
+  <bdep name="system-group-hardware" version="20170617" release="lp150.3.34" arch="noarch" project="openSUSE:Leap:15.0" repository="standard"/>
+  <bdep name="gcc7" version="7.3.1+r258812" release="lp150.2.10" arch="x86_64" project="openSUSE:Leap:15.0" repository="standard"/>
+  <bdep name="cpp" version="7" release="lp150.1.50" arch="x86_64" project="openSUSE:Leap:15.0" repository="standard"/>
+  <bdep name="libmagic1" version="5.32" release="lp150.5.17" arch="x86_64" project="openSUSE:Leap:15.0" repository="standard"/>
+  <bdep name="update-alternatives" version="1.19.0.4" release="lp150.2.25" arch="x86_64" project="openSUSE:Leap:15.0" repository="standard"/>
+  <bdep name="libdw1" version="0.168" release="lp150.2.48" arch="x86_64" project="openSUSE:Leap:15.0" repository="standard"/>
+  <bdep name="openssl-1_1" version="1.1.0h" release="lp150.2.1" arch="x86_64" project="openSUSE:Leap:15.0" repository="standard"/>
+  <bdep name="terminfo-base" version="6.1" release="lp150.3.14" arch="x86_64" project="openSUSE:Leap:15.0" repository="standard"/>
+  <bdep name="system-user-root" version="20170617" release="lp150.1.48" arch="noarch" project="openSUSE:Leap:15.0" repository="standard"/>
+  <bdep name="libgmpxx4" version="6.1.2" release="lp150.2.20" arch="x86_64" project="openSUSE:Leap:15.0" repository="standard"/>
+  <bdep name="libffi7" version="3.2.1.git259" release="lp150.3.3" arch="x86_64" project="openSUSE:Leap:15.0" repository="standard"/>
+  <bdep name="libtasn1" version="4.13" release="lp150.2.2" arch="x86_64" project="openSUSE:Leap:15.0" repository="standard"/>
+  <bdep name="logrotate" version="3.13.0" release="lp150.2.1" arch="x86_64" project="openSUSE:Leap:15.0" repository="standard"/>
+  <bdep name="perl-Term-ReadKey" version="2.37" release="lp150.1.3" arch="x86_64" project="openSUSE:Leap:15.0" repository="standard"/>
+  <bdep name="libtirpc3" version="1.0.2" release="lp150.1.34" arch="x86_64" project="openSUSE:Leap:15.0" repository="standard"/>
+  <bdep name="libnsl2" version="1.2.0" release="lp150.2.20" arch="x86_64" project="openSUSE:Leap:15.0" repository="standard"/>
+  <bdep name="libcrack2" version="2.9.6" release="lp150.2.17" arch="x86_64" project="openSUSE:Leap:15.0" repository="standard"/>
+  <bdep name="shadow" version="4.5" release="lp150.5.20" arch="x86_64" project="openSUSE:Leap:15.0" repository="standard"/>
+  <bdep name="sysuser-shadow" version="2.0" release="lp150.2.40" arch="noarch" project="openSUSE:Leap:15.0" repository="standard"/>
+  <bdep name="libmpfr6" version="4.0.1" release="lp150.1.21" arch="x86_64" project="openSUSE:Leap:15.0" repository="standard"/>
+  <bdep name="libmpc3" version="1.1.0" release="lp150.1.22" arch="x86_64" project="openSUSE:Leap:15.0" repository="standard"/>
+  <bdep name="libisl15" version="0.18" release="lp150.1.49" arch="x86_64" project="openSUSE:Leap:15.0" repository="standard"/>
+  <bdep name="cpp7" version="7.3.1+r258812" release="lp150.2.10" arch="x86_64" project="openSUSE:Leap:15.0" repository="standard"/>
+  <bdep name="libasan4" version="7.3.1+r258812" release="lp150.2.10" arch="x86_64" project="openSUSE:Leap:15.0" repository="standard"/>
+  <bdep name="libatomic1" version="7.3.1+r258812" release="lp150.2.10" arch="x86_64" project="openSUSE:Leap:15.0" repository="standard"/>
+  <bdep name="libcilkrts5" version="7.3.1+r258812" release="lp150.2.10" arch="x86_64" project="openSUSE:Leap:15.0" repository="standard"/>
+  <bdep name="libgomp1" version="7.3.1+r258812" release="lp150.2.10" arch="x86_64" project="openSUSE:Leap:15.0" repository="standard"/>
+  <bdep name="libitm1" version="7.3.1+r258812" release="lp150.2.10" arch="x86_64" project="openSUSE:Leap:15.0" repository="standard"/>
+  <bdep name="liblsan0" version="7.3.1+r258812" release="lp150.2.10" arch="x86_64" project="openSUSE:Leap:15.0" repository="standard"/>
+  <bdep name="libmpx2" version="7.3.1+r258812" release="lp150.2.10" arch="x86_64" project="openSUSE:Leap:15.0" repository="standard"/>
+  <bdep name="libmpxwrappers2" version="7.3.1+r258812" release="lp150.2.10" arch="x86_64" project="openSUSE:Leap:15.0" repository="standard"/>
+  <bdep name="libtsan0" version="7.3.1+r258812" release="lp150.2.10" arch="x86_64" project="openSUSE:Leap:15.0" repository="standard"/>
+  <bdep name="libubsan0" version="7.3.1+r258812" release="lp150.2.10" arch="x86_64" project="openSUSE:Leap:15.0" repository="standard"/>
+  <bdep name="file-magic" version="5.32" release="lp150.5.17" arch="noarch" project="openSUSE:Leap:15.0" repository="standard"/>
+  <bdep name="libebl-plugins" version="0.168" release="lp150.2.48" arch="x86_64" project="openSUSE:Leap:15.0" repository="standard"/>
+  <bdep name="libtirpc-netconfig" version="1.0.2" release="lp150.1.34" arch="x86_64" project="openSUSE:Leap:15.0" repository="standard"/>
+  <bdep name="cracklib" version="2.9.6" release="lp150.2.17" arch="x86_64" project="openSUSE:Leap:15.0" repository="standard"/>
+  <bdep name="libsemanage1" version="2.6" release="lp150.1.33" arch="x86_64" project="openSUSE:Leap:15.0" repository="standard"/>
+  <bdep name="libustr-1_0-1" version="1.0.4" release="lp150.2.15" arch="x86_64" project="openSUSE:Leap:15.0" repository="standard"/>
+  <bdep name="systemd-mini" version="234" release="lp150.19.1" arch="x86_64" project="openSUSE:Leap:15.0" repository="standard"/>
+  <bdep name="systemd-mini-devel" version="234" release="lp150.19.1" arch="x86_64" project="openSUSE:Leap:15.0" repository="standard"/>
+  <bdep name="libcurl-devel" version="7.59.0" release="lp150.1.1" arch="x86_64" project="openSUSE:Leap:15.0" repository="standard"/>
+  <bdep name="gettext-tools-mini" version="0.19.8.1" release="lp150.2.43" arch="x86_64" project="openSUSE:Leap:15.0" repository="standard"/>
+  <bdep name="libsystemd0-mini" version="234" release="lp150.19.1" arch="x86_64" project="openSUSE:Leap:15.0" repository="standard"/>
+  <bdep name="libkmod2" version="25" release="lp150.3.1" arch="x86_64" project="openSUSE:Leap:15.0" repository="standard"/>
+  <bdep name="libcurl4" version="7.59.0" release="lp150.1.1" arch="x86_64" project="openSUSE:Leap:15.0" repository="standard"/>
+  <bdep name="gettext-runtime-mini" version="0.19.8.1" release="lp150.2.43" arch="x86_64" project="openSUSE:Leap:15.0" repository="standard"/>
+  <bdep name="libldap-2_4-2" version="2.4.46" release="lp150.7.1" arch="x86_64" project="openSUSE:Leap:15.0" repository="standard"/>
+  <bdep name="libssh4" version="0.7.5" release="lp150.4.1" arch="x86_64" project="openSUSE:Leap:15.0" repository="standard"/>
+  <bdep name="libnghttp2-14" version="1.31.1" release="lp150.1.1" arch="x86_64" project="openSUSE:Leap:15.0" repository="standard"/>
+  <bdep name="libpsl5" version="0.20.1" release="lp150.1.3" arch="x86_64" project="openSUSE:Leap:15.0" repository="standard"/>
+  <bdep name="libsasl2-3" version="2.1.26" release="lp150.3.7" arch="x86_64" project="openSUSE:Leap:15.0" repository="standard"/>
+  <bdep name="postgresql10-devel" version="10.3" release="lp150.2.2" arch="x86_64" project="openSUSE:Leap:15.0" repository="standard"/>
+  <bdep name="libpq5" version="10.3" release="lp150.2.2" arch="x86_64" project="openSUSE:Leap:15.0" repository="standard"/>
+  <bdep name="libecpg6" version="10.3" release="lp150.2.2" arch="x86_64" project="openSUSE:Leap:15.0" repository="standard"/>
+  <bdep name="postgresql" version="10" release="lp150.4.4" arch="noarch" project="openSUSE:Leap:15.0" repository="standard"/>
+  <bdep name="postgresql10" version="10.3" release="lp150.2.1" arch="x86_64" project="openSUSE:Leap:15.0" repository="standard"/>
+  <bdep name="gdb" notmeta="1" version="8.1" release="lp150.1.11" arch="x86_64" project="openSUSE:Leap:15.0" repository="standard"/>
+  <bdep name="vim" notmeta="1" version="8.0.1568" release="lp150.3.1" arch="x86_64" project="openSUSE:Leap:15.0" repository="standard"/>
+  <bdep name="strace" notmeta="1" version="4.20" release="lp150.2.2" arch="x86_64" project="openSUSE:Leap:15.0" repository="standard"/>
+  <bdep name="rzsz" notmeta="1" version="0.12.21~rc" release="lp150.1.1" arch="x86_64" project="openSUSE:Leap:15.0" repository="standard"/>
+  <bdep name="perl" notmeta="1" version="5.26.1" release="lp150.5.19" arch="x86_64" project="openSUSE:Leap:15.0" repository="standard"/>
+  <bdep name="build-mkbaselibs" notmeta="1" version="20180329" release="lp150.1.2" arch="noarch" project="openSUSE:Leap:15.0" repository="standard"/>
+  <bdep name="brp-check-suse" notmeta="1" version="84.87+git20170602.cec5415" release="lp150.1.8" arch="x86_64" project="openSUSE:Leap:15.0" repository="standard"/>
+  <bdep name="post-build-checks" notmeta="1" version="84.87+git20171221.9eed556" release="lp150.1.2" arch="noarch" project="openSUSE:Leap:15.0" repository="standard"/>
+  <bdep name="rpmlint-Factory" notmeta="1" version="1.0" release="lp150.3.3" arch="noarch" project="openSUSE:Leap:15.0" repository="standard"/>
+  <bdep name="hostname" notmeta="1" version="3.16" release="lp150.1.8" arch="x86_64" project="openSUSE:Leap:15.0" repository="standard"/>
+  <bdep name="build-compare" notmeta="1" version="20171204T112209.f06fbac" release="lp150.1.22" arch="noarch" project="openSUSE:Leap:15.0" repository="standard"/>
+  <bdep name="brp-extract-appdata" notmeta="1" version="2016.05.04" release="lp150.1.8" arch="noarch" project="openSUSE:Leap:15.0" repository="standard"/>
+  <bdep name="system-user-news" notmeta="1" version="20170617" release="lp150.3.34" arch="noarch" project="openSUSE:Leap:15.0" repository="standard"/>
+  <bdep name="libpython3_6m1_0" notmeta="1" version="3.6.5" release="lp150.1.5" arch="x86_64" project="openSUSE:Leap:15.0" repository="standard"/>
+  <bdep name="libexpat1" notmeta="1" version="2.2.5" release="lp150.1.9" arch="x86_64" project="openSUSE:Leap:15.0" repository="standard"/>
+  <bdep name="python3-base" notmeta="1" version="3.6.5" release="lp150.1.5" arch="x86_64" project="openSUSE:Leap:15.0" repository="standard"/>
+  <bdep name="vim-data-common" notmeta="1" version="8.0.1568" release="lp150.3.1" arch="noarch" project="openSUSE:Leap:15.0" repository="standard"/>
+  <bdep name="libunwind" notmeta="1" version="1.2.1" release="lp150.2.1" arch="x86_64" project="openSUSE:Leap:15.0" repository="standard"/>
+  <bdep name="ncurses-utils" notmeta="1" version="6.1" release="lp150.3.14" arch="x86_64" project="openSUSE:Leap:15.0" repository="standard"/>
+  <bdep name="aaa_base-malloccheck" notmeta="1" version="84.87+git20180409.04c9dae" release="lp150.1.1" arch="x86_64" project="openSUSE:Leap:15.0" repository="standard"/>
+  <bdep name="rpmlint-mini" notmeta="1" version="1.10" release="lp150.3.24" arch="x86_64" project="openSUSE:Leap:15.0" repository="standard"/>
+  <bdep name="python-rpm-macros" notmeta="1" version="2017.12.22.d9968ab" release="lp150.1.6" arch="noarch" project="openSUSE:Leap:15.0" repository="standard"/>
+  <path project="home:rainergerhards:branches:home:rgerhards" repository="openSUSE_Leap_15.0" url="https://download.opensuse.org/repositories/home:/rainergerhards:/branches:/home:/rgerhards/openSUSE_Leap_15.0/"/>
+  <path project="home:rgerhards" repository="openSUSE_Leap_15.0" url="https://download.opensuse.org/repositories/home:/rgerhards/openSUSE_Leap_15.0/"/>
+  <path project="openSUSE:Leap:15.0" repository="standard"/>
+</buildinfo>

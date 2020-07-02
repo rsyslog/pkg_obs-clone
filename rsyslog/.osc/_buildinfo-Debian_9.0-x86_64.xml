@@ -1,0 +1,293 @@
+<buildinfo project="home:rainergerhards:branches:home:rgerhards" repository="Debian_9.0" package="rsyslog" downloadurl="https://download.opensuse.org/repositories">
+  <arch>x86_64</arch>
+  <debuginfo>1</debuginfo>
+  <subpack>rsyslog</subpack>
+  <subpack>rsyslog-czmq</subpack>
+  <subpack>rsyslog-dbgsym</subpack>
+  <subpack>rsyslog-dbi</subpack>
+  <subpack>rsyslog-doc</subpack>
+  <subpack>rsyslog-elasticsearch</subpack>
+  <subpack>rsyslog-elasticsearch-dbgsym</subpack>
+  <subpack>rsyslog-fmhash</subpack>
+  <subpack>rsyslog-fmhash-dbgsym</subpack>
+  <subpack>rsyslog-fmhttp</subpack>
+  <subpack>rsyslog-fmhttp-dbgsym</subpack>
+  <subpack>rsyslog-gnutls</subpack>
+  <subpack>rsyslog-gnutls-dbgsym</subpack>
+  <subpack>rsyslog-gssapi</subpack>
+  <subpack>rsyslog-hiredis</subpack>
+  <subpack>rsyslog-imptcp</subpack>
+  <subpack>rsyslog-imptcp-dbgsym</subpack>
+  <subpack>rsyslog-kafka</subpack>
+  <subpack>rsyslog-kafka-dbgsym</subpack>
+  <subpack>rsyslog-mmanon</subpack>
+  <subpack>rsyslog-mmdblookup</subpack>
+  <subpack>rsyslog-mmdblookup-dbgsym</subpack>
+  <subpack>rsyslog-mmfields</subpack>
+  <subpack>rsyslog-mmjsonparse</subpack>
+  <subpack>rsyslog-mmkubernetes</subpack>
+  <subpack>rsyslog-mmkubernetes-dbgsym</subpack>
+  <subpack>rsyslog-mmnormalize</subpack>
+  <subpack>rsyslog-mmrm1stspace</subpack>
+  <subpack>rsyslog-mmutf8fix</subpack>
+  <subpack>rsyslog-mongodb</subpack>
+  <subpack>rsyslog-mysql</subpack>
+  <subpack>rsyslog-omhttp</subpack>
+  <subpack>rsyslog-omhttp-dbgsym</subpack>
+  <subpack>rsyslog-omstdout</subpack>
+  <subpack>rsyslog-omstdout-dbgsym</subpack>
+  <subpack>rsyslog-openssl</subpack>
+  <subpack>rsyslog-openssl-dbgsym</subpack>
+  <subpack>rsyslog-pgsql</subpack>
+  <subpack>rsyslog-redis</subpack>
+  <subpack>rsyslog-relp</subpack>
+  <subpack>rsyslog-relp-dbgsym</subpack>
+  <subpack>rsyslog-utils</subpack>
+  <bdep name="base-passwd" preinstall="1" runscripts="1" notmeta="1" version="3.5.43" arch="amd64" project="Debian:9.0" repository="standard"/>
+  <bdep name="user-setup" preinstall="1" runscripts="1" notmeta="1" version="1.67" arch="all" project="Debian:9.0" repository="standard"/>
+  <bdep name="perl" preinstall="1" notmeta="1" version="5.24.1" release="3+deb9u6" arch="amd64" project="Debian:9.0" repository="standard"/>
+  <bdep name="base-files" preinstall="1" runscripts="1" notmeta="1" version="9.9+deb9u12" arch="amd64" project="Debian:9.0" repository="standard"/>
+  <bdep name="bash" preinstall="1" notmeta="1" version="4.4" release="5" arch="amd64" project="Debian:9.0" repository="standard"/>
+  <bdep name="bsdutils" preinstall="1" notmeta="1" epoch="1" version="2.29.2" release="1+deb9u1" arch="amd64" project="Debian:9.0" repository="standard"/>
+  <bdep name="coreutils" preinstall="1" notmeta="1" version="8.26" release="3" arch="amd64" project="Debian:9.0" repository="standard"/>
+  <bdep name="dash" preinstall="1" notmeta="1" version="0.5.8" release="2.4" arch="amd64" project="Debian:9.0" repository="standard"/>
+  <bdep name="debconf" preinstall="1" notmeta="1" version="1.5.61" arch="all" project="Debian:9.0" repository="standard"/>
+  <bdep name="debianutils" preinstall="1" notmeta="1" version="4.8.1.1" arch="amd64" project="Debian:9.0" repository="standard"/>
+  <bdep name="diffutils" preinstall="1" notmeta="1" epoch="1" version="3.5" release="3" arch="amd64" project="Debian:9.0" repository="standard"/>
+  <bdep name="dpkg" preinstall="1" notmeta="1" version="1.18.25" arch="amd64" project="Debian:9.0" repository="standard"/>
+  <bdep name="e2fslibs" preinstall="1" notmeta="1" version="1.43.4" release="2+deb9u1" arch="amd64" project="Debian:9.0" repository="standard"/>
+  <bdep name="e2fsprogs" preinstall="1" notmeta="1" version="1.43.4" release="2+deb9u1" arch="amd64" project="Debian:9.0" repository="standard"/>
+  <bdep name="findutils" preinstall="1" notmeta="1" version="4.6.0+git+20161106" release="2" arch="amd64" project="Debian:9.0" repository="standard"/>
+  <bdep name="gawk" preinstall="1" runscripts="1" notmeta="1" epoch="1" version="4.1.4+dfsg" release="1" arch="amd64" project="Debian:9.0" repository="standard"/>
+  <bdep name="gcc-6-base" preinstall="1" notmeta="1" version="6.3.0" release="18+deb9u1" arch="amd64" project="Debian:9.0" repository="standard"/>
+  <bdep name="grep" preinstall="1" notmeta="1" version="2.27" release="2" arch="amd64" project="Debian:9.0" repository="standard"/>
+  <bdep name="gzip" preinstall="1" notmeta="1" version="1.6" release="5+b1" arch="amd64" project="Debian:9.0" repository="standard"/>
+  <bdep name="hostname" preinstall="1" notmeta="1" version="3.18+b1" arch="amd64" project="Debian:9.0" repository="standard"/>
+  <bdep name="initscripts" preinstall="1" notmeta="1" version="2.88dsf" release="59.9" arch="amd64" project="Debian:9.0" repository="standard"/>
+  <bdep name="insserv" preinstall="1" notmeta="1" version="1.14.0" release="5.4+b1" arch="amd64" project="Debian:9.0" repository="standard"/>
+  <bdep name="libacl1" preinstall="1" notmeta="1" version="2.2.52" release="3+b1" arch="amd64" project="Debian:9.0" repository="standard"/>
+  <bdep name="libattr1" preinstall="1" notmeta="1" epoch="1" version="2.4.47" release="2+b2" arch="amd64" project="Debian:9.0" repository="standard"/>
+  <bdep name="libblkid1" preinstall="1" notmeta="1" version="2.29.2" release="1+deb9u1" arch="amd64" project="Debian:9.0" repository="standard"/>
+  <bdep name="libbz2-1.0" preinstall="1" notmeta="1" version="1.0.6" release="8.1" arch="amd64" project="Debian:9.0" repository="standard"/>
+  <bdep name="libc-bin" preinstall="1" notmeta="1" version="2.24" release="11+deb9u4" arch="amd64" project="Debian:9.0" repository="standard"/>
+  <bdep name="libc6" preinstall="1" notmeta="1" version="2.24" release="11+deb9u4" arch="amd64" project="Debian:9.0" repository="standard"/>
+  <bdep name="libcomerr2" preinstall="1" notmeta="1" version="1.43.4" release="2+deb9u1" arch="amd64" project="Debian:9.0" repository="standard"/>
+  <bdep name="libdb5.3" preinstall="1" notmeta="1" version="5.3.28" release="12+deb9u1" arch="amd64" project="Debian:9.0" repository="standard"/>
+  <bdep name="libgcc1" preinstall="1" notmeta="1" epoch="1" version="6.3.0" release="18+deb9u1" arch="amd64" project="Debian:9.0" repository="standard"/>
+  <bdep name="liblzma5" preinstall="1" notmeta="1" version="5.2.2" release="1.2+b1" arch="amd64" project="Debian:9.0" repository="standard"/>
+  <bdep name="libmount1" preinstall="1" notmeta="1" version="2.29.2" release="1+deb9u1" arch="amd64" project="Debian:9.0" repository="standard"/>
+  <bdep name="libncurses5" preinstall="1" notmeta="1" version="6.0+20161126" release="1+deb9u2" arch="amd64" project="Debian:9.0" repository="standard"/>
+  <bdep name="libpam-modules" preinstall="1" notmeta="1" version="1.1.8" release="3.6" arch="amd64" project="Debian:9.0" repository="standard"/>
+  <bdep name="libpcre3" preinstall="1" notmeta="1" epoch="2" version="8.39" release="3" arch="amd64" project="Debian:9.0" repository="standard"/>
+  <bdep name="libsmartcols1" preinstall="1" notmeta="1" version="2.29.2" release="1+deb9u1" arch="amd64" project="Debian:9.0" repository="standard"/>
+  <bdep name="libperl5.24" preinstall="1" notmeta="1" version="5.24.1" release="3+deb9u6" arch="amd64" project="Debian:9.0" repository="standard"/>
+  <bdep name="libdebconfclient0" preinstall="1" notmeta="1" version="0.227" arch="amd64" project="Debian:9.0" repository="standard"/>
+  <bdep name="libpam-modules-bin" preinstall="1" notmeta="1" version="1.1.8" release="3.6" arch="amd64" project="Debian:9.0" repository="standard"/>
+  <bdep name="libpam-runtime" preinstall="1" notmeta="1" version="1.1.8" release="3.6" arch="all" project="Debian:9.0" repository="standard"/>
+  <bdep name="libpam0g" preinstall="1" notmeta="1" version="1.1.8" release="3.6" arch="amd64" project="Debian:9.0" repository="standard"/>
+  <bdep name="libreadline7" preinstall="1" notmeta="1" version="7.0" release="3" arch="amd64" project="Debian:9.0" repository="standard"/>
+  <bdep name="libselinux1" preinstall="1" notmeta="1" version="2.6" release="3+b3" arch="amd64" project="Debian:9.0" repository="standard"/>
+  <bdep name="libsemanage-common" preinstall="1" notmeta="1" version="2.6" release="2" arch="all" project="Debian:9.0" repository="standard"/>
+  <bdep name="libsemanage1" preinstall="1" notmeta="1" version="2.6" release="2" arch="amd64" project="Debian:9.0" repository="standard"/>
+  <bdep name="libsepol1" preinstall="1" notmeta="1" version="2.6" release="2" arch="amd64" project="Debian:9.0" repository="standard"/>
+  <bdep name="libsigsegv2" preinstall="1" notmeta="1" version="2.10" release="5" arch="amd64" project="Debian:9.0" repository="standard"/>
+  <bdep name="libslang2" preinstall="1" notmeta="1" version="2.3.1" release="5" arch="amd64" project="Debian:9.0" repository="standard"/>
+  <bdep name="libss2" preinstall="1" notmeta="1" version="1.43.4" release="2+deb9u1" arch="amd64" project="Debian:9.0" repository="standard"/>
+  <bdep name="libtinfo5" preinstall="1" notmeta="1" version="6.0+20161126" release="1+deb9u2" arch="amd64" project="Debian:9.0" repository="standard"/>
+  <bdep name="libustr-1.0-1" preinstall="1" notmeta="1" version="1.0.4" release="6" arch="amd64" project="Debian:9.0" repository="standard"/>
+  <bdep name="libuuid1" preinstall="1" notmeta="1" version="2.29.2" release="1+deb9u1" arch="amd64" project="Debian:9.0" repository="standard"/>
+  <bdep name="login" preinstall="1" notmeta="1" epoch="1" version="4.4" release="4.1" arch="amd64" project="Debian:9.0" repository="standard"/>
+  <bdep name="lsb-base" preinstall="1" notmeta="1" version="9.20161125" arch="all" project="Debian:9.0" repository="standard"/>
+  <bdep name="mount" preinstall="1" notmeta="1" version="2.29.2" release="1+deb9u1" arch="amd64" project="Debian:9.0" repository="standard"/>
+  <bdep name="multiarch-support" preinstall="1" notmeta="1" version="2.24" release="11+deb9u4" arch="amd64" project="Debian:9.0" repository="standard"/>
+  <bdep name="ncurses-base" preinstall="1" notmeta="1" version="6.0+20161126" release="1+deb9u2" arch="all" project="Debian:9.0" repository="standard"/>
+  <bdep name="ncurses-bin" preinstall="1" notmeta="1" version="6.0+20161126" release="1+deb9u2" arch="amd64" project="Debian:9.0" repository="standard"/>
+  <bdep name="passwd" preinstall="1" notmeta="1" epoch="1" version="4.4" release="4.1" arch="amd64" project="Debian:9.0" repository="standard"/>
+  <bdep name="perl-base" preinstall="1" notmeta="1" version="5.24.1" release="3+deb9u6" arch="amd64" project="Debian:9.0" repository="standard"/>
+  <bdep name="readline-common" preinstall="1" notmeta="1" version="7.0" release="3" arch="all" project="Debian:9.0" repository="standard"/>
+  <bdep name="sed" preinstall="1" notmeta="1" version="4.4" release="1" arch="amd64" project="Debian:9.0" repository="standard"/>
+  <bdep name="sensible-utils" preinstall="1" notmeta="1" version="0.0.9+deb9u1" arch="all" project="Debian:9.0" repository="standard"/>
+  <bdep name="sysv-rc" preinstall="1" notmeta="1" version="2.88dsf" release="59.9" arch="all" project="Debian:9.0" repository="standard"/>
+  <bdep name="init-system-helpers" preinstall="1" notmeta="1" version="1.48" arch="all" project="Debian:9.0" repository="standard"/>
+  <bdep name="sysvinit-utils" preinstall="1" notmeta="1" version="2.88dsf" release="59.9" arch="amd64" project="Debian:9.0" repository="standard"/>
+  <bdep name="tar" preinstall="1" notmeta="1" version="1.29b" release="1.1" arch="amd64" project="Debian:9.0" repository="standard"/>
+  <bdep name="tzdata" preinstall="1" notmeta="1" version="2019c" release="0+deb9u1" arch="all" project="Debian:9.0" repository="standard"/>
+  <bdep name="util-linux" preinstall="1" notmeta="1" version="2.29.2" release="1+deb9u1" arch="amd64" project="Debian:9.0" repository="standard"/>
+  <bdep name="zlib1g" preinstall="1" notmeta="1" epoch="1" version="1.2.8.dfsg" release="5" arch="amd64" project="Debian:9.0" repository="standard"/>
+  <bdep name="libdevmapper1.02.1" vminstall="1" notmeta="1" epoch="2" version="1.02.137" release="2" arch="amd64" project="Debian:9.0" repository="standard"/>
+  <bdep name="debhelper" version="10.2.5" arch="all" project="Debian:9.0" repository="standard"/>
+  <bdep name="dpkg-dev" version="1.18.25" arch="all" project="Debian:9.0" repository="standard"/>
+  <bdep name="autotools-dev" version="20161112.1" arch="all" project="Debian:9.0" repository="standard"/>
+  <bdep name="dh-autoreconf" version="14" arch="all" project="Debian:9.0" repository="standard"/>
+  <bdep name="zlib1g-dev" epoch="1" version="1.2.8.dfsg" release="5" arch="amd64" project="Debian:9.0" repository="standard"/>
+  <bdep name="libpq-dev" version="9.6.16" release="0+deb9u1" arch="amd64" project="Debian:9.0" repository="standard"/>
+  <bdep name="librelp-dev" version="1.6.0" release="1" arch="amd64" project="home:rainergerhards:branches:home:rgerhards" repository="Debian_9.0"/>
+  <bdep name="libestr-dev" version="0.1.11" release="1" arch="amd64" project="home:rainergerhards:branches:home:rgerhards" repository="Debian_9.0"/>
+  <bdep name="liblognorm-dev" version="2.0.6" release="1" arch="amd64" project="home:rainergerhards:branches:home:rgerhards" repository="Debian_9.0"/>
+  <bdep name="libfastjson-dev" version="0.99.8" release="1" arch="amd64" project="home:rainergerhards:branches:home:rgerhards" repository="Debian_9.0"/>
+  <bdep name="libglib2.0-dev" version="2.50.3" release="2+deb9u2" arch="amd64" project="Debian:9.0" repository="standard"/>
+  <bdep name="uuid-dev" version="2.29.2" release="1+deb9u1" arch="amd64" project="Debian:9.0" repository="standard"/>
+  <bdep name="libgnutls28-dev" version="3.5.8" release="5+deb9u4" arch="amd64" project="Debian:9.0" repository="standard"/>
+  <bdep name="libkrb5-dev" version="1.15" release="1+deb9u1" arch="amd64" project="Debian:9.0" repository="standard"/>
+  <bdep name="pkg-config" version="0.29" release="4+b1" arch="amd64" project="Debian:9.0" repository="standard"/>
+  <bdep name="libssl-dev" version="1.1.0l" release="1~deb9u1" arch="amd64" project="Debian:9.0" repository="standard"/>
+  <bdep name="libcurl4-gnutls-dev" version="7.52.1" release="5+deb9u9" arch="amd64" project="Debian:9.0" repository="standard"/>
+  <bdep name="bison" epoch="2" version="3.0.4.dfsg" release="1+b1" arch="amd64" project="Debian:9.0" repository="standard"/>
+  <bdep name="build-essential" version="12.3" arch="amd64" project="Debian:9.0" repository="standard"/>
+  <bdep name="binutils" version="2.28" release="5" arch="amd64" project="Debian:9.0" repository="standard"/>
+  <bdep name="po-debconf" version="1.0.20" arch="all" project="Debian:9.0" repository="standard"/>
+  <bdep name="man-db" version="2.7.6.1" release="2" arch="amd64" project="Debian:9.0" repository="standard"/>
+  <bdep name="dh-strip-nondeterminism" version="0.034" release="1" arch="all" project="Debian:9.0" repository="standard"/>
+  <bdep name="file" epoch="1" version="5.30" release="1+deb9u3" arch="amd64" project="Debian:9.0" repository="standard"/>
+  <bdep name="libdpkg-perl" version="1.18.25" arch="all" project="Debian:9.0" repository="standard"/>
+  <bdep name="bzip2" version="1.0.6" release="8.1" arch="amd64" project="Debian:9.0" repository="standard"/>
+  <bdep name="xz-utils" version="5.2.2" release="1.2+b1" arch="amd64" project="Debian:9.0" repository="standard"/>
+  <bdep name="patch" version="2.7.5" release="1+deb9u2" arch="amd64" project="Debian:9.0" repository="standard"/>
+  <bdep name="autoconf" version="2.69" release="10" arch="all" project="Debian:9.0" repository="standard"/>
+  <bdep name="automake" epoch="1" version="1.15" release="6" arch="all" project="Debian:9.0" repository="standard"/>
+  <bdep name="autopoint" version="0.19.8.1" release="2+deb9u1" arch="all" project="Debian:9.0" repository="standard"/>
+  <bdep name="libtool" version="2.4.6" release="2" arch="all" project="Debian:9.0" repository="standard"/>
+  <bdep name="libc6-dev" version="2.24" release="11+deb9u4" arch="amd64" project="Debian:9.0" repository="standard"/>
+  <bdep name="libpq5" version="9.6.16" release="0+deb9u1" arch="amd64" project="Debian:9.0" repository="standard"/>
+  <bdep name="librelp0" version="1.6.0" release="1" arch="amd64" project="home:rainergerhards:branches:home:rgerhards" repository="Debian_9.0"/>
+  <bdep name="libestr0" version="0.1.11" release="1" arch="amd64" project="home:rainergerhards:branches:home:rgerhards" repository="Debian_9.0"/>
+  <bdep name="liblognorm5" version="2.0.6" release="1" arch="amd64" project="home:rainergerhards:branches:home:rgerhards" repository="Debian_9.0"/>
+  <bdep name="libfastjson4" version="0.99.8" release="1" arch="amd64" project="home:rainergerhards:branches:home:rgerhards" repository="Debian_9.0"/>
+  <bdep name="python3" version="3.5.3" release="1" arch="amd64" project="Debian:9.0" repository="standard"/>
+  <bdep name="libglib2.0-0" version="2.50.3" release="2+deb9u2" arch="amd64" project="Debian:9.0" repository="standard"/>
+  <bdep name="libglib2.0-bin" version="2.50.3" release="2+deb9u2" arch="amd64" project="Debian:9.0" repository="standard"/>
+  <bdep name="libpcre3-dev" epoch="2" version="8.39" release="3" arch="amd64" project="Debian:9.0" repository="standard"/>
+  <bdep name="libp11-kit-dev" version="0.23.3" release="2" arch="amd64" project="Debian:9.0" repository="standard"/>
+  <bdep name="nettle-dev" version="3.3" release="1+b2" arch="amd64" project="Debian:9.0" repository="standard"/>
+  <bdep name="libtasn1-6-dev" version="4.10" release="1.1+deb9u1" arch="amd64" project="Debian:9.0" repository="standard"/>
+  <bdep name="libgnutls30" version="3.5.8" release="5+deb9u4" arch="amd64" project="Debian:9.0" repository="standard"/>
+  <bdep name="libgnutls-dane0" version="3.5.8" release="5+deb9u4" arch="amd64" project="Debian:9.0" repository="standard"/>
+  <bdep name="libgnutlsxx28" version="3.5.8" release="5+deb9u4" arch="amd64" project="Debian:9.0" repository="standard"/>
+  <bdep name="libgnutls-openssl27" version="3.5.8" release="5+deb9u4" arch="amd64" project="Debian:9.0" repository="standard"/>
+  <bdep name="libidn11-dev" version="1.33" release="1+deb9u1" arch="amd64" project="Debian:9.0" repository="standard"/>
+  <bdep name="krb5-multidev" version="1.15" release="1+deb9u1" arch="amd64" project="Debian:9.0" repository="standard"/>
+  <bdep name="libssl1.1" version="1.1.0l" release="1~deb9u1" arch="amd64" project="Debian:9.0" repository="standard"/>
+  <bdep name="libcurl3-gnutls" version="7.52.1" release="5+deb9u9" arch="amd64" project="Debian:9.0" repository="standard"/>
+  <bdep name="m4" version="1.4.18" release="1" arch="amd64" project="Debian:9.0" repository="standard"/>
+  <bdep name="libbison-dev" epoch="2" version="3.0.4.dfsg" release="1+b1" arch="amd64" project="Debian:9.0" repository="standard"/>
+  <bdep name="gcc" epoch="4" version="6.3.0" release="4" arch="amd64" project="Debian:9.0" repository="standard"/>
+  <bdep name="g++" epoch="4" version="6.3.0" release="4" arch="amd64" project="Debian:9.0" repository="standard"/>
+  <bdep name="perl-modules-5.24" version="5.24.1" release="3+deb9u6" arch="all" project="Debian:9.0" repository="standard"/>
+  <bdep name="gettext" version="0.19.8.1" release="2+deb9u1" arch="amd64" project="Debian:9.0" repository="standard"/>
+  <bdep name="intltool-debian" version="0.35.0+20060710.4" arch="all" project="Debian:9.0" repository="standard"/>
+  <bdep name="bsdmainutils" version="9.0.12+nmu1" arch="amd64" project="Debian:9.0" repository="standard"/>
+  <bdep name="libgdbm3" version="1.8.3" release="14" arch="amd64" project="Debian:9.0" repository="standard"/>
+  <bdep name="groff-base" version="1.22.3" release="9" arch="amd64" project="Debian:9.0" repository="standard"/>
+  <bdep name="libpipeline1" version="1.4.1" release="2" arch="amd64" project="Debian:9.0" repository="standard"/>
+  <bdep name="libtimedate-perl" version="2.3000" release="2+deb9u1" arch="all" project="Debian:9.0" repository="standard"/>
+  <bdep name="libfile-stripnondeterminism-perl" version="0.034" release="1" arch="all" project="Debian:9.0" repository="standard"/>
+  <bdep name="libmagic1" epoch="1" version="5.30" release="1+deb9u3" arch="amd64" project="Debian:9.0" repository="standard"/>
+  <bdep name="cpp" epoch="4" version="6.3.0" release="4" arch="amd64" project="Debian:9.0" repository="standard"/>
+  <bdep name="libc-dev-bin" version="2.24" release="11+deb9u4" arch="amd64" project="Debian:9.0" repository="standard"/>
+  <bdep name="linux-libc-dev" version="4.9.210" release="1" arch="amd64" project="Debian:9.0" repository="standard"/>
+  <bdep name="libldap-2.4-2" version="2.4.44+dfsg" release="5+deb9u3" arch="amd64" project="Debian:9.0" repository="standard"/>
+  <bdep name="libgssapi-krb5-2" version="1.15" release="1+deb9u1" arch="amd64" project="Debian:9.0" repository="standard"/>
+  <bdep name="dh-python" version="2.20170125" arch="all" project="Debian:9.0" repository="standard"/>
+  <bdep name="libpython3-stdlib" version="3.5.3" release="1" arch="amd64" project="Debian:9.0" repository="standard"/>
+  <bdep name="python3.5" version="3.5.3" release="1+deb9u1" arch="amd64" project="Debian:9.0" repository="standard"/>
+  <bdep name="python3-minimal" version="3.5.3" release="1" arch="amd64" project="Debian:9.0" repository="standard"/>
+  <bdep name="libffi6" version="3.2.1" release="6" arch="amd64" project="Debian:9.0" repository="standard"/>
+  <bdep name="libglib2.0-data" version="2.50.3" release="2+deb9u2" arch="all" project="Debian:9.0" repository="standard"/>
+  <bdep name="libelf1" version="0.168" release="1" arch="amd64" project="Debian:9.0" repository="standard"/>
+  <bdep name="libpcrecpp0v5" epoch="2" version="8.39" release="3" arch="amd64" project="Debian:9.0" repository="standard"/>
+  <bdep name="libpcre16-3" epoch="2" version="8.39" release="3" arch="amd64" project="Debian:9.0" repository="standard"/>
+  <bdep name="libpcre32-3" epoch="2" version="8.39" release="3" arch="amd64" project="Debian:9.0" repository="standard"/>
+  <bdep name="libp11-kit0" version="0.23.3" release="2" arch="amd64" project="Debian:9.0" repository="standard"/>
+  <bdep name="libgmp-dev" epoch="2" version="6.1.2+dfsg" release="1" arch="amd64" project="Debian:9.0" repository="standard"/>
+  <bdep name="libnettle6" version="3.3" release="1+b2" arch="amd64" project="Debian:9.0" repository="standard"/>
+  <bdep name="libhogweed4" version="3.3" release="1+b2" arch="amd64" project="Debian:9.0" repository="standard"/>
+  <bdep name="libtasn1-6" version="4.10" release="1.1+deb9u1" arch="amd64" project="Debian:9.0" repository="standard"/>
+  <bdep name="libidn11" version="1.33" release="1+deb9u1" arch="amd64" project="Debian:9.0" repository="standard"/>
+  <bdep name="libgmp10" epoch="2" version="6.1.2+dfsg" release="1" arch="amd64" project="Debian:9.0" repository="standard"/>
+  <bdep name="libunbound2" version="1.6.0" release="3+deb9u2" arch="amd64" project="Debian:9.0" repository="standard"/>
+  <bdep name="libstdc++6" version="6.3.0" release="18+deb9u1" arch="amd64" project="Debian:9.0" repository="standard"/>
+  <bdep name="comerr-dev" version="2.1-1.43.4" release="2+deb9u1" arch="amd64" project="Debian:9.0" repository="standard"/>
+  <bdep name="libkrb5-3" version="1.15" release="1+deb9u1" arch="amd64" project="Debian:9.0" repository="standard"/>
+  <bdep name="libk5crypto3" version="1.15" release="1+deb9u1" arch="amd64" project="Debian:9.0" repository="standard"/>
+  <bdep name="libkadm5srv-mit11" version="1.15" release="1+deb9u1" arch="amd64" project="Debian:9.0" repository="standard"/>
+  <bdep name="libgssrpc4" version="1.15" release="1+deb9u1" arch="amd64" project="Debian:9.0" repository="standard"/>
+  <bdep name="libkadm5clnt-mit11" version="1.15" release="1+deb9u1" arch="amd64" project="Debian:9.0" repository="standard"/>
+  <bdep name="libidn2-0" version="0.16" release="1+deb9u1" arch="amd64" project="Debian:9.0" repository="standard"/>
+  <bdep name="libssh2-1" version="1.7.0" release="1+deb9u1" arch="amd64" project="Debian:9.0" repository="standard"/>
+  <bdep name="libpsl5" version="0.17.0" release="3" arch="amd64" project="Debian:9.0" repository="standard"/>
+  <bdep name="librtmp1" version="2.4+20151223.gitfa8646d.1" release="1+b1" arch="amd64" project="Debian:9.0" repository="standard"/>
+  <bdep name="libnghttp2-14" version="1.18.1" release="1+deb9u1" arch="amd64" project="Debian:9.0" repository="standard"/>
+  <bdep name="gcc-6" version="6.3.0" release="18+deb9u1" arch="amd64" project="Debian:9.0" repository="standard"/>
+  <bdep name="g++-6" version="6.3.0" release="18+deb9u1" arch="amd64" project="Debian:9.0" repository="standard"/>
+  <bdep name="gettext-base" version="0.19.8.1" release="2+deb9u1" arch="amd64" project="Debian:9.0" repository="standard"/>
+  <bdep name="libunistring0" version="0.9.6+really0.9.3" release="0.1" arch="amd64" project="Debian:9.0" repository="standard"/>
+  <bdep name="libgomp1" version="6.3.0" release="18+deb9u1" arch="amd64" project="Debian:9.0" repository="standard"/>
+  <bdep name="libcroco3" version="0.6.11" release="3" arch="amd64" project="Debian:9.0" repository="standard"/>
+  <bdep name="libxml2" version="2.9.4+dfsg1" release="2.2+deb9u2" arch="amd64" project="Debian:9.0" repository="standard"/>
+  <bdep name="libbsd0" version="0.8.3" release="1" arch="amd64" project="Debian:9.0" repository="standard"/>
+  <bdep name="libarchive-zip-perl" version="1.59" release="1+deb9u1" arch="all" project="Debian:9.0" repository="standard"/>
+  <bdep name="libmagic-mgc" epoch="1" version="5.30" release="1+deb9u3" arch="amd64" project="Debian:9.0" repository="standard"/>
+  <bdep name="cpp-6" version="6.3.0" release="18+deb9u1" arch="amd64" project="Debian:9.0" repository="standard"/>
+  <bdep name="libsasl2-2" version="2.1.27~101-g0780600+dfsg" release="3+deb9u1" arch="amd64" project="Debian:9.0" repository="standard"/>
+  <bdep name="libldap-common" version="2.4.44+dfsg" release="5+deb9u3" arch="all" project="Debian:9.0" repository="standard"/>
+  <bdep name="libkeyutils1" version="1.5.9" release="9" arch="amd64" project="Debian:9.0" repository="standard"/>
+  <bdep name="libkrb5support0" version="1.15" release="1+deb9u1" arch="amd64" project="Debian:9.0" repository="standard"/>
+  <bdep name="libpython3.5-stdlib" version="3.5.3" release="1+deb9u1" arch="amd64" project="Debian:9.0" repository="standard"/>
+  <bdep name="mime-support" version="3.60" arch="all" project="Debian:9.0" repository="standard"/>
+  <bdep name="python3.5-minimal" version="3.5.3" release="1+deb9u1" arch="amd64" project="Debian:9.0" repository="standard"/>
+  <bdep name="libaudit1" epoch="1" version="2.6.7" release="2" arch="amd64" project="Debian:9.0" repository="standard"/>
+  <bdep name="libgmpxx4ldbl" epoch="2" version="6.1.2+dfsg" release="1" arch="amd64" project="Debian:9.0" repository="standard"/>
+  <bdep name="libkdb5-8" version="1.15" release="1+deb9u1" arch="amd64" project="Debian:9.0" repository="standard"/>
+  <bdep name="libgcrypt20" version="1.7.6" release="2+deb9u3" arch="amd64" project="Debian:9.0" repository="standard"/>
+  <bdep name="libmpc3" version="1.0.3" release="1+b2" arch="amd64" project="Debian:9.0" repository="standard"/>
+  <bdep name="libmpfr4" version="3.1.5" release="1" arch="amd64" project="Debian:9.0" repository="standard"/>
+  <bdep name="libisl15" version="0.18" release="1" arch="amd64" project="Debian:9.0" repository="standard"/>
+  <bdep name="libgcc-6-dev" version="6.3.0" release="18+deb9u1" arch="amd64" project="Debian:9.0" repository="standard"/>
+  <bdep name="libcc1-0" version="6.3.0" release="18+deb9u1" arch="amd64" project="Debian:9.0" repository="standard"/>
+  <bdep name="libstdc++-6-dev" version="6.3.0" release="18+deb9u1" arch="amd64" project="Debian:9.0" repository="standard"/>
+  <bdep name="libicu57" version="57.1" release="6+deb9u3" arch="amd64" project="Debian:9.0" repository="standard"/>
+  <bdep name="libsystemd0" version="232" release="25+deb9u12" arch="amd64" project="Debian:9.0" repository="standard"/>
+  <bdep name="libsasl2-modules-db" version="2.1.27~101-g0780600+dfsg" release="3+deb9u1" arch="amd64" project="Debian:9.0" repository="standard"/>
+  <bdep name="libmpdec2" version="2.4.2" release="1" arch="amd64" project="Debian:9.0" repository="standard"/>
+  <bdep name="libsqlite3-0" version="3.16.2" release="5+deb9u1" arch="amd64" project="Debian:9.0" repository="standard"/>
+  <bdep name="libncursesw5" version="6.0+20161126" release="1+deb9u2" arch="amd64" project="Debian:9.0" repository="standard"/>
+  <bdep name="libpython3.5-minimal" version="3.5.3" release="1+deb9u1" arch="amd64" project="Debian:9.0" repository="standard"/>
+  <bdep name="libexpat1" version="2.2.0" release="2+deb9u3" arch="amd64" project="Debian:9.0" repository="standard"/>
+  <bdep name="libcap-ng0" version="0.7.7" release="3+b1" arch="amd64" project="Debian:9.0" repository="standard"/>
+  <bdep name="libaudit-common" epoch="1" version="2.6.7" release="2" arch="all" project="Debian:9.0" repository="standard"/>
+  <bdep name="libgpg-error0" version="1.26" release="2" arch="amd64" project="Debian:9.0" repository="standard"/>
+  <bdep name="libitm1" version="6.3.0" release="18+deb9u1" arch="amd64" project="Debian:9.0" repository="standard"/>
+  <bdep name="libatomic1" version="6.3.0" release="18+deb9u1" arch="amd64" project="Debian:9.0" repository="standard"/>
+  <bdep name="libasan3" version="6.3.0" release="18+deb9u1" arch="amd64" project="Debian:9.0" repository="standard"/>
+  <bdep name="liblsan0" version="6.3.0" release="18+deb9u1" arch="amd64" project="Debian:9.0" repository="standard"/>
+  <bdep name="libtsan0" version="6.3.0" release="18+deb9u1" arch="amd64" project="Debian:9.0" repository="standard"/>
+  <bdep name="libubsan0" version="6.3.0" release="18+deb9u1" arch="amd64" project="Debian:9.0" repository="standard"/>
+  <bdep name="libcilkrts5" version="6.3.0" release="18+deb9u1" arch="amd64" project="Debian:9.0" repository="standard"/>
+  <bdep name="libmpx2" version="6.3.0" release="18+deb9u1" arch="amd64" project="Debian:9.0" repository="standard"/>
+  <bdep name="libquadmath0" version="6.3.0" release="18+deb9u1" arch="amd64" project="Debian:9.0" repository="standard"/>
+  <bdep name="liblz4-1" version="0.0~r131" release="2+b1" arch="amd64" project="Debian:9.0" repository="standard"/>
+  <bdep name="make" version="4.1" release="9.1" arch="amd64" project="Debian:9.0" repository="standard"/>
+  <bdep name="cpio" notmeta="1" version="2.11+dfsg" release="6" arch="amd64" project="Debian:9.0" repository="standard"/>
+  <bdep name="fakeroot" notmeta="1" version="1.21" release="3.1" arch="amd64" project="Debian:9.0" repository="standard"/>
+  <bdep name="less" notmeta="1" version="481" release="2.1" arch="amd64" project="Debian:9.0" repository="standard"/>
+  <bdep name="kmod" notmeta="1" version="23" release="2" arch="amd64" project="Debian:9.0" repository="standard"/>
+  <bdep name="net-tools" notmeta="1" version="1.60+git20161116.90da8a0" release="1" arch="amd64" project="Debian:9.0" repository="standard"/>
+  <bdep name="procps" notmeta="1" epoch="2" version="3.3.12" release="3+deb9u1" arch="amd64" project="Debian:9.0" repository="standard"/>
+  <bdep name="psmisc" notmeta="1" version="22.21" release="2.1+b2" arch="amd64" project="Debian:9.0" repository="standard"/>
+  <bdep name="strace" notmeta="1" version="4.15" release="2" arch="amd64" project="Debian:9.0" repository="standard"/>
+  <bdep name="vim" notmeta="1" epoch="2" version="8.0.0197" release="4+deb9u3" arch="amd64" project="Debian:9.0" repository="standard"/>
+  <bdep name="adduser" notmeta="1" version="3.115" arch="all" project="Debian:9.0" repository="standard"/>
+  <bdep name="libudev1" notmeta="1" version="232" release="25+deb9u12" arch="amd64" project="Debian:9.0" repository="standard"/>
+  <bdep name="startpar" notmeta="1" version="0.59" release="3.1" arch="amd64" project="Debian:9.0" repository="standard"/>
+  <bdep name="libfdisk1" notmeta="1" version="2.29.2" release="1+deb9u1" arch="amd64" project="Debian:9.0" repository="standard"/>
+  <bdep name="libfakeroot" notmeta="1" version="1.21" release="3.1" arch="amd64" project="Debian:9.0" repository="standard"/>
+  <bdep name="libkmod2" notmeta="1" version="23" release="2" arch="amd64" project="Debian:9.0" repository="standard"/>
+  <bdep name="libprocps6" notmeta="1" epoch="2" version="3.3.12" release="3+deb9u1" arch="amd64" project="Debian:9.0" repository="standard"/>
+  <bdep name="libgpm2" notmeta="1" version="1.20.4" release="6.2+b1" arch="amd64" project="Debian:9.0" repository="standard"/>
+  <bdep name="vim-common" notmeta="1" epoch="2" version="8.0.0197" release="4+deb9u3" arch="all" project="Debian:9.0" repository="standard"/>
+  <bdep name="vim-runtime" notmeta="1" epoch="2" version="8.0.0197" release="4+deb9u3" arch="all" project="Debian:9.0" repository="standard"/>
+  <bdep name="xxd" notmeta="1" epoch="2" version="8.0.0197" release="4+deb9u3" arch="amd64" project="Debian:9.0" repository="standard"/>
+  <path project="home:rainergerhards:branches:home:rgerhards" repository="Debian_9.0" url="https://download.opensuse.org/repositories/home:/rainergerhards:/branches:/home:/rgerhards/Debian_9.0/"/>
+  <path project="home:rgerhards" repository="Debian_9.0" url="https://download.opensuse.org/repositories/home:/rgerhards/Debian_9.0/"/>
+  <path project="Debian:9.0" repository="standard"/>
+</buildinfo>

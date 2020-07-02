@@ -1,0 +1,26 @@
+--- a/rsyslog.service.in	2020-06-22 14:57:15.286097749 +0200
++++ a/rsyslog.service.in	2020-06-08 08:59:30.592351709 +0200
+@@ -1,14 +1,14 @@
+ [Unit]
+ Description=System Logging Service
+ ;Requires=syslog.socket
+-Wants=network.target network-online.target
+-After=network.target network-online.target
+ Documentation=man:rsyslogd(8)
+-Documentation=http://www.rsyslog.com/doc/
++Documentation=https://www.rsyslog.com/doc/
+ 
+ [Service]
+ Type=notify
+-ExecStart=@sbindir@/rsyslogd -n -iNONE
++EnvironmentFile=-/etc/sysconfig/rsyslog
++ExecStart=/usr/sbin/rsyslogd -n $SYSLOGD_OPTIONS
++UMask=0066
+ StandardOutput=null
+ Restart=on-failure
+ 
+@@ -19,3 +19,4 @@
+ [Install]
+ WantedBy=multi-user.target
+ ;Alias=syslog.service
++

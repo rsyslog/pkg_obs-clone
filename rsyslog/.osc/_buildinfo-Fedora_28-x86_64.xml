@@ -1,0 +1,484 @@
+<buildinfo project="home:rainergerhards:branches:home:rgerhards" repository="Fedora_28" package="rsyslog" downloadurl="https://download.opensuse.org/repositories">
+  <arch>x86_64</arch>
+  <debuginfo>1</debuginfo>
+  <subpack>rsyslog</subpack>
+  <subpack>rsyslog-crypto</subpack>
+  <subpack>rsyslog-dbi</subpack>
+  <subpack>rsyslog-diag-tools</subpack>
+  <subpack>rsyslog-doc</subpack>
+  <subpack>rsyslog-elasticsearch</subpack>
+  <subpack>rsyslog-gnutls</subpack>
+  <subpack>rsyslog-gssapi</subpack>
+  <subpack>rsyslog-hiredis</subpack>
+  <subpack>rsyslog-imdocker</subpack>
+  <subpack>rsyslog-kafka</subpack>
+  <subpack>rsyslog-mmnormalize</subpack>
+  <subpack>rsyslog-mongodb</subpack>
+  <subpack>rsyslog-mysql</subpack>
+  <subpack>rsyslog-omhttp</subpack>
+  <subpack>rsyslog-omhttpfs</subpack>
+  <subpack>rsyslog-omtcl</subpack>
+  <subpack>rsyslog-openssl</subpack>
+  <subpack>rsyslog-pgsql</subpack>
+  <subpack>rsyslog-relp</subpack>
+  <subpack>rsyslog-snmp</subpack>
+  <subpack>rsyslog-updspoof</subpack>
+  <bdep name="acl" preinstall="1" notmeta="1" version="2.2.52" release="20.fc28" arch="x86_64" project="Fedora:28" repository="standard"/>
+  <bdep name="attr" preinstall="1" notmeta="1" version="2.4.47" release="23.fc28" arch="x86_64" project="Fedora:28" repository="standard"/>
+  <bdep name="bash" preinstall="1" notmeta="1" version="4.4.19" release="2.fc28" arch="x86_64" project="Fedora:28" repository="standard"/>
+  <bdep name="bzip2" preinstall="1" version="1.0.6" release="26.fc28" arch="x86_64" project="Fedora:28" repository="standard"/>
+  <bdep name="coreutils" preinstall="1" notmeta="1" version="8.29" release="5.fc28" arch="x86_64" project="Fedora:28" repository="standard"/>
+  <bdep name="device-mapper-libs" preinstall="1" notmeta="1" version="1.02.146" release="4.fc28" arch="x86_64" project="Fedora:28" repository="standard"/>
+  <bdep name="diffutils" preinstall="1" notmeta="1" version="3.6" release="4.fc28" arch="x86_64" project="Fedora:28" repository="standard"/>
+  <bdep name="filesystem" preinstall="1" notmeta="1" version="3.8" release="2.fc28" arch="x86_64" project="Fedora:28" repository="standard"/>
+  <bdep name="glibc" preinstall="1" version="2.27" release="8.fc28" arch="x86_64" project="Fedora:28" repository="standard"/>
+  <bdep name="grep" preinstall="1" notmeta="1" version="3.1" release="5.fc28" arch="x86_64" project="Fedora:28" repository="standard"/>
+  <bdep name="libacl" preinstall="1" notmeta="1" version="2.2.52" release="20.fc28" arch="x86_64" project="Fedora:28" repository="standard"/>
+  <bdep name="libattr" preinstall="1" notmeta="1" version="2.4.47" release="23.fc28" arch="x86_64" project="Fedora:28" repository="standard"/>
+  <bdep name="libgcc" preinstall="1" notmeta="1" version="8.0.1" release="0.20.fc28" arch="x86_64" project="Fedora:28" repository="standard"/>
+  <bdep name="m4" preinstall="1" notmeta="1" version="1.4.18" release="6.fc28" arch="x86_64" project="Fedora:28" repository="standard"/>
+  <bdep name="ncurses" preinstall="1" version="6.1" release="4.20180224.fc28" arch="x86_64" project="Fedora:28" repository="standard"/>
+  <bdep name="pam" preinstall="1" notmeta="1" version="1.3.0" release="10.fc28" arch="x86_64" project="Fedora:28" repository="standard"/>
+  <bdep name="nspr" preinstall="1" notmeta="1" version="4.19.0" release="1.fc28" arch="x86_64" project="Fedora:28" repository="standard"/>
+  <bdep name="libzstd" preinstall="1" notmeta="1" version="1.3.4" release="1.fc28" arch="x86_64" project="Fedora:28" repository="standard"/>
+  <bdep name="popt" preinstall="1" notmeta="1" version="1.16" release="14.fc28" arch="x86_64" project="Fedora:28" repository="standard"/>
+  <bdep name="readline" preinstall="1" notmeta="1" version="7.0" release="10.fc28" arch="x86_64" project="Fedora:28" repository="standard"/>
+  <bdep name="ncurses-libs" preinstall="1" notmeta="1" version="6.1" release="4.20180224.fc28" arch="x86_64" project="Fedora:28" repository="standard"/>
+  <bdep name="rpm" preinstall="1" version="4.14.1" release="7.fc28" arch="x86_64" project="Fedora:28" repository="standard"/>
+  <bdep name="rpm-sign" preinstall="1" notmeta="1" version="4.14.1" release="7.fc28" arch="x86_64" project="Fedora:28" repository="standard"/>
+  <bdep name="sed" preinstall="1" notmeta="1" version="4.5" release="1.fc28" arch="x86_64" project="Fedora:28" repository="standard"/>
+  <bdep name="tar" preinstall="1" notmeta="1" epoch="2" version="1.30" release="3.fc28" arch="x86_64" project="Fedora:28" repository="standard"/>
+  <bdep name="zlib" preinstall="1" version="1.2.11" release="7.fc28" arch="x86_64" project="Fedora:28" repository="standard"/>
+  <bdep name="rpm-libs" preinstall="1" notmeta="1" version="4.14.1" release="7.fc28" arch="x86_64" project="Fedora:28" repository="standard"/>
+  <bdep name="pcre" preinstall="1" notmeta="1" version="8.42" release="1.fc28" arch="x86_64" project="Fedora:28" repository="standard"/>
+  <bdep name="pcre2" preinstall="1" notmeta="1" version="10.31" release="4.fc28" arch="x86_64" project="Fedora:28" repository="standard"/>
+  <bdep name="info" preinstall="1" notmeta="1" version="6.5" release="3.fc28" arch="x86_64" project="Fedora:28" repository="standard"/>
+  <bdep name="libselinux" preinstall="1" notmeta="1" version="2.7" release="13.fc28" arch="x86_64" project="Fedora:28" repository="standard"/>
+  <bdep name="sqlite" preinstall="1" notmeta="1" version="3.22.0" release="4.fc28" arch="x86_64" project="Fedora:28" repository="standard"/>
+  <bdep name="elfutils-libelf" preinstall="1" notmeta="1" version="0.170" release="11.fc28" arch="x86_64" project="Fedora:28" repository="standard"/>
+  <bdep name="findutils" preinstall="1" notmeta="1" epoch="1" version="4.6.0" release="17.fc28" arch="x86_64" project="Fedora:28" repository="standard"/>
+  <bdep name="openssl" preinstall="1" notmeta="1" epoch="1" version="1.1.0h" release="3.fc28" arch="x86_64" project="Fedora:28" repository="standard"/>
+  <bdep name="krb5-libs" preinstall="1" notmeta="1" version="1.16" release="21.fc28" arch="x86_64" project="Fedora:28" repository="standard"/>
+  <bdep name="e2fsprogs-libs" preinstall="1" notmeta="1" version="1.43.8" release="2.fc28" arch="x86_64" project="Fedora:28" repository="standard"/>
+  <bdep name="expat" preinstall="1" notmeta="1" version="2.2.5" release="3.fc28" arch="x86_64" project="Fedora:28" repository="standard"/>
+  <bdep name="bzip2-libs" preinstall="1" notmeta="1" version="1.0.6" release="26.fc28" arch="x86_64" project="Fedora:28" repository="standard"/>
+  <bdep name="libstdc++" preinstall="1" notmeta="1" version="8.0.1" release="0.20.fc28" arch="x86_64" project="Fedora:28" repository="standard"/>
+  <bdep name="setup" preinstall="1" notmeta="1" version="2.11.3" release="1.fc28" arch="noarch" project="Fedora:28" repository="standard"/>
+  <bdep name="libsepol" preinstall="1" notmeta="1" version="2.7" release="6.fc28" arch="x86_64" project="Fedora:28" repository="standard"/>
+  <bdep name="libcap" preinstall="1" notmeta="1" version="2.25" release="9.fc28" arch="x86_64" project="Fedora:28" repository="standard"/>
+  <bdep name="libdb" preinstall="1" notmeta="1" version="5.3.28" release="30.fc28" arch="x86_64" project="Fedora:28" repository="standard"/>
+  <bdep name="file-libs" preinstall="1" notmeta="1" version="5.32" release="3.fc28" arch="x86_64" project="Fedora:28" repository="standard"/>
+  <bdep name="lua-libs" preinstall="1" notmeta="1" version="5.3.4" release="10.fc28" arch="x86_64" project="Fedora:28" repository="standard"/>
+  <bdep name="shadow-utils" preinstall="1" notmeta="1" epoch="2" version="4.5" release="9.fc28" arch="x86_64" project="Fedora:28" repository="standard"/>
+  <bdep name="chkconfig" preinstall="1" notmeta="1" version="1.10" release="4.fc28" arch="x86_64" project="Fedora:28" repository="standard"/>
+  <bdep name="util-linux" preinstall="1" notmeta="1" version="2.32" release="2.fc28" arch="x86_64" project="Fedora:28" repository="standard"/>
+  <bdep name="xz-libs" preinstall="1" notmeta="1" version="5.2.3" release="7.fc28" arch="x86_64" project="Fedora:28" repository="standard"/>
+  <bdep name="libxcrypt" preinstall="1" notmeta="1" version="4.0.0" release="5.fc28" arch="x86_64" project="Fedora:28" repository="standard"/>
+  <bdep name="openssl-libs" preinstall="1" notmeta="1" epoch="1" version="1.1.0h" release="3.fc28" arch="x86_64" project="Fedora:28" repository="standard"/>
+  <bdep name="nss" preinstall="1" notmeta="1" version="3.36.0" release="1.0.fc28" arch="x86_64" project="Fedora:28" repository="standard"/>
+  <bdep name="nss-util" preinstall="1" notmeta="1" version="3.36.0" release="1.0.fc28" arch="x86_64" project="Fedora:28" repository="standard"/>
+  <bdep name="nss-softokn-freebl" preinstall="1" version="3.36.0" release="1.0.fc28" arch="x86_64" project="Fedora:28" repository="standard"/>
+  <bdep name="nss-softokn" preinstall="1" notmeta="1" version="3.36.0" release="1.0.fc28" arch="x86_64" project="Fedora:28" repository="standard"/>
+  <bdep name="sqlite-libs" preinstall="1" notmeta="1" version="3.22.0" release="4.fc28" arch="x86_64" project="Fedora:28" repository="standard"/>
+  <bdep name="perl-Exporter" preinstall="1" notmeta="1" version="5.72" release="396.fc28" arch="noarch" project="Fedora:28" repository="standard"/>
+  <bdep name="perl-Data-Dumper" preinstall="1" notmeta="1" version="2.167" release="399.fc28" arch="x86_64" project="Fedora:28" repository="standard"/>
+  <bdep name="perl-interpreter" preinstall="1" notmeta="1" epoch="4" version="5.26.1" release="409.fc28" arch="x86_64" project="Fedora:28" repository="standard"/>
+  <bdep name="perl-libs" preinstall="1" notmeta="1" epoch="4" version="5.26.1" release="409.fc28" arch="x86_64" project="Fedora:28" repository="standard"/>
+  <bdep name="perl-constant" preinstall="1" notmeta="1" version="1.33" release="396.fc28" arch="noarch" project="Fedora:28" repository="standard"/>
+  <bdep name="perl-Getopt-Long" preinstall="1" notmeta="1" epoch="1" version="2.50" release="4.fc28" arch="noarch" project="Fedora:28" repository="standard"/>
+  <bdep name="perl-Carp" preinstall="1" notmeta="1" version="1.42" release="395.fc28" arch="noarch" project="Fedora:28" repository="standard"/>
+  <bdep name="perl-Digest-MD5" preinstall="1" notmeta="1" version="2.55" release="396.fc28" arch="x86_64" project="Fedora:28" repository="standard"/>
+  <bdep name="device-mapper" vminstall="1" version="1.02.146" release="4.fc28" arch="x86_64" project="Fedora:28" repository="standard"/>
+  <bdep name="libblkid" vminstall="1" version="2.32" release="2.fc28" arch="x86_64" project="Fedora:28" repository="standard"/>
+  <bdep name="libuuid" vminstall="1" version="2.32" release="2.fc28" arch="x86_64" project="Fedora:28" repository="standard"/>
+  <bdep name="libmount" vminstall="1" version="2.32" release="2.fc28" arch="x86_64" project="Fedora:28" repository="standard"/>
+  <bdep name="libsmartcols" vminstall="1" version="2.32" release="2.fc28" arch="x86_64" project="Fedora:28" repository="standard"/>
+  <bdep name="autoconf" version="2.69" release="27.fc28" arch="noarch" project="Fedora:28" repository="standard"/>
+  <bdep name="automake" version="1.15.1" release="5.fc28" arch="noarch" project="Fedora:28" repository="standard"/>
+  <bdep name="libtool" version="2.4.6" release="22.fc28" arch="x86_64" project="Fedora:28" repository="standard"/>
+  <bdep name="bison" version="3.0.4" release="9.fc28" arch="x86_64" project="Fedora:28" repository="standard"/>
+  <bdep name="flex" version="2.6.1" release="7.fc28" arch="x86_64" project="Fedora:28" repository="standard"/>
+  <bdep name="openssl-devel" epoch="1" version="1.1.0h" release="3.fc28" arch="x86_64" project="Fedora:28" repository="standard"/>
+  <bdep name="pcre-devel" version="8.42" release="1.fc28" arch="x86_64" project="Fedora:28" repository="standard"/>
+  <bdep name="zlib-devel" version="1.2.11" release="7.fc28" arch="x86_64" project="Fedora:28" repository="standard"/>
+  <bdep name="liblogging-devel" version="1.0.6" release="11.1" arch="x86_64" project="home:rainergerhards:branches:home:rgerhards" repository="Fedora_28"/>
+  <bdep name="hiredis-devel" version="0.13.3" release="8.fc28" arch="x86_64" project="Fedora:28" repository="standard"/>
+  <bdep name="krb5-devel" version="1.16" release="21.fc28" arch="x86_64" project="Fedora:28" repository="standard"/>
+  <bdep name="gnutls-devel" version="3.6.2" release="1.fc28" arch="x86_64" project="Fedora:28" repository="standard"/>
+  <bdep name="libgcrypt-devel" version="1.8.2" release="2.fc28" arch="x86_64" project="Fedora:28" repository="standard"/>
+  <bdep name="libdbi-devel" version="0.9.0" release="10.fc28" arch="x86_64" project="Fedora:28" repository="standard"/>
+  <bdep name="net-snmp-devel" epoch="1" version="5.7.3" release="36.fc28" arch="x86_64" project="Fedora:28" repository="standard"/>
+  <bdep name="postgresql-devel" version="10.3" release="1.fc28" arch="x86_64" project="Fedora:28" repository="standard"/>
+  <bdep name="librelp-devel" version="1.6.0" release="2.1" arch="x86_64" project="home:rainergerhards:branches:home:rgerhards" repository="Fedora_28"/>
+  <bdep name="libnet-devel" version="1.1.6" release="15.fc28" arch="x86_64" project="Fedora:28" repository="standard"/>
+  <bdep name="liblognorm-devel" version="2.0.6" release="3.1" arch="x86_64" project="home:rainergerhards:branches:home:rgerhards" repository="Fedora_28"/>
+  <bdep name="libestr-devel" version="0.1.11" release="3.1" arch="x86_64" project="home:rainergerhards:branches:home:rgerhards" repository="Fedora_28"/>
+  <bdep name="libfastjson-devel" version="0.99.8" release="5.1" arch="x86_64" project="home:rainergerhards:branches:home:rgerhards" repository="Fedora_28"/>
+  <bdep name="libuuid-devel" version="2.32" release="2.fc28" arch="x86_64" project="Fedora:28" repository="standard"/>
+  <bdep name="tcl-devel" epoch="1" version="8.6.8" release="1.fc28" arch="x86_64" project="Fedora:28" repository="standard"/>
+  <bdep name="librdkafka-devel" version="0.11.3" release="2.fc28" arch="x86_64" project="Fedora:28" repository="standard"/>
+  <bdep name="cyrus-sasl-devel" version="2.1.27" release="0.1rc7.fc28" arch="x86_64" project="Fedora:28" repository="standard"/>
+  <bdep name="mongo-c-driver-devel" version="1.9.3" release="2.fc28" arch="x86_64" project="Fedora:28" repository="standard"/>
+  <bdep name="snappy-devel" version="1.1.7" release="5.fc28" arch="x86_64" project="Fedora:28" repository="standard"/>
+  <bdep name="binutils" version="2.29.1" release="20.fc28" arch="x86_64" project="Fedora:28" repository="standard"/>
+  <bdep name="gcc" version="8.0.1" release="0.20.fc28" arch="x86_64" project="Fedora:28" repository="standard"/>
+  <bdep name="gdbm" epoch="1" version="1.14.1" release="4.fc28" arch="x86_64" project="Fedora:28" repository="standard"/>
+  <bdep name="gettext" version="0.19.8.1" release="14.fc28" arch="x86_64" project="Fedora:28" repository="standard"/>
+  <bdep name="perl" epoch="4" version="5.26.1" release="409.fc28" arch="x86_64" project="Fedora:28" repository="standard"/>
+  <bdep name="rpm-build" version="4.14.1" release="7.fc28" arch="x86_64" project="Fedora:28" repository="standard"/>
+  <bdep name="gcc-c++" version="8.0.1" release="0.20.fc28" arch="x86_64" project="Fedora:28" repository="standard"/>
+  <bdep name="pkgconf-pkg-config" version="1.4.2" release="1.fc28" arch="x86_64" project="Fedora:28" repository="standard"/>
+  <bdep name="libcurl-devel" version="7.59.0" release="2.fc28" arch="x86_64" project="Fedora:28" repository="standard"/>
+  <bdep name="mariadb-devel" epoch="3" version="10.2.14" release="1.fc28" arch="x86_64" project="Fedora:28" repository="standard"/>
+  <bdep name="perl-PathTools" version="3.74" release="1.fc28" arch="x86_64" project="Fedora:28" repository="standard"/>
+  <bdep name="perl-File-Path" version="2.15" release="2.fc28" arch="noarch" project="Fedora:28" repository="standard"/>
+  <bdep name="perl-IO" version="1.38" release="409.fc28" arch="x86_64" project="Fedora:28" repository="standard"/>
+  <bdep name="perl-Errno" version="1.28" release="409.fc28" arch="x86_64" project="Fedora:28" repository="standard"/>
+  <bdep name="perl-Text-ParseWords" version="3.30" release="395.fc28" arch="noarch" project="Fedora:28" repository="standard"/>
+  <bdep name="emacs-filesystem" epoch="1" version="25.3" release="5.fc28" arch="noarch" project="Fedora:28" repository="standard"/>
+  <bdep name="perl-threads" epoch="1" version="2.21" release="2.fc28" arch="x86_64" project="Fedora:28" repository="standard"/>
+  <bdep name="perl-Thread-Queue" version="3.12" release="395.fc28" arch="noarch" project="Fedora:28" repository="standard"/>
+  <bdep name="pcre-cpp" version="8.42" release="1.fc28" arch="x86_64" project="Fedora:28" repository="standard"/>
+  <bdep name="pcre-utf16" version="8.42" release="1.fc28" arch="x86_64" project="Fedora:28" repository="standard"/>
+  <bdep name="pcre-utf32" version="8.42" release="1.fc28" arch="x86_64" project="Fedora:28" repository="standard"/>
+  <bdep name="liblogging0" version="1.0.6" release="11.1" arch="x86_64" project="home:rainergerhards:branches:home:rgerhards" repository="Fedora_28"/>
+  <bdep name="hiredis" version="0.13.3" release="8.fc28" arch="x86_64" project="Fedora:28" repository="standard"/>
+  <bdep name="libcom_err" version="1.43.8" release="2.fc28" arch="x86_64" project="Fedora:28" repository="standard"/>
+  <bdep name="keyutils-libs" version="1.5.10" release="6.fc28" arch="x86_64" project="Fedora:28" repository="standard"/>
+  <bdep name="keyutils-libs-devel" version="1.5.10" release="6.fc28" arch="x86_64" project="Fedora:28" repository="standard"/>
+  <bdep name="libverto-devel" version="0.3.0" release="5.fc28" arch="x86_64" project="Fedora:28" repository="standard"/>
+  <bdep name="libcom_err-devel" version="1.43.8" release="2.fc28" arch="x86_64" project="Fedora:28" repository="standard"/>
+  <bdep name="libselinux-devel" version="2.7" release="13.fc28" arch="x86_64" project="Fedora:28" repository="standard"/>
+  <bdep name="libkadm5" version="1.16" release="21.fc28" arch="x86_64" project="Fedora:28" repository="standard"/>
+  <bdep name="gnutls" version="3.6.2" release="1.fc28" arch="x86_64" project="Fedora:28" repository="standard"/>
+  <bdep name="nettle-devel" version="3.4" release="2.fc28" arch="x86_64" project="Fedora:28" repository="standard"/>
+  <bdep name="p11-kit-devel" version="0.23.10" release="1.fc28" arch="x86_64" project="Fedora:28" repository="standard"/>
+  <bdep name="gnutls-dane" version="3.6.2" release="1.fc28" arch="x86_64" project="Fedora:28" repository="standard"/>
+  <bdep name="libtasn1-devel" version="4.13" release="2.fc28" arch="x86_64" project="Fedora:28" repository="standard"/>
+  <bdep name="gnutls-c++" version="3.6.2" release="1.fc28" arch="x86_64" project="Fedora:28" repository="standard"/>
+  <bdep name="libgcrypt" version="1.8.2" release="2.fc28" arch="x86_64" project="Fedora:28" repository="standard"/>
+  <bdep name="libgpg-error" version="1.29" release="1.fc28" arch="x86_64" project="Fedora:28" repository="standard"/>
+  <bdep name="libgpg-error-devel" version="1.29" release="1.fc28" arch="x86_64" project="Fedora:28" repository="standard"/>
+  <bdep name="libdbi" version="0.9.0" release="10.fc28" arch="x86_64" project="Fedora:28" repository="standard"/>
+  <bdep name="net-snmp-libs" epoch="1" version="5.7.3" release="36.fc28" arch="x86_64" project="Fedora:28" repository="standard"/>
+  <bdep name="net-snmp-agent-libs" epoch="1" version="5.7.3" release="36.fc28" arch="x86_64" project="Fedora:28" repository="standard"/>
+  <bdep name="elfutils-libelf-devel" version="0.170" release="11.fc28" arch="x86_64" project="Fedora:28" repository="standard"/>
+  <bdep name="rpm-devel" version="4.14.1" release="7.fc28" arch="x86_64" project="Fedora:28" repository="standard"/>
+  <bdep name="perl-devel" epoch="4" version="5.26.1" release="409.fc28" arch="x86_64" project="Fedora:28" repository="standard"/>
+  <bdep name="elfutils-devel" version="0.170" release="11.fc28" arch="x86_64" project="Fedora:28" repository="standard"/>
+  <bdep name="lm_sensors-devel" version="3.4.0" release="12.fc28" arch="x86_64" project="Fedora:28" repository="standard"/>
+  <bdep name="postgresql-libs" version="10.3" release="1.fc28" arch="x86_64" project="Fedora:28" repository="standard"/>
+  <bdep name="librelp0" version="1.6.0" release="2.1" arch="x86_64" project="home:rainergerhards:branches:home:rgerhards" repository="Fedora_28"/>
+  <bdep name="libnet" version="1.1.6" release="15.fc28" arch="x86_64" project="Fedora:28" repository="standard"/>
+  <bdep name="liblognorm5" version="2.0.6" release="3.1" arch="x86_64" project="home:rainergerhards:branches:home:rgerhards" repository="Fedora_28"/>
+  <bdep name="libestr0" version="0.1.11" release="3.1" arch="x86_64" project="home:rainergerhards:branches:home:rgerhards" repository="Fedora_28"/>
+  <bdep name="libfastjson4" version="0.99.8" release="5.1" arch="x86_64" project="home:rainergerhards:branches:home:rgerhards" repository="Fedora_28"/>
+  <bdep name="tcl" epoch="1" version="8.6.8" release="1.fc28" arch="x86_64" project="Fedora:28" repository="standard"/>
+  <bdep name="librdkafka" version="0.11.3" release="2.fc28" arch="x86_64" project="Fedora:28" repository="standard"/>
+  <bdep name="cyrus-sasl-lib" version="2.1.27" release="0.1rc7.fc28" arch="x86_64" project="Fedora:28" repository="standard"/>
+  <bdep name="cyrus-sasl" version="2.1.27" release="0.1rc7.fc28" arch="x86_64" project="Fedora:28" repository="standard"/>
+  <bdep name="mongo-c-driver-libs" version="1.9.3" release="2.fc28" arch="x86_64" project="Fedora:28" repository="standard"/>
+  <bdep name="libbson-devel" version="1.9.4" release="1.fc28" arch="x86_64" project="Fedora:28" repository="standard"/>
+  <bdep name="mongo-c-driver" version="1.9.3" release="2.fc28" arch="x86_64" project="Fedora:28" repository="standard"/>
+  <bdep name="cmake-filesystem" version="3.11.0" release="1.fc28" arch="x86_64" project="Fedora:28" repository="standard"/>
+  <bdep name="snappy" version="1.1.7" release="5.fc28" arch="x86_64" project="Fedora:28" repository="standard"/>
+  <bdep name="gmp" epoch="1" version="6.1.2" release="7.fc28" arch="x86_64" project="Fedora:28" repository="standard"/>
+  <bdep name="libgomp" version="8.0.1" release="0.20.fc28" arch="x86_64" project="Fedora:28" repository="standard"/>
+  <bdep name="mpfr" version="3.1.6" release="1.fc28" arch="x86_64" project="Fedora:28" repository="standard"/>
+  <bdep name="libmpc" version="1.0.2" release="9.fc28" arch="x86_64" project="Fedora:28" repository="standard"/>
+  <bdep name="isl" version="0.16.1" release="6.fc28" arch="x86_64" project="Fedora:28" repository="standard"/>
+  <bdep name="gdbm-libs" epoch="1" version="1.14.1" release="4.fc28" arch="x86_64" project="Fedora:28" repository="standard"/>
+  <bdep name="glib2" version="2.56.1" release="1.fc28" arch="x86_64" project="Fedora:28" repository="standard"/>
+  <bdep name="libxml2" version="2.9.7" release="4.fc28" arch="x86_64" project="Fedora:28" repository="standard"/>
+  <bdep name="libunistring" version="0.9.9" release="1.fc28" arch="x86_64" project="Fedora:28" repository="standard"/>
+  <bdep name="libcroco" version="0.6.12" release="4.fc28" arch="x86_64" project="Fedora:28" repository="standard"/>
+  <bdep name="gettext-libs" version="0.19.8.1" release="14.fc28" arch="x86_64" project="Fedora:28" repository="standard"/>
+  <bdep name="glibc-common" version="2.27" release="8.fc28" arch="x86_64" project="Fedora:28" repository="standard"/>
+  <bdep name="basesystem" version="11" release="5.fc28" arch="noarch" project="Fedora:28" repository="standard"/>
+  <bdep name="perl-Encode" epoch="4" version="2.97" release="3.fc28" arch="x86_64" project="Fedora:28" repository="standard"/>
+  <bdep name="perl-ExtUtils-MakeMaker" epoch="1" version="7.34" release="1.fc28" arch="noarch" project="Fedora:28" repository="standard"/>
+  <bdep name="perl-macros" epoch="4" version="5.26.1" release="409.fc28" arch="x86_64" project="Fedora:28" repository="standard"/>
+  <bdep name="perl-Module-CoreList" epoch="1" version="5.20180221" release="1.fc28" arch="noarch" project="Fedora:28" repository="standard"/>
+  <bdep name="perl-Digest-SHA" epoch="1" version="6.01" release="2.fc28" arch="x86_64" project="Fedora:28" repository="standard"/>
+  <bdep name="perl-ExtUtils-ParseXS" epoch="1" version="3.35" release="2.fc28" arch="noarch" project="Fedora:28" repository="standard"/>
+  <bdep name="perl-Pod-Perldoc" version="3.28" release="396.fc28" arch="noarch" project="Fedora:28" repository="standard"/>
+  <bdep name="perl-Socket" epoch="4" version="2.027" release="2.fc28" arch="x86_64" project="Fedora:28" repository="standard"/>
+  <bdep name="perl-Time-HiRes" version="1.9758" release="1.fc28" arch="x86_64" project="Fedora:28" repository="standard"/>
+  <bdep name="perl-CPAN-Meta" version="2.150010" release="396.fc28" arch="noarch" project="Fedora:28" repository="standard"/>
+  <bdep name="perl-Scalar-List-Utils" epoch="3" version="1.49" release="2.fc28" arch="x86_64" project="Fedora:28" repository="standard"/>
+  <bdep name="perl-Storable" epoch="1" version="2.62" release="396.fc28" arch="x86_64" project="Fedora:28" repository="standard"/>
+  <bdep name="perl-Test-Harness" epoch="1" version="3.42" release="1.fc28" arch="noarch" project="Fedora:28" repository="standard"/>
+  <bdep name="perl-Time-Piece" version="1.31" release="409.fc28" arch="x86_64" project="Fedora:28" repository="standard"/>
+  <bdep name="perl-Archive-Tar" version="2.26" release="6.fc28" arch="noarch" project="Fedora:28" repository="standard"/>
+  <bdep name="perl-B-Debug" version="1.26" release="2.fc28" arch="noarch" project="Fedora:28" repository="standard"/>
+  <bdep name="perl-CPAN" version="2.18" release="397.fc28" arch="noarch" project="Fedora:28" repository="standard"/>
+  <bdep name="perl-CPAN-Meta-Requirements" version="2.140" release="396.fc28" arch="noarch" project="Fedora:28" repository="standard"/>
+  <bdep name="perl-CPAN-Meta-YAML" version="0.018" release="397.fc28" arch="noarch" project="Fedora:28" repository="standard"/>
+  <bdep name="perl-Compress-Raw-Bzip2" version="2.081" release="1.fc28" arch="x86_64" project="Fedora:28" repository="standard"/>
+  <bdep name="perl-Compress-Raw-Zlib" version="2.081" release="1.fc28" arch="x86_64" project="Fedora:28" repository="standard"/>
+  <bdep name="perl-Config-Perl-V" version="0.29" release="2.fc28" arch="noarch" project="Fedora:28" repository="standard"/>
+  <bdep name="perl-DB_File" version="1.841" release="1.fc28" arch="x86_64" project="Fedora:28" repository="standard"/>
+  <bdep name="perl-Devel-PPPort" version="3.36" release="5.fc28" arch="x86_64" project="Fedora:28" repository="standard"/>
+  <bdep name="perl-Digest" version="1.17" release="395.fc28" arch="noarch" project="Fedora:28" repository="standard"/>
+  <bdep name="perl-Env" version="1.04" release="395.fc28" arch="noarch" project="Fedora:28" repository="standard"/>
+  <bdep name="perl-ExtUtils-CBuilder" epoch="1" version="0.280230" release="2.fc28" arch="noarch" project="Fedora:28" repository="standard"/>
+  <bdep name="perl-ExtUtils-Install" version="2.14" release="4.fc28" arch="noarch" project="Fedora:28" repository="standard"/>
+  <bdep name="perl-ExtUtils-Manifest" version="1.70" release="395.fc28" arch="noarch" project="Fedora:28" repository="standard"/>
+  <bdep name="perl-File-Fetch" version="0.56" release="2.fc28" arch="noarch" project="Fedora:28" repository="standard"/>
+  <bdep name="perl-File-Temp" version="0.230.400" release="396.fc28" arch="noarch" project="Fedora:28" repository="standard"/>
+  <bdep name="perl-Filter" epoch="2" version="1.58" release="2.fc28" arch="x86_64" project="Fedora:28" repository="standard"/>
+  <bdep name="perl-Filter-Simple" version="0.94" release="2.fc28" arch="noarch" project="Fedora:28" repository="standard"/>
+  <bdep name="perl-HTTP-Tiny" version="0.070" release="395.fc28" arch="noarch" project="Fedora:28" repository="standard"/>
+  <bdep name="perl-IO-Compress" version="2.081" release="1.fc28" arch="noarch" project="Fedora:28" repository="standard"/>
+  <bdep name="perl-IO-Socket-IP" version="0.39" release="5.fc28" arch="noarch" project="Fedora:28" repository="standard"/>
+  <bdep name="perl-IPC-Cmd" epoch="2" version="1.00" release="1.fc28" arch="noarch" project="Fedora:28" repository="standard"/>
+  <bdep name="perl-IPC-SysV" version="2.07" release="397.fc28" arch="x86_64" project="Fedora:28" repository="standard"/>
+  <bdep name="perl-JSON-PP" epoch="1" version="2.97.001" release="2.fc28" arch="noarch" project="Fedora:28" repository="standard"/>
+  <bdep name="perl-Locale-Codes" version="3.56" release="1.fc28" arch="noarch" project="Fedora:28" repository="standard"/>
+  <bdep name="perl-Locale-Maketext" version="1.28" release="396.fc28" arch="noarch" project="Fedora:28" repository="standard"/>
+  <bdep name="perl-MIME-Base64" version="3.15" release="396.fc28" arch="x86_64" project="Fedora:28" repository="standard"/>
+  <bdep name="perl-Math-BigInt" epoch="1" version="1.9998.11" release="5.fc28" arch="noarch" project="Fedora:28" repository="standard"/>
+  <bdep name="perl-Math-BigInt-FastCalc" version="0.500.600" release="6.fc28" arch="x86_64" project="Fedora:28" repository="standard"/>
+  <bdep name="perl-Math-BigRat" version="0.2613" release="3.fc28" arch="noarch" project="Fedora:28" repository="standard"/>
+  <bdep name="perl-Module-Load" epoch="1" version="0.32" release="395.fc28" arch="noarch" project="Fedora:28" repository="standard"/>
+  <bdep name="perl-Module-Load-Conditional" version="0.68" release="395.fc28" arch="noarch" project="Fedora:28" repository="standard"/>
+  <bdep name="perl-Module-Metadata" version="1.000033" release="395.fc28" arch="noarch" project="Fedora:28" repository="standard"/>
+  <bdep name="perl-Net-Ping" version="2.55" release="409.fc28" arch="noarch" project="Fedora:28" repository="standard"/>
+  <bdep name="perl-Params-Check" epoch="1" version="0.38" release="395.fc28" arch="noarch" project="Fedora:28" repository="standard"/>
+  <bdep name="perl-Perl-OSType" version="1.010" release="396.fc28" arch="noarch" project="Fedora:28" repository="standard"/>
+  <bdep name="perl-PerlIO-via-QuotedPrint" version="0.08" release="395.fc28" arch="noarch" project="Fedora:28" repository="standard"/>
+  <bdep name="perl-Pod-Checker" epoch="4" version="1.73" release="395.fc28" arch="noarch" project="Fedora:28" repository="standard"/>
+  <bdep name="perl-Pod-Escapes" epoch="1" version="1.07" release="395.fc28" arch="noarch" project="Fedora:28" repository="standard"/>
+  <bdep name="perl-Pod-Parser" version="1.63" release="396.fc28" arch="noarch" project="Fedora:28" repository="standard"/>
+  <bdep name="perl-Pod-Simple" epoch="1" version="3.35" release="395.fc28" arch="noarch" project="Fedora:28" repository="standard"/>
+  <bdep name="perl-Pod-Usage" epoch="4" version="1.69" release="395.fc28" arch="noarch" project="Fedora:28" repository="standard"/>
+  <bdep name="perl-Sys-Syslog" version="0.35" release="397.fc28" arch="x86_64" project="Fedora:28" repository="standard"/>
+  <bdep name="perl-Term-ANSIColor" version="4.06" release="396.fc28" arch="noarch" project="Fedora:28" repository="standard"/>
+  <bdep name="perl-Term-Cap" version="1.17" release="395.fc28" arch="noarch" project="Fedora:28" repository="standard"/>
+  <bdep name="perl-Test-Simple" epoch="1" version="1.302135" release="1.fc28" arch="noarch" project="Fedora:28" repository="standard"/>
+  <bdep name="perl-Text-Balanced" version="2.03" release="395.fc28" arch="noarch" project="Fedora:28" repository="standard"/>
+  <bdep name="perl-Text-Tabs+Wrap" version="2013.0523" release="395.fc28" arch="noarch" project="Fedora:28" repository="standard"/>
+  <bdep name="perl-Time-Local" epoch="1" version="1.250" release="395.fc28" arch="noarch" project="Fedora:28" repository="standard"/>
+  <bdep name="perl-Unicode-Collate" version="1.25" release="2.fc28" arch="x86_64" project="Fedora:28" repository="standard"/>
+  <bdep name="perl-Unicode-Normalize" version="1.25" release="396.fc28" arch="x86_64" project="Fedora:28" repository="standard"/>
+  <bdep name="perl-autodie" version="2.29" release="396.fc28" arch="noarch" project="Fedora:28" repository="standard"/>
+  <bdep name="perl-bignum" version="0.49" release="2.fc28" arch="noarch" project="Fedora:28" repository="standard"/>
+  <bdep name="perl-experimental" version="0.019" release="2.fc28" arch="noarch" project="Fedora:28" repository="standard"/>
+  <bdep name="perl-libnet" version="3.11" release="3.fc28" arch="noarch" project="Fedora:28" repository="standard"/>
+  <bdep name="perl-parent" epoch="1" version="0.236" release="395.fc28" arch="noarch" project="Fedora:28" repository="standard"/>
+  <bdep name="perl-perlfaq" version="5.021011" release="395.fc28" arch="noarch" project="Fedora:28" repository="standard"/>
+  <bdep name="perl-podlators" version="4.10" release="2.fc28" arch="noarch" project="Fedora:28" repository="standard"/>
+  <bdep name="perl-threads-shared" version="1.58" release="2.fc28" arch="x86_64" project="Fedora:28" repository="standard"/>
+  <bdep name="perl-version" epoch="6" version="0.99.18" release="7.fc28" arch="x86_64" project="Fedora:28" repository="standard"/>
+  <bdep name="perl-Attribute-Handlers" version="0.99" release="409.fc28" arch="noarch" project="Fedora:28" repository="standard"/>
+  <bdep name="perl-Devel-Peek" version="1.26" release="409.fc28" arch="x86_64" project="Fedora:28" repository="standard"/>
+  <bdep name="perl-Devel-SelfStubber" version="1.06" release="409.fc28" arch="noarch" project="Fedora:28" repository="standard"/>
+  <bdep name="perl-ExtUtils-Command" epoch="1" version="7.34" release="1.fc28" arch="noarch" project="Fedora:28" repository="standard"/>
+  <bdep name="perl-ExtUtils-Embed" version="1.34" release="409.fc28" arch="noarch" project="Fedora:28" repository="standard"/>
+  <bdep name="perl-ExtUtils-Miniperl" version="1.06" release="409.fc28" arch="noarch" project="Fedora:28" repository="standard"/>
+  <bdep name="perl-IO-Zlib" epoch="1" version="1.10" release="409.fc28" arch="noarch" project="Fedora:28" repository="standard"/>
+  <bdep name="perl-Locale-Maketext-Simple" epoch="1" version="0.21" release="409.fc28" arch="noarch" project="Fedora:28" repository="standard"/>
+  <bdep name="perl-Math-Complex" version="1.59" release="409.fc28" arch="noarch" project="Fedora:28" repository="standard"/>
+  <bdep name="perl-Memoize" version="1.03" release="409.fc28" arch="noarch" project="Fedora:28" repository="standard"/>
+  <bdep name="perl-Module-CoreList-tools" epoch="1" version="5.20180221" release="1.fc28" arch="noarch" project="Fedora:28" repository="standard"/>
+  <bdep name="perl-Module-Loaded" epoch="1" version="0.08" release="409.fc28" arch="noarch" project="Fedora:28" repository="standard"/>
+  <bdep name="perl-Pod-Html" version="1.22.02" release="409.fc28" arch="noarch" project="Fedora:28" repository="standard"/>
+  <bdep name="perl-SelfLoader" version="1.23" release="409.fc28" arch="noarch" project="Fedora:28" repository="standard"/>
+  <bdep name="perl-Test" version="1.30" release="409.fc28" arch="noarch" project="Fedora:28" repository="standard"/>
+  <bdep name="perl-encoding" epoch="4" version="2.22" release="3.fc28" arch="x86_64" project="Fedora:28" repository="standard"/>
+  <bdep name="perl-libnetcfg" epoch="4" version="5.26.1" release="409.fc28" arch="noarch" project="Fedora:28" repository="standard"/>
+  <bdep name="perl-open" version="1.11" release="409.fc28" arch="noarch" project="Fedora:28" repository="standard"/>
+  <bdep name="perl-utils" version="5.26.1" release="409.fc28" arch="noarch" project="Fedora:28" repository="standard"/>
+  <bdep name="libarchive" version="3.3.1" release="4.fc28" arch="x86_64" project="Fedora:28" repository="standard"/>
+  <bdep name="libdb-utils" version="5.3.28" release="30.fc28" arch="x86_64" project="Fedora:28" repository="standard"/>
+  <bdep name="xz" version="5.2.3" release="7.fc28" arch="x86_64" project="Fedora:28" repository="standard"/>
+  <bdep name="elfutils-libs" version="0.170" release="11.fc28" arch="x86_64" project="Fedora:28" repository="standard"/>
+  <bdep name="zstd" version="1.3.4" release="1.fc28" arch="x86_64" project="Fedora:28" repository="standard"/>
+  <bdep name="rpm-build-libs" version="4.14.1" release="7.fc28" arch="x86_64" project="Fedora:28" repository="standard"/>
+  <bdep name="gdb" version="8.1" release="11.fc28" arch="x86_64" project="Fedora:28" repository="standard"/>
+  <bdep name="elfutils" version="0.170" release="11.fc28" arch="x86_64" project="Fedora:28" repository="standard"/>
+  <bdep name="libstdc++-devel" version="8.0.1" release="0.20.fc28" arch="x86_64" project="Fedora:28" repository="standard"/>
+  <bdep name="pkgconf-m4" version="1.4.2" release="1.fc28" arch="noarch" project="Fedora:28" repository="standard"/>
+  <bdep name="pkgconf" version="1.4.2" release="1.fc28" arch="x86_64" project="Fedora:28" repository="standard"/>
+  <bdep name="mariadb-connector-c-devel" version="3.0.3" release="3.fc28" arch="x86_64" project="Fedora:28" repository="standard"/>
+  <bdep name="crypto-policies" version="20180306" release="1.gitaea6928.fc28" arch="noarch" project="Fedora:28" repository="standard"/>
+  <bdep name="ca-certificates" version="2018.2.22" release="3.fc28" arch="noarch" project="Fedora:28" repository="standard"/>
+  <bdep name="libverto" version="0.3.0" release="5.fc28" arch="x86_64" project="Fedora:28" repository="standard"/>
+  <bdep name="pcre2-devel" version="10.31" release="4.fc28" arch="x86_64" project="Fedora:28" repository="standard"/>
+  <bdep name="libsepol-devel" version="2.7" release="6.fc28" arch="x86_64" project="Fedora:28" repository="standard"/>
+  <bdep name="nettle" version="3.4" release="2.fc28" arch="x86_64" project="Fedora:28" repository="standard"/>
+  <bdep name="p11-kit" version="0.23.10" release="1.fc28" arch="x86_64" project="Fedora:28" repository="standard"/>
+  <bdep name="libidn2" version="2.0.4" release="7.fc28" arch="x86_64" project="Fedora:28" repository="standard"/>
+  <bdep name="libtasn1" version="4.13" release="2.fc28" arch="x86_64" project="Fedora:28" repository="standard"/>
+  <bdep name="p11-kit-trust" version="0.23.10" release="1.fc28" arch="x86_64" project="Fedora:28" repository="standard"/>
+  <bdep name="gmp-devel" epoch="1" version="6.1.2" release="7.fc28" arch="x86_64" project="Fedora:28" repository="standard"/>
+  <bdep name="unbound-libs" version="1.7.0" release="4.fc28" arch="x86_64" project="Fedora:28" repository="standard"/>
+  <bdep name="mariadb-connector-c" version="3.0.3" release="3.fc28" arch="x86_64" project="Fedora:28" repository="standard"/>
+  <bdep name="lm_sensors-libs" version="3.4.0" release="12.fc28" arch="x86_64" project="Fedora:28" repository="standard"/>
+  <bdep name="libzstd-devel" version="1.3.4" release="1.fc28" arch="x86_64" project="Fedora:28" repository="standard"/>
+  <bdep name="popt-devel" version="1.16" release="14.fc28" arch="x86_64" project="Fedora:28" repository="standard"/>
+  <bdep name="systemtap-sdt-devel" version="3.2" release="8.fc28" arch="x86_64" project="Fedora:28" repository="standard"/>
+  <bdep name="xz-devel" version="5.2.3" release="7.fc28" arch="x86_64" project="Fedora:28" repository="standard"/>
+  <bdep name="openldap" version="2.4.46" release="1.fc28" arch="x86_64" project="Fedora:28" repository="standard"/>
+  <bdep name="lz4-libs" version="1.8.1.2" release="4.fc28" arch="x86_64" project="Fedora:28" repository="standard"/>
+  <bdep name="systemd" version="238" release="7.fc28.1" arch="x86_64" project="Fedora:28" repository="standard"/>
+  <bdep name="libbson" version="1.9.4" release="1.fc28" arch="x86_64" project="Fedora:28" repository="standard"/>
+  <bdep name="glibc-headers" version="2.27" release="8.fc28" arch="x86_64" project="Fedora:28" repository="standard"/>
+  <bdep name="libxcrypt-devel" version="4.0.0" release="5.fc28" arch="x86_64" project="Fedora:28" repository="standard"/>
+  <bdep name="ncurses-base" version="6.1" release="4.20180224.fc28" arch="noarch" project="Fedora:28" repository="standard"/>
+  <bdep name="libffi" version="3.1" release="16.fc28" arch="x86_64" project="Fedora:28" repository="standard"/>
+  <bdep name="tzdata" version="2018d" release="1.fc28" arch="noarch" project="Fedora:28" repository="standard"/>
+  <bdep name="groff-base" version="1.22.3" release="15.fc28" arch="x86_64" project="Fedora:28" repository="standard"/>
+  <bdep name="perl-Text-Diff" version="1.45" release="2.fc28" arch="noarch" project="Fedora:28" repository="standard"/>
+  <bdep name="perl-URI" version="1.73" release="2.fc28" arch="noarch" project="Fedora:28" repository="standard"/>
+  <bdep name="perl-Archive-Zip" version="1.60" release="2.fc28" arch="noarch" project="Fedora:28" repository="standard"/>
+  <bdep name="perl-Module-Build" epoch="2" version="0.42.24" release="5.fc28" arch="noarch" project="Fedora:28" repository="standard"/>
+  <bdep name="perl-Text-Glob" version="0.11" release="4.fc28" arch="noarch" project="Fedora:28" repository="standard"/>
+  <bdep name="perl-local-lib" version="2.000024" release="2.fc28" arch="noarch" project="Fedora:28" repository="standard"/>
+  <bdep name="perl-Compress-Bzip2" version="2.26" release="6.fc28" arch="x86_64" project="Fedora:28" repository="standard"/>
+  <bdep name="perl-Devel-Size" version="0.81" release="2.fc28" arch="x86_64" project="Fedora:28" repository="standard"/>
+  <bdep name="perl-File-HomeDir" version="1.002" release="4.fc28" arch="noarch" project="Fedora:28" repository="standard"/>
+  <bdep name="perl-ExtUtils-MM-Utils" epoch="1" version="7.34" release="1.fc28" arch="noarch" project="Fedora:28" repository="standard"/>
+  <bdep name="perl-IPC-System-Simple" version="1.25" release="17.fc28" arch="noarch" project="Fedora:28" repository="standard"/>
+  <bdep name="rpm-plugin-selinux" version="4.14.1" release="7.fc28" arch="x86_64" project="Fedora:28" repository="standard"/>
+  <bdep name="libsigsegv" version="2.11" release="5.fc28" arch="x86_64" project="Fedora:28" repository="standard"/>
+  <bdep name="elfutils-default-yama-scope" version="0.170" release="11.fc28" arch="noarch" project="Fedora:28" repository="standard"/>
+  <bdep name="ima-evm-utils" version="1.1" release="2.fc28" arch="x86_64" project="Fedora:28" repository="standard"/>
+  <bdep name="gnupg2" version="2.2.6" release="1.fc28" arch="x86_64" project="Fedora:28" repository="standard"/>
+  <bdep name="zip" version="3.0" release="21.fc28" arch="x86_64" project="Fedora:28" repository="standard"/>
+  <bdep name="openblas-srpm-macros" version="2" release="2.fc27" arch="noarch" project="Fedora:28" repository="standard"/>
+  <bdep name="go-srpm-macros" version="2" release="16.fc28" arch="noarch" project="Fedora:28" repository="standard"/>
+  <bdep name="gnat-srpm-macros" version="4" release="5.fc28" arch="noarch" project="Fedora:28" repository="standard"/>
+  <bdep name="python-srpm-macros" version="3" release="28.fc28" arch="noarch" project="Fedora:28" repository="standard"/>
+  <bdep name="rust-srpm-macros" version="5" release="2.fc28" arch="noarch" project="Fedora:28" repository="standard"/>
+  <bdep name="fpc-srpm-macros" version="1.1" release="4.fc28" arch="noarch" project="Fedora:28" repository="standard"/>
+  <bdep name="ghc-srpm-macros" version="1.4.2" release="7.fc28" arch="noarch" project="Fedora:28" repository="standard"/>
+  <bdep name="nim-srpm-macros" version="1" release="1.fc28" arch="noarch" project="Fedora:28" repository="standard"/>
+  <bdep name="ocaml-srpm-macros" version="5" release="2.fc27" arch="noarch" project="Fedora:28" repository="standard"/>
+  <bdep name="perl-srpm-macros" version="1" release="25.fc28" arch="noarch" project="Fedora:28" repository="standard"/>
+  <bdep name="qt5-srpm-macros" version="5.10.1" release="1.fc28" arch="noarch" project="Fedora:28" repository="standard"/>
+  <bdep name="annobin" version="5.2" release="1.fc28" arch="x86_64" project="Fedora:28" repository="standard"/>
+  <bdep name="dwz" version="0.12" release="7.fc28" arch="x86_64" project="Fedora:28" repository="standard"/>
+  <bdep name="gdb-headless" version="8.1" release="11.fc28" arch="x86_64" project="Fedora:28" repository="standard"/>
+  <bdep name="libpkgconf" version="1.4.2" release="1.fc28" arch="x86_64" project="Fedora:28" repository="standard"/>
+  <bdep name="pcre2-utf32" version="10.31" release="4.fc28" arch="x86_64" project="Fedora:28" repository="standard"/>
+  <bdep name="pcre2-utf16" version="10.31" release="4.fc28" arch="x86_64" project="Fedora:28" repository="standard"/>
+  <bdep name="gmp-c++" epoch="1" version="6.1.2" release="7.fc28" arch="x86_64" project="Fedora:28" repository="standard"/>
+  <bdep name="python3-libs" version="3.6.5" release="1.fc28" arch="x86_64" project="Fedora:28" repository="standard"/>
+  <bdep name="libevent" version="2.1.8" release="2.fc28" arch="x86_64" project="Fedora:28" repository="standard"/>
+  <bdep name="python3" version="3.6.5" release="1.fc28" arch="x86_64" project="Fedora:28" repository="standard"/>
+  <bdep name="python3-pyparsing" version="2.1.10" release="6.fc28" arch="noarch" project="Fedora:28" repository="standard"/>
+  <bdep name="libtirpc" version="1.0.3" release="1.fc28" arch="x86_64" project="Fedora:28" repository="standard"/>
+  <bdep name="audit-libs" version="2.8.3" release="3.fc28" arch="x86_64" project="Fedora:28" repository="standard"/>
+  <bdep name="libnsl2" version="1.2.0" release="1.fc28" arch="x86_64" project="Fedora:28" repository="standard"/>
+  <bdep name="libpwquality" version="1.4.0" release="7.fc28" arch="x86_64" project="Fedora:28" repository="standard"/>
+  <bdep name="libseccomp" version="2.3.3" release="2.fc28" arch="x86_64" project="Fedora:28" repository="standard"/>
+  <bdep name="kmod-libs" version="25" release="2.fc28" arch="x86_64" project="Fedora:28" repository="standard"/>
+  <bdep name="cryptsetup-libs" version="2.0.2" release="2.fc28" arch="x86_64" project="Fedora:28" repository="standard"/>
+  <bdep name="qrencode-libs" version="3.4.4" release="5.fc28" arch="x86_64" project="Fedora:28" repository="standard"/>
+  <bdep name="iptables-libs" version="1.6.2" release="2.fc28" arch="x86_64" project="Fedora:28" repository="standard"/>
+  <bdep name="systemd-pam" version="238" release="7.fc28.1" arch="x86_64" project="Fedora:28" repository="standard"/>
+  <bdep name="dbus" epoch="1" version="1.12.0" release="1.fc28" arch="x86_64" project="Fedora:28" repository="standard"/>
+  <bdep name="systemd-libs" version="238" release="7.fc28.1" arch="x86_64" project="Fedora:28" repository="standard"/>
+  <bdep name="kernel-headers" version="4.16.3" release="301.fc28" arch="x86_64" project="Fedora:28" repository="standard"/>
+  <bdep name="perl-Algorithm-Diff" version="1.1903" release="9.fc28" arch="noarch" project="Fedora:28" repository="standard"/>
+  <bdep name="gc" version="7.6.4" release="3.fc28" arch="x86_64" project="Fedora:28" repository="standard"/>
+  <bdep name="guile" epoch="5" version="2.0.14" release="7.fc28" arch="x86_64" project="Fedora:28" repository="standard"/>
+  <bdep name="perl-Software-License" version="0.103013" release="2.fc28" arch="noarch" project="Fedora:28" repository="standard"/>
+  <bdep name="perl-inc-latest" epoch="2" version="0.500" release="9.fc28" arch="noarch" project="Fedora:28" repository="standard"/>
+  <bdep name="perl-File-Which" version="1.22" release="2.fc28" arch="noarch" project="Fedora:28" repository="standard"/>
+  <bdep name="libusbx" version="1.0.21" release="6.fc28" arch="x86_64" project="Fedora:28" repository="standard"/>
+  <bdep name="libassuan" version="2.5.1" release="3.fc28" arch="x86_64" project="Fedora:28" repository="standard"/>
+  <bdep name="libksba" version="1.3.5" release="7.fc28" arch="x86_64" project="Fedora:28" repository="standard"/>
+  <bdep name="npth" version="1.5" release="4.fc28" arch="x86_64" project="Fedora:28" repository="standard"/>
+  <bdep name="libbabeltrace" version="1.5.4" release="2.fc28" arch="x86_64" project="Fedora:28" repository="standard"/>
+  <bdep name="libipt" version="1.6.1" release="8.fc28" arch="x86_64" project="Fedora:28" repository="standard"/>
+  <bdep name="libsemanage" version="2.7" release="12.fc28" arch="x86_64" project="Fedora:28" repository="standard"/>
+  <bdep name="python3-setuptools" version="39.0.1" release="1.fc28" arch="noarch" project="Fedora:28" repository="standard"/>
+  <bdep name="python3-pip" version="9.0.3" release="1.fc28" arch="noarch" project="Fedora:28" repository="standard"/>
+  <bdep name="nss-sysinit" version="3.36.0" release="1.0.fc28" arch="x86_64" project="Fedora:28" repository="standard"/>
+  <bdep name="libcap-ng" version="0.7.9" release="1.fc28" arch="x86_64" project="Fedora:28" repository="standard"/>
+  <bdep name="libutempter" version="1.1.6" release="14.fc28" arch="x86_64" project="Fedora:28" repository="standard"/>
+  <bdep name="libfdisk" version="2.32" release="2.fc28" arch="x86_64" project="Fedora:28" repository="standard"/>
+  <bdep name="json-c" version="0.13.1" release="1.fc28" arch="x86_64" project="Fedora:28" repository="standard"/>
+  <bdep name="libargon2" version="20161029" release="5.fc28" arch="x86_64" project="Fedora:28" repository="standard"/>
+  <bdep name="libpcap" epoch="14" version="1.8.1" release="8.fc28" arch="x86_64" project="Fedora:28" repository="standard"/>
+  <bdep name="dbus-libs" epoch="1" version="1.12.0" release="1.fc28" arch="x86_64" project="Fedora:28" repository="standard"/>
+  <bdep name="libatomic_ops" version="7.6.2" release="3.fc28" arch="x86_64" project="Fedora:28" repository="standard"/>
+  <bdep name="libtool-ltdl" version="2.4.6" release="22.fc28" arch="x86_64" project="Fedora:28" repository="standard"/>
+  <bdep name="perl-Text-Template" version="1.51" release="1.fc28" arch="noarch" project="Fedora:28" repository="standard"/>
+  <bdep name="perl-Data-Section" version="0.200007" release="3.fc28" arch="noarch" project="Fedora:28" repository="standard"/>
+  <bdep name="perl-Sub-Exporter" version="0.987" release="15.fc28" arch="noarch" project="Fedora:28" repository="standard"/>
+  <bdep name="perl-MRO-Compat" version="0.13" release="4.fc28" arch="noarch" project="Fedora:28" repository="standard"/>
+  <bdep name="perl-Package-Generator" version="1.106" release="11.fc28" arch="noarch" project="Fedora:28" repository="standard"/>
+  <bdep name="perl-Data-OptList" version="0.110" release="6.fc28" arch="noarch" project="Fedora:28" repository="standard"/>
+  <bdep name="perl-Params-Util" version="1.07" release="22.fc28" arch="x86_64" project="Fedora:28" repository="standard"/>
+  <bdep name="perl-Sub-Install" version="0.928" release="14.fc28" arch="noarch" project="Fedora:28" repository="standard"/>
+  <bdep name="curl-minimal" version="7.59.0" release="2.fc28" arch="x86_64" project="Fedora:28" repository="standard"/>
+  <bdep name="libcurl-minimal" version="7.59.0" release="2.fc28" arch="x86_64" project="Fedora:28" repository="standard"/>
+  <bdep name="generic-release" version="28" release="1.fc28" arch="noarch" project="Fedora:28" repository="standard"/>
+  <bdep name="coreutils-common" version="8.29" release="5.fc28" arch="x86_64" project="Fedora:28" repository="standard"/>
+  <bdep name="libnghttp2" version="1.31.1" release="1.fc28" arch="x86_64" project="Fedora:28" repository="standard"/>
+  <bdep name="bind-libs" notmeta="1" epoch="32" version="9.11.3" release="6.fc28" arch="x86_64" project="Fedora:28" repository="standard"/>
+  <bdep name="bind-utils" notmeta="1" epoch="32" version="9.11.3" release="6.fc28" arch="x86_64" project="Fedora:28" repository="standard"/>
+  <bdep name="cpp" notmeta="1" version="8.0.1" release="0.20.fc28" arch="x86_64" project="Fedora:28" repository="standard"/>
+  <bdep name="cracklib" notmeta="1" version="2.9.6" release="13.fc28" arch="x86_64" project="Fedora:28" repository="standard"/>
+  <bdep name="cvs" notmeta="1" version="1.11.23" release="46.fc28" arch="x86_64" project="Fedora:28" repository="standard"/>
+  <bdep name="cpio" notmeta="1" version="2.12" release="7.fc28" arch="x86_64" project="Fedora:28" repository="standard"/>
+  <bdep name="e2fsprogs" notmeta="1" version="1.43.8" release="2.fc28" arch="x86_64" project="Fedora:28" repository="standard"/>
+  <bdep name="file" notmeta="1" version="5.32" release="3.fc28" arch="x86_64" project="Fedora:28" repository="standard"/>
+  <bdep name="gawk" notmeta="1" version="4.2.1" release="1.fc28" arch="x86_64" project="Fedora:28" repository="standard"/>
+  <bdep name="gdbm-devel" notmeta="1" epoch="1" version="1.14.1" release="4.fc28" arch="x86_64" project="Fedora:28" repository="standard"/>
+  <bdep name="gettext-devel" notmeta="1" version="0.19.8.1" release="14.fc28" arch="x86_64" project="Fedora:28" repository="standard"/>
+  <bdep name="glibc-devel" notmeta="1" version="2.27" release="8.fc28" arch="x86_64" project="Fedora:28" repository="standard"/>
+  <bdep name="gpm" notmeta="1" version="1.20.7" release="15.fc28" arch="x86_64" project="Fedora:28" repository="standard"/>
+  <bdep name="groff" notmeta="1" version="1.22.3" release="15.fc28" arch="x86_64" project="Fedora:28" repository="standard"/>
+  <bdep name="gzip" notmeta="1" version="1.9" release="3.fc28" arch="x86_64" project="Fedora:28" repository="standard"/>
+  <bdep name="less" notmeta="1" version="530" release="1.fc28" arch="x86_64" project="Fedora:28" repository="standard"/>
+  <bdep name="make" notmeta="1" epoch="1" version="4.2.1" release="6.fc28" arch="x86_64" project="Fedora:28" repository="standard"/>
+  <bdep name="man-db" notmeta="1" version="2.7.6.1" release="13.fc28" arch="x86_64" project="Fedora:28" repository="standard"/>
+  <bdep name="kmod" notmeta="1" version="25" release="2.fc28" arch="x86_64" project="Fedora:28" repository="standard"/>
+  <bdep name="which" notmeta="1" version="2.21" release="8.fc28" arch="x86_64" project="Fedora:28" repository="standard"/>
+  <bdep name="ncurses-devel" notmeta="1" version="6.1" release="4.20180224.fc28" arch="x86_64" project="Fedora:28" repository="standard"/>
+  <bdep name="net-tools" notmeta="1" version="2.0" release="0.49.20160912git.fc28" arch="x86_64" project="Fedora:28" repository="standard"/>
+  <bdep name="patch" notmeta="1" version="2.7.6" release="3.fc28" arch="x86_64" project="Fedora:28" repository="standard"/>
+  <bdep name="procinfo" notmeta="1" version="18" release="41.fc28" arch="x86_64" project="Fedora:28" repository="standard"/>
+  <bdep name="psmisc" notmeta="1" version="23.1" release="3.fc28" arch="x86_64" project="Fedora:28" repository="standard"/>
+  <bdep name="rcs" notmeta="1" version="5.9.4" release="9.fc28" arch="x86_64" project="Fedora:28" repository="standard"/>
+  <bdep name="strace" notmeta="1" version="4.22" release="1.fc28" arch="x86_64" project="Fedora:28" repository="standard"/>
+  <bdep name="texinfo" notmeta="1" version="6.5" release="3.fc28" arch="x86_64" project="Fedora:28" repository="standard"/>
+  <bdep name="unzip" notmeta="1" version="6.0" release="38.fc28" arch="x86_64" project="Fedora:28" repository="standard"/>
+  <bdep name="vim-enhanced" notmeta="1" epoch="2" version="8.0.1704" release="1.fc28" arch="x86_64" project="Fedora:28" repository="standard"/>
+  <bdep name="initscripts" notmeta="1" version="9.79" release="3.fc28" arch="x86_64" project="Fedora:28" repository="standard"/>
+  <bdep name="bzip2-devel" notmeta="1" version="1.0.6" release="26.fc28" arch="x86_64" project="Fedora:28" repository="standard"/>
+  <bdep name="redhat-rpm-config" notmeta="1" version="106" release="1.fc28" arch="noarch" project="Fedora:28" repository="standard"/>
+  <bdep name="procps-ng" notmeta="1" version="3.3.12" release="1.fc28" arch="x86_64" project="Fedora:28" repository="standard"/>
+  <bdep name="GeoIP" notmeta="1" version="1.6.12" release="3.fc28" arch="x86_64" project="Fedora:28" repository="standard"/>
+  <bdep name="bind-libs-lite" notmeta="1" epoch="32" version="9.11.3" release="6.fc28" arch="x86_64" project="Fedora:28" repository="standard"/>
+  <bdep name="bind-license" notmeta="1" epoch="32" version="9.11.3" release="6.fc28" arch="noarch" project="Fedora:28" repository="standard"/>
+  <bdep name="python3-bind" notmeta="1" epoch="32" version="9.11.3" release="6.fc28" arch="noarch" project="Fedora:28" repository="standard"/>
+  <bdep name="vim-minimal" notmeta="1" epoch="2" version="8.0.1704" release="1.fc28" arch="x86_64" project="Fedora:28" repository="standard"/>
+  <bdep name="fuse-libs" notmeta="1" version="2.9.7" release="11.fc28" arch="x86_64" project="Fedora:28" repository="standard"/>
+  <bdep name="libss" notmeta="1" version="1.43.8" release="2.fc28" arch="x86_64" project="Fedora:28" repository="standard"/>
+  <bdep name="gettext-common-devel" notmeta="1" version="0.19.8.1" release="14.fc28" arch="noarch" project="Fedora:28" repository="standard"/>
+  <bdep name="gpm-libs" notmeta="1" version="1.20.7" release="15.fc28" arch="x86_64" project="Fedora:28" repository="standard"/>
+  <bdep name="linuxconsoletools" notmeta="1" version="1.6.0" release="1.fc28" arch="x86_64" project="Fedora:28" repository="standard"/>
+  <bdep name="libpipeline" notmeta="1" version="1.5.0" release="2.fc28" arch="x86_64" project="Fedora:28" repository="standard"/>
+  <bdep name="ncurses-c++-libs" notmeta="1" version="6.1" release="4.20180224.fc28" arch="x86_64" project="Fedora:28" repository="standard"/>
+  <bdep name="libunwind" notmeta="1" version="1.2.1" release="5.fc28" arch="x86_64" project="Fedora:28" repository="standard"/>
+  <bdep name="perl-Text-Unidecode" notmeta="1" version="1.30" release="5.fc28" arch="noarch" project="Fedora:28" repository="standard"/>
+  <bdep name="perl-libintl-perl" notmeta="1" version="1.29" release="2.fc28" arch="x86_64" project="Fedora:28" repository="standard"/>
+  <bdep name="perl-Unicode-EastAsianWidth" notmeta="1" version="1.33" release="12.fc28" arch="noarch" project="Fedora:28" repository="standard"/>
+  <bdep name="vim-common" notmeta="1" epoch="2" version="8.0.1704" release="1.fc28" arch="x86_64" project="Fedora:28" repository="standard"/>
+  <bdep name="iproute" notmeta="1" version="4.15.0" release="1.fc28" arch="x86_64" project="Fedora:28" repository="standard"/>
+  <bdep name="hostname" notmeta="1" version="3.20" release="3.fc28" arch="x86_64" project="Fedora:28" repository="standard"/>
+  <bdep name="ipcalc" notmeta="1" version="0.2.2" release="4.fc28" arch="x86_64" project="Fedora:28" repository="standard"/>
+  <bdep name="GeoIP-GeoLite-data" notmeta="1" version="2018.04" release="1.fc28" arch="noarch" project="Fedora:28" repository="standard"/>
+  <bdep name="python3-ply" notmeta="1" version="3.9" release="6.fc28" arch="noarch" project="Fedora:28" repository="standard"/>
+  <bdep name="SDL" notmeta="1" version="1.2.15" release="30.fc28" arch="x86_64" project="Fedora:28" repository="standard"/>
+  <bdep name="vim-filesystem" notmeta="1" epoch="2" version="8.0.1704" release="1.fc28" arch="noarch" project="Fedora:28" repository="standard"/>
+  <bdep name="libmnl" notmeta="1" version="1.0.4" release="6.fc28" arch="x86_64" project="Fedora:28" repository="standard"/>
+  <path project="home:rainergerhards:branches:home:rgerhards" repository="Fedora_28" url="https://download.opensuse.org/repositories/home:/rainergerhards:/branches:/home:/rgerhards/Fedora_28/"/>
+  <path project="home:rgerhards" repository="Fedora_28" url="https://download.opensuse.org/repositories/home:/rgerhards/Fedora_28/"/>
+  <path project="Fedora:28" repository="standard"/>
+</buildinfo>

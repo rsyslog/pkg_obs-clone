@@ -1,0 +1,267 @@
+<buildinfo project="home:rainergerhards:branches:home:rgerhards" repository="SLE_12_SP4" package="rsyslog" downloadurl="https://download.opensuse.org/repositories">
+  <arch>x86_64</arch>
+  <debuginfo>1</debuginfo>
+  <subpack>rsyslog</subpack>
+  <subpack>rsyslog-diag-tools</subpack>
+  <subpack>rsyslog-doc</subpack>
+  <subpack>rsyslog-module-dbi</subpack>
+  <subpack>rsyslog-module-elasticsearch</subpack>
+  <subpack>rsyslog-module-gcrypt</subpack>
+  <subpack>rsyslog-module-gssapi</subpack>
+  <subpack>rsyslog-module-gtls</subpack>
+  <subpack>rsyslog-module-mmnormalize</subpack>
+  <subpack>rsyslog-module-mysql</subpack>
+  <subpack>rsyslog-module-omhttpfs</subpack>
+  <subpack>rsyslog-module-omtcl</subpack>
+  <subpack>rsyslog-module-openssl</subpack>
+  <subpack>rsyslog-module-pgsql</subpack>
+  <subpack>rsyslog-module-relp</subpack>
+  <subpack>rsyslog-module-snmp</subpack>
+  <subpack>rsyslog-module-udpspoof</subpack>
+  <bdep name="aaa_base" preinstall="1" runscripts="1" notmeta="1" version="13.2+git20140911.61c1681" release="38.8.1" arch="x86_64" project="SUSE:SLE-12-SP4:GA" repository="SLES"/>
+  <bdep name="attr" preinstall="1" notmeta="1" version="2.4.47" release="3.143" arch="x86_64" project="SUSE:SLE-12-SP4:GA" repository="SLES"/>
+  <bdep name="bash" preinstall="1" notmeta="1" version="4.3" release="83.15.1" arch="x86_64" project="SUSE:SLE-12-SP4:GA" repository="SLES"/>
+  <bdep name="coreutils" preinstall="1" notmeta="1" version="8.25" release="13.7.1" arch="x86_64" project="SUSE:SLE-12-SP4:GA" repository="SLES"/>
+  <bdep name="diffutils" preinstall="1" notmeta="1" version="3.3" release="5.40" arch="x86_64" project="SUSE:SLE-12-SP4:GA" repository="SLES"/>
+  <bdep name="filesystem" preinstall="1" notmeta="1" version="13.1" release="14.15" arch="x86_64" project="SUSE:SLE-12-SP4:GA" repository="SLES"/>
+  <bdep name="fillup" preinstall="1" notmeta="1" version="1.42" release="270.64" arch="x86_64" project="SUSE:SLE-12-SP4:GA" repository="SLES"/>
+  <bdep name="glibc" preinstall="1" notmeta="1" version="2.22" release="15.3" arch="x86_64" project="SUSE:SLE-12-SP4:GA" repository="SLES"/>
+  <bdep name="grep" preinstall="1" notmeta="1" version="2.16" release="3.1" arch="x86_64" project="SUSE:SLE-12-SP4:GA" repository="SLES"/>
+  <bdep name="libbz2-1" preinstall="1" notmeta="1" version="1.0.6" release="29.2" arch="x86_64" project="SUSE:SLE-12-SP4:GA" repository="SLES"/>
+  <bdep name="libgcc_s1" preinstall="1" notmeta="1" version="8.2.1+r264010" release="1.3.3" arch="x86_64" project="SUSE:SLE-12-SP4:GA" repository="SLES"/>
+  <bdep name="m4" preinstall="1" notmeta="1" version="1.4.16" release="15.74" arch="x86_64" project="SUSE:SLE-12-SP4:GA" repository="SLES"/>
+  <bdep name="libncurses5" preinstall="1" notmeta="1" version="5.9" release="58.1" arch="x86_64" project="SUSE:SLE-12-SP4:GA" repository="SLES"/>
+  <bdep name="pam" preinstall="1" notmeta="1" version="1.1.8" release="24.14.1" arch="x86_64" project="SUSE:SLE-12-SP4:GA" repository="SLES"/>
+  <bdep name="permissions" preinstall="1" notmeta="1" version="20170707" release="1.14" arch="x86_64" project="SUSE:SLE-12-SP4:GA" repository="SLES"/>
+  <bdep name="libreadline6" preinstall="1" notmeta="1" version="6.3" release="83.15.1" arch="x86_64" project="SUSE:SLE-12-SP4:GA" repository="SLES"/>
+  <bdep name="rpm" preinstall="1" notmeta="1" version="4.11.2" release="16.16.1" arch="x86_64" project="SUSE:SLE-12-SP4:GA" repository="SLES"/>
+  <bdep name="sed" preinstall="1" notmeta="1" version="4.2.2" release="7.3.1" arch="x86_64" project="SUSE:SLE-12-SP4:GA" repository="SLES"/>
+  <bdep name="tar" preinstall="1" notmeta="1" version="1.27.1" release="15.3.7" arch="x86_64" project="SUSE:SLE-12-SP4:GA" repository="SLES"/>
+  <bdep name="libz1" preinstall="1" notmeta="1" version="1.2.11" release="1.27" arch="x86_64" project="SUSE:SLE-12-SP4:GA" repository="SLES"/>
+  <bdep name="libselinux1" preinstall="1" notmeta="1" version="2.5" release="8.79" arch="x86_64" project="SUSE:SLE-12-SP4:GA" repository="SLES"/>
+  <bdep name="liblzma5" preinstall="1" notmeta="1" version="5.0.5" release="4.852" arch="x86_64" project="SUSE:SLE-12-SP4:GA" repository="SLES"/>
+  <bdep name="libcap2" preinstall="1" notmeta="1" version="2.22" release="13.1" arch="x86_64" project="SUSE:SLE-12-SP4:GA" repository="SLES"/>
+  <bdep name="libacl1" preinstall="1" notmeta="1" version="2.2.52" release="6.1" arch="x86_64" project="SUSE:SLE-12-SP4:GA" repository="SLES"/>
+  <bdep name="libattr1" preinstall="1" notmeta="1" version="2.4.47" release="3.143" arch="x86_64" project="SUSE:SLE-12-SP4:GA" repository="SLES"/>
+  <bdep name="libpopt0" preinstall="1" notmeta="1" version="1.16" release="26.128" arch="x86_64" project="SUSE:SLE-12-SP4:GA" repository="SLES"/>
+  <bdep name="libelf1" preinstall="1" notmeta="1" version="0.158" release="6.1" arch="x86_64" project="SUSE:SLE-12-SP4:GA" repository="SLES"/>
+  <bdep name="liblua5_1" preinstall="1" notmeta="1" version="5.1.5" release="8.3.1" arch="x86_64" project="SUSE:SLE-12-SP4:GA" repository="SLES"/>
+  <bdep name="libpcre1" preinstall="1" notmeta="1" version="8.39" release="8.3.1" arch="x86_64" project="SUSE:SLE-12-SP4:GA" repository="SLES"/>
+  <bdep name="libsmartcols1" preinstall="1" notmeta="1" version="2.29.2" release="7.14" arch="x86_64" project="SUSE:SLE-12-SP4:GA" repository="SLES"/>
+  <bdep name="perl" preinstall="1" notmeta="1" version="5.18.2" release="12.17.1" arch="x86_64" project="SUSE:SLE-12-SP4:GA" repository="SLES"/>
+  <bdep name="kernel-obs-build" vminstall="1" notmeta="1" version="4.12.14" release="94.41.1" arch="x86_64" project="SUSE:SLE-12-SP4:GA" repository="SDK"/>
+  <bdep name="util-linux" vminstall="1" version="2.29.2" release="7.14" arch="x86_64" project="SUSE:SLE-12-SP4:GA" repository="SLES"/>
+  <bdep name="libmount1" vminstall="1" version="2.29.2" release="7.14" arch="x86_64" project="SUSE:SLE-12-SP4:GA" repository="SLES"/>
+  <bdep name="perl-base" vminstall="1" version="5.18.2" release="12.17.1" arch="x86_64" project="SUSE:SLE-12-SP4:GA" repository="SLES"/>
+  <bdep name="libdb-4_8" vminstall="1" version="4.8.30" release="29.6" arch="x86_64" project="SUSE:SLE-12-SP4:GA" repository="SLES"/>
+  <bdep name="libsepol1" vminstall="1" version="2.5" release="3.143" arch="x86_64" project="SUSE:SLE-12-SP4:GA" repository="SLES"/>
+  <bdep name="libblkid1" vminstall="1" version="2.29.2" release="7.14" arch="x86_64" project="SUSE:SLE-12-SP4:GA" repository="SLES"/>
+  <bdep name="libuuid1" vminstall="1" version="2.29.2" release="7.14" arch="x86_64" project="SUSE:SLE-12-SP4:GA" repository="SLES"/>
+  <bdep name="net-tools" vminstall="1" version="1.60" release="765.5.4" arch="x86_64" project="SUSE:SLE-12-SP4:GA" repository="SLES"/>
+  <bdep name="autoconf" version="2.69" release="9.71" arch="noarch" project="SUSE:SLE-12-SP4:GA" repository="SDK"/>
+  <bdep name="automake" version="1.13.4" release="6.2" arch="noarch" project="SUSE:SLE-12-SP4:GA" repository="SDK"/>
+  <bdep name="libtool" version="2.4.2" release="17.4.1" arch="x86_64" project="SUSE:SLE-12-SP4:GA" repository="SDK"/>
+  <bdep name="bison" version="2.7" release="6.107" arch="x86_64" project="SUSE:SLE-12-SP4:GA" repository="SDK"/>
+  <bdep name="flex" version="2.5.37" release="8.1" arch="x86_64" project="SUSE:SLE-12-SP4:GA" repository="SDK"/>
+  <bdep name="pcre-devel" version="8.39" release="8.3.1" arch="x86_64" project="SUSE:SLE-12-SP4:GA" repository="SDK"/>
+  <bdep name="zlib-devel" version="1.2.11" release="1.27" arch="x86_64" project="SUSE:SLE-12-SP4:GA" repository="SDK"/>
+  <bdep name="krb5-devel" version="1.12.5" release="40.28.2" arch="x86_64" project="SUSE:SLE-12-SP4:GA" repository="SDK"/>
+  <bdep name="libgnutls-devel" version="3.3.27" release="3.3.1" arch="x86_64" project="SUSE:SLE-12-SP4:GA" repository="SDK"/>
+  <bdep name="libgcrypt-devel" version="1.6.1" release="16.61.1" arch="x86_64" project="SUSE:SLE-12-SP4:GA" repository="SDK"/>
+  <bdep name="libdbi-devel" version="0.9.0" release="3.65" arch="x86_64" project="SUSE:SLE-12-SP4:GA" repository="SDK"/>
+  <bdep name="net-snmp-devel" version="5.7.3" release="6.3.1" arch="x86_64" project="SUSE:SLE-12-SP4:GA" repository="SDK"/>
+  <bdep name="libnet-devel" version="1.2~rc3" release="3.1" arch="x86_64" project="SUSE:SLE-12-SP4:GA" repository="SDK"/>
+  <bdep name="rpm-build" version="4.11.2" release="16.16.1" arch="x86_64" project="SUSE:SLE-12-SP4:GA" repository="SLES"/>
+  <bdep name="systemd" version="228" release="150.49.2" arch="x86_64" project="SUSE:SLE-12-SP4:GA" repository="SLES"/>
+  <bdep name="systemd-devel" version="228" release="150.49.2" arch="x86_64" project="SUSE:SLE-12-SP4:GA" repository="SDK"/>
+  <bdep name="libopenssl-devel" version="1.0.2p" release="1.13" arch="noarch" project="SUSE:SLE-12-SP4:GA" repository="SDK"/>
+  <bdep name="pkg-config" version="0.28" release="6.98" arch="x86_64" project="SUSE:SLE-12-SP4:GA" repository="SLES"/>
+  <bdep name="liblogging-devel" version="1.0.6" release="11.1" arch="x86_64" project="home:rainergerhards:branches:home:rgerhards" repository="SLE_12_SP4"/>
+  <bdep name="libcurl-devel" version="7.60.0" release="2.11" arch="x86_64" project="SUSE:SLE-12-SP4:GA" repository="SDK"/>
+  <bdep name="libmysqlclient-devel" version="10.0.35" release="1.7" arch="x86_64" project="SUSE:SLE-12-SP4:GA" repository="SDK"/>
+  <bdep name="postgresql10-devel" version="10.5" release="1.3.1" arch="x86_64" project="SUSE:SLE-12-SP4:GA" repository="SDK"/>
+  <bdep name="librelp-devel" version="1.6.0" release="2.1" arch="x86_64" project="home:rainergerhards:branches:home:rgerhards" repository="SLE_12_SP4"/>
+  <bdep name="liblognorm-devel" version="2.0.6" release="3.1" arch="x86_64" project="home:rainergerhards:branches:home:rgerhards" repository="SLE_12_SP4"/>
+  <bdep name="libestr-devel" version="0.1.11" release="3.1" arch="x86_64" project="home:rainergerhards:branches:home:rgerhards" repository="SLE_12_SP4"/>
+  <bdep name="libfastjson-devel" version="0.99.8" release="5.1" arch="x86_64" project="home:rainergerhards:branches:home:rgerhards" repository="SLE_12_SP4"/>
+  <bdep name="libuuid-devel" version="2.29.2" release="7.14" arch="x86_64" project="SUSE:SLE-12-SP4:GA" repository="WE"/>
+  <bdep name="tcl-devel" version="8.6.7" release="3.3.3" arch="x86_64" project="SUSE:SLE-12-SP4:GA" repository="SDK"/>
+  <bdep name="info" version="4.13a" release="37.229" arch="x86_64" project="SUSE:SLE-12-SP4:GA" repository="SLES"/>
+  <bdep name="libltdl7" version="2.4.2" release="17.4.1" arch="x86_64" project="SUSE:SLE-12-SP4:GA" repository="SLES"/>
+  <bdep name="libstdc++-devel" version="4.8" release="6.189" arch="x86_64" project="SUSE:SLE-12-SP4:GA" repository="SLES"/>
+  <bdep name="libpcre16-0" version="8.39" release="8.3.1" arch="x86_64" project="SUSE:SLE-12-SP4:GA" repository="SLES"/>
+  <bdep name="libpcreposix0" version="8.39" release="8.3.1" arch="x86_64" project="SUSE:SLE-12-SP4:GA" repository="HA"/>
+  <bdep name="libpcrecpp0" version="8.39" release="8.3.1" arch="x86_64" project="SUSE:SLE-12-SP4:GA" repository="WE"/>
+  <bdep name="glibc-devel" version="2.22" release="15.3" arch="x86_64" project="SUSE:SLE-12-SP4:GA" repository="SLES"/>
+  <bdep name="libcom_err-devel" version="1.43.8" release="1.19" arch="x86_64" project="SUSE:SLE-12-SP4:GA" repository="SDK"/>
+  <bdep name="keyutils-devel" version="1.5.9" release="3.29" arch="x86_64" project="SUSE:SLE-12-SP4:GA" repository="SDK"/>
+  <bdep name="libverto-devel" version="0.2.6" release="3.2.2" arch="x86_64" project="SUSE:SLE-12-SP4:GA" repository="SDK"/>
+  <bdep name="krb5" version="1.12.5" release="40.28.2" arch="x86_64" project="SUSE:SLE-12-SP4:GA" repository="SLES"/>
+  <bdep name="p11-kit-devel" version="0.20.7" release="1.7" arch="x86_64" project="SUSE:SLE-12-SP4:GA" repository="SDK"/>
+  <bdep name="libnettle-devel" version="2.7.1" release="12.1" arch="x86_64" project="SUSE:SLE-12-SP4:GA" repository="SDK"/>
+  <bdep name="libtasn1-devel" version="4.9" release="3.5.1" arch="x86_64" project="SUSE:SLE-12-SP4:GA" repository="SDK"/>
+  <bdep name="libgnutls28" version="3.3.27" release="3.3.1" arch="x86_64" project="SUSE:SLE-12-SP4:GA" repository="SLES"/>
+  <bdep name="libgcrypt20" version="1.6.1" release="16.61.1" arch="x86_64" project="SUSE:SLE-12-SP4:GA" repository="SLES"/>
+  <bdep name="libgpg-error0" version="1.13" release="1.79" arch="x86_64" project="SUSE:SLE-12-SP4:GA" repository="SLES"/>
+  <bdep name="libgpg-error-devel" version="1.13" release="1.79" arch="x86_64" project="SUSE:SLE-12-SP4:GA" repository="SDK"/>
+  <bdep name="libdbi1" version="0.9.0" release="3.65" arch="x86_64" project="SUSE:SLE-12-SP4:GA" repository="SLES"/>
+  <bdep name="rpm-devel" version="4.11.2" release="16.16.1" arch="x86_64" project="SUSE:SLE-12-SP4:GA" repository="SDK"/>
+  <bdep name="tcpd-devel" version="7.6" release="886.3" arch="x86_64" project="SUSE:SLE-12-SP4:GA" repository="SDK"/>
+  <bdep name="libsensors4-devel" version="3.4.0" release="8.1" arch="x86_64" project="SUSE:SLE-12-SP4:GA" repository="SDK"/>
+  <bdep name="perl-SNMP" version="5.7.3" release="6.3.1" arch="x86_64" project="SUSE:SLE-12-SP4:GA" repository="SLES"/>
+  <bdep name="libsnmp30" version="5.7.3" release="6.3.1" arch="x86_64" project="SUSE:SLE-12-SP4:GA" repository="SLES"/>
+  <bdep name="libnet9" version="1.2~rc3" release="3.1" arch="x86_64" project="SUSE:SLE-12-SP4:GA" repository="SLES"/>
+  <bdep name="findutils" version="4.5.12" release="7.1" arch="x86_64" project="SUSE:SLE-12-SP4:GA" repository="SLES"/>
+  <bdep name="xz" version="5.0.5" release="4.852" arch="x86_64" project="SUSE:SLE-12-SP4:GA" repository="SLES"/>
+  <bdep name="file" version="5.22" release="10.6.1" arch="x86_64" project="SUSE:SLE-12-SP4:GA" repository="SLES"/>
+  <bdep name="gcc" version="4.8" release="6.189" arch="x86_64" project="SUSE:SLE-12-SP4:GA" repository="SLES"/>
+  <bdep name="cpio" version="2.11" release="36.3.4" arch="x86_64" project="SUSE:SLE-12-SP4:GA" repository="SLES"/>
+  <bdep name="gawk" version="4.1.0" release="3.663" arch="x86_64" project="SUSE:SLE-12-SP4:GA" repository="SLES"/>
+  <bdep name="gzip" version="1.6" release="9.3.1" arch="x86_64" project="SUSE:SLE-12-SP4:GA" repository="SLES"/>
+  <bdep name="bzip2" version="1.0.6" release="29.2" arch="x86_64" project="SUSE:SLE-12-SP4:GA" repository="SLES"/>
+  <bdep name="glibc-locale" version="2.22" release="15.3" arch="x86_64" project="SUSE:SLE-12-SP4:GA" repository="SLES"/>
+  <bdep name="binutils" version="2.31" release="9.26.1" arch="x86_64" project="SUSE:SLE-12-SP4:GA" repository="SLES"/>
+  <bdep name="make" version="4.0" release="4.1" arch="x86_64" project="SUSE:SLE-12-SP4:GA" repository="SLES"/>
+  <bdep name="which" version="2.20" release="3.180" arch="x86_64" project="SUSE:SLE-12-SP4:GA" repository="SLES"/>
+  <bdep name="patch" version="2.7.5" release="8.5.1" arch="x86_64" project="SUSE:SLE-12-SP4:GA" repository="SLES"/>
+  <bdep name="systemd-rpm-macros" version="3" release="10.9.1" arch="noarch" project="SUSE:SLE-12-SP4:GA" repository="SLES"/>
+  <bdep name="gettext-tools" version="0.19.2" release="1.103" arch="x86_64" project="SUSE:SLE-12-SP4:GA" repository="SLES"/>
+  <bdep name="shadow" version="4.2.1" release="27.19.1" arch="x86_64" project="SUSE:SLE-12-SP4:GA" repository="SLES"/>
+  <bdep name="libcurl4" version="7.60.0" release="2.11" arch="x86_64" project="SUSE:SLE-12-SP4:GA" repository="SLES"/>
+  <bdep name="libkmod2" version="25" release="1.35" arch="x86_64" project="SUSE:SLE-12-SP4:GA" repository="SLES"/>
+  <bdep name="libapparmor1" version="2.8.2" release="49.21" arch="x86_64" project="SUSE:SLE-12-SP4:GA" repository="SLES"/>
+  <bdep name="sysvinit-tools" version="2.88+" release="99.15" arch="x86_64" project="SUSE:SLE-12-SP4:GA" repository="SLES"/>
+  <bdep name="libcryptsetup4" version="1.6.4" release="4.1" arch="x86_64" project="SUSE:SLE-12-SP4:GA" repository="SLES"/>
+  <bdep name="libseccomp2" version="2.3.1" release="10.1" arch="x86_64" project="SUSE:SLE-12-SP4:GA" repository="SLES"/>
+  <bdep name="libqrencode3" version="3.4.3" release="1.31" arch="x86_64" project="SUSE:SLE-12-SP4:GA" repository="SLES"/>
+  <bdep name="netcfg" version="11.5" release="29.1" arch="noarch" project="SUSE:SLE-12-SP4:GA" repository="SLES"/>
+  <bdep name="libsystemd0" version="228" release="150.49.2" arch="x86_64" project="SUSE:SLE-12-SP4:GA" repository="SLES"/>
+  <bdep name="libopenssl1_0_0" version="1.0.2p" release="2.11" arch="x86_64" project="SUSE:SLE-12-SP4:GA" repository="SLES"/>
+  <bdep name="libopenssl-1_0_0-devel" version="1.0.2p" release="2.11" arch="x86_64" project="SUSE:SLE-12-SP4:GA" repository="SDK"/>
+  <bdep name="openssl" version="1.0.2p" release="1.13" arch="noarch" project="SUSE:SLE-12-SP4:GA" repository="SLES"/>
+  <bdep name="liblogging0" version="1.0.6" release="11.1" arch="x86_64" project="home:rainergerhards:branches:home:rgerhards" repository="SLE_12_SP4"/>
+  <bdep name="libmysqlclient18" version="10.0.35" release="1.7" arch="x86_64" project="SUSE:SLE-12-SP4:GA" repository="SLES"/>
+  <bdep name="libmysqlclient_r18" version="10.0.35" release="1.7" arch="x86_64" project="SUSE:SLE-12-SP4:GA" repository="WE"/>
+  <bdep name="libpq5" version="10.5" release="1.3.1" arch="x86_64" project="SUSE:SLE-12-SP4:GA" repository="SLES"/>
+  <bdep name="libecpg6" version="10.5" release="1.3.1" arch="x86_64" project="SUSE:SLE-12-SP4:GA" repository="SLES"/>
+  <bdep name="update-alternatives" version="1.18.4" release="14.216" arch="x86_64" project="SUSE:SLE-12-SP4:GA" repository="SLES"/>
+  <bdep name="librelp0" version="1.6.0" release="2.1" arch="x86_64" project="home:rainergerhards:branches:home:rgerhards" repository="SLE_12_SP4"/>
+  <bdep name="liblognorm5" version="2.0.6" release="3.1" arch="x86_64" project="home:rainergerhards:branches:home:rgerhards" repository="SLE_12_SP4"/>
+  <bdep name="libestr0" version="0.1.11" release="3.1" arch="x86_64" project="home:rainergerhards:branches:home:rgerhards" repository="SLE_12_SP4"/>
+  <bdep name="libfastjson4" version="0.99.8" release="5.1" arch="x86_64" project="home:rainergerhards:branches:home:rgerhards" repository="SLE_12_SP4"/>
+  <bdep name="tcl" version="8.6.7" release="3.3.3" arch="x86_64" project="SUSE:SLE-12-SP4:GA" repository="SLES"/>
+  <bdep name="libzio1" version="1.00" release="9.188" arch="x86_64" project="SUSE:SLE-12-SP4:GA" repository="SLES"/>
+  <bdep name="libgdbm4" version="1.10" release="9.70" arch="x86_64" project="SUSE:SLE-12-SP4:GA" repository="SLES"/>
+  <bdep name="libstdc++48-devel" version="4.8.5" release="31.17.1" arch="x86_64" project="SUSE:SLE-12-SP4:GA" repository="SLES"/>
+  <bdep name="libstdc++6" version="8.2.1+r264010" release="1.3.3" arch="x86_64" project="SUSE:SLE-12-SP4:GA" repository="SLES"/>
+  <bdep name="linux-glibc-devel" version="4.12" release="1.27" arch="noarch" project="SUSE:SLE-12-SP4:GA" repository="SLES"/>
+  <bdep name="libcom_err2" version="1.43.8" release="1.19" arch="x86_64" project="SUSE:SLE-12-SP4:GA" repository="SLES"/>
+  <bdep name="libkeyutils1" version="1.5.9" release="3.29" arch="x86_64" project="SUSE:SLE-12-SP4:GA" repository="SLES"/>
+  <bdep name="libverto1" version="0.2.6" release="3.2.2" arch="x86_64" project="SUSE:SLE-12-SP4:GA" repository="SLES"/>
+  <bdep name="libp11-kit0" version="0.20.7" release="1.7" arch="x86_64" project="SUSE:SLE-12-SP4:GA" repository="SLES"/>
+  <bdep name="gmp-devel" version="5.1.3" release="2.121" arch="x86_64" project="SUSE:SLE-12-SP4:GA" repository="SDK"/>
+  <bdep name="libnettle4" version="2.7.1" release="12.1" arch="x86_64" project="SUSE:SLE-12-SP4:GA" repository="SLES"/>
+  <bdep name="libhogweed2" version="2.7.1" release="12.1" arch="x86_64" project="SUSE:SLE-12-SP4:GA" repository="SLES"/>
+  <bdep name="libtasn1-6" version="4.9" release="3.5.1" arch="x86_64" project="SUSE:SLE-12-SP4:GA" repository="SLES"/>
+  <bdep name="libgmp10" version="5.1.3" release="2.121" arch="x86_64" project="SUSE:SLE-12-SP4:GA" repository="SLES"/>
+  <bdep name="popt-devel" version="1.16" release="26.128" arch="x86_64" project="SUSE:SLE-12-SP4:GA" repository="SDK"/>
+  <bdep name="libwrap0" version="7.6" release="886.3" arch="x86_64" project="SUSE:SLE-12-SP4:GA" repository="SLES"/>
+  <bdep name="libsensors4" version="3.4.0" release="8.1" arch="x86_64" project="SUSE:SLE-12-SP4:GA" repository="SLES"/>
+  <bdep name="net-snmp" version="5.7.3" release="6.3.1" arch="x86_64" project="SUSE:SLE-12-SP4:GA" repository="SLES"/>
+  <bdep name="snmp-mibs" version="5.7.3" release="6.3.1" arch="x86_64" project="SUSE:SLE-12-SP4:GA" repository="SLES"/>
+  <bdep name="libaudit1" version="2.3.6" release="4.3.1" arch="x86_64" project="SUSE:SLE-12-SP4:GA" repository="SLES"/>
+  <bdep name="libcap-ng0" version="0.7.3" release="4.125" arch="x86_64" project="SUSE:SLE-12-SP4:GA" repository="SLES"/>
+  <bdep name="libncurses6" version="5.9" release="58.1" arch="x86_64" project="SUSE:SLE-12-SP4:GA" repository="SLES"/>
+  <bdep name="libutempter0" version="1.1.6" release="5.114" arch="x86_64" project="SUSE:SLE-12-SP4:GA" repository="SLES"/>
+  <bdep name="libfdisk1" version="2.29.2" release="7.14" arch="x86_64" project="SUSE:SLE-12-SP4:GA" repository="SLES"/>
+  <bdep name="insserv-compat" version="0.1" release="14.3.1" arch="noarch" project="SUSE:SLE-12-SP4:GA" repository="SLES"/>
+  <bdep name="libmagic1" version="5.22" release="10.6.1" arch="x86_64" project="SUSE:SLE-12-SP4:GA" repository="SLES"/>
+  <bdep name="gcc48" version="4.8.5" release="31.17.1" arch="x86_64" project="SUSE:SLE-12-SP4:GA" repository="SLES"/>
+  <bdep name="cpp" version="4.8" release="6.189" arch="x86_64" project="SUSE:SLE-12-SP4:GA" repository="SLES"/>
+  <bdep name="libsemanage1" version="2.5" release="8.1" arch="x86_64" project="SUSE:SLE-12-SP4:GA" repository="SLES"/>
+  <bdep name="libgomp1" version="8.2.1+r264010" release="1.3.3" arch="x86_64" project="SUSE:SLE-12-SP4:GA" repository="SLES"/>
+  <bdep name="gettext-runtime" version="0.19.2" release="1.103" arch="x86_64" project="SUSE:SLE-12-SP4:GA" repository="SLES"/>
+  <bdep name="libcrack2" version="2.9.0" release="7.1" arch="x86_64" project="SUSE:SLE-12-SP4:GA" repository="SLES"/>
+  <bdep name="libldap-2_4-2" version="2.4.41" release="18.40.1" arch="x86_64" project="SUSE:SLE-12-SP4:GA" repository="SLES"/>
+  <bdep name="libnghttp2-14" version="1.7.1" release="1.84" arch="x86_64" project="SUSE:SLE-12-SP4:GA" repository="SLES"/>
+  <bdep name="libssh4" version="0.6.3" release="12.6.1" arch="x86_64" project="SUSE:SLE-12-SP4:GA" repository="SDK"/>
+  <bdep name="blog" version="2.18" release="2.7" arch="x86_64" project="SUSE:SLE-12-SP4:GA" repository="SLES"/>
+  <bdep name="libfipscheck1" version="1.2.0" release="9.3" arch="x86_64" project="SUSE:SLE-12-SP4:GA" repository="SLES"/>
+  <bdep name="device-mapper" version="1.02.149" release="8.16" arch="x86_64" project="SUSE:SLE-12-SP4:GA" repository="SLES"/>
+  <bdep name="openssl-1_0_0" version="1.0.2p" release="2.11" arch="x86_64" project="SUSE:SLE-12-SP4:GA" repository="SLES"/>
+  <bdep name="terminfo-base" version="5.9" release="58.1" arch="x86_64" project="SUSE:SLE-12-SP4:GA" repository="SLES"/>
+  <bdep name="libffi4" version="5.3.1+r233831" release="12.1" arch="x86_64" project="SUSE:SLE-12-SP4:GA" repository="SLES"/>
+  <bdep name="libgmpxx4" version="5.1.3" release="2.121" arch="x86_64" project="SUSE:SLE-12-SP4:GA" repository="SDK"/>
+  <bdep name="libtasn1" version="4.9" release="3.5.1" arch="x86_64" project="SUSE:SLE-12-SP4:GA" repository="SLES"/>
+  <bdep name="logrotate" version="3.11.0" release="2.11.1" arch="x86_64" project="SUSE:SLE-12-SP4:GA" repository="SLES"/>
+  <bdep name="perl-Term-ReadKey" version="2.31" release="1.152" arch="x86_64" project="SUSE:SLE-12-SP4:GA" repository="SLES"/>
+  <bdep name="file-magic" version="5.22" release="10.6.1" arch="x86_64" project="SUSE:SLE-12-SP4:GA" repository="SLES"/>
+  <bdep name="libmpfr4" version="3.1.2" release="7.1" arch="x86_64" project="SUSE:SLE-12-SP4:GA" repository="SLES"/>
+  <bdep name="libisl10" version="0.12.2" release="1.121" arch="x86_64" project="SUSE:SLE-12-SP4:GA" repository="SLES"/>
+  <bdep name="libcloog-isl4" version="0.18.1" release="1.124" arch="x86_64" project="SUSE:SLE-12-SP4:GA" repository="SLES"/>
+  <bdep name="libmpc3" version="1.0.2" release="1.123" arch="x86_64" project="SUSE:SLE-12-SP4:GA" repository="SLES"/>
+  <bdep name="cpp48" version="4.8.5" release="31.17.1" arch="x86_64" project="SUSE:SLE-12-SP4:GA" repository="SLES"/>
+  <bdep name="libasan0" version="4.8.5" release="31.17.1" arch="x86_64" project="SUSE:SLE-12-SP4:GA" repository="SLES"/>
+  <bdep name="libtsan0" version="8.2.1+r264010" release="1.3.3" arch="x86_64" project="SUSE:SLE-12-SP4:GA" repository="SLES"/>
+  <bdep name="libitm1" version="8.2.1+r264010" release="1.3.3" arch="x86_64" project="SUSE:SLE-12-SP4:GA" repository="SLES"/>
+  <bdep name="libatomic1" version="8.2.1+r264010" release="1.3.3" arch="x86_64" project="SUSE:SLE-12-SP4:GA" repository="SLES"/>
+  <bdep name="libustr-1_0-1" version="1.0.4" release="31.197" arch="x86_64" project="SUSE:SLE-12-SP4:GA" repository="SLES"/>
+  <bdep name="libxml2-2" version="2.9.4" release="46.15.1" arch="x86_64" project="SUSE:SLE-12-SP4:GA" repository="SLES"/>
+  <bdep name="libcroco-0_6-3" version="0.6.11" release="10.2" arch="x86_64" project="SUSE:SLE-12-SP4:GA" repository="SLES"/>
+  <bdep name="cracklib" version="2.9.0" release="7.1" arch="x86_64" project="SUSE:SLE-12-SP4:GA" repository="SLES"/>
+  <bdep name="ncurses-utils" version="5.9" release="58.1" arch="x86_64" project="SUSE:SLE-12-SP4:GA" repository="SLES"/>
+  <bdep name="libsasl2-3" version="2.1.26" release="8.7.1" arch="x86_64" project="SUSE:SLE-12-SP4:GA" repository="SLES"/>
+  <bdep name="fipscheck" version="1.2.0" release="9.3" arch="x86_64" project="SUSE:SLE-12-SP4:GA" repository="SLES"/>
+  <bdep name="libexpat1" version="2.1.0" release="21.3.1" arch="x86_64" project="SUSE:SLE-12-SP4:GA" repository="SLES"/>
+  <bdep name="libudev1" version="228" release="150.49.2" arch="x86_64" project="SUSE:SLE-12-SP4:GA" repository="SLES"/>
+  <bdep name="libaio1" version="0.3.109" release="17.15" arch="x86_64" project="SUSE:SLE-12-SP4:GA" repository="SLES"/>
+  <bdep name="expat" version="2.1.0" release="21.3.1" arch="x86_64" project="SUSE:SLE-12-SP4:GA" repository="SLES"/>
+  <bdep name="libglib-2_0-0" version="2.48.2" release="10.2" arch="x86_64" project="SUSE:SLE-12-SP4:GA" repository="SLES"/>
+  <bdep name="gdb" notmeta="1" version="8.0.1" release="2.3.2" arch="x86_64" project="SUSE:SLE-12-SP4:GA" repository="SLES"/>
+  <bdep name="vim" notmeta="1" version="7.4.326" release="16.1" arch="x86_64" project="SUSE:SLE-12-SP4:GA" repository="SLES"/>
+  <bdep name="strace" notmeta="1" version="4.10" release="3.1" arch="x86_64" project="SUSE:SLE-12-SP4:GA" repository="SLES"/>
+  <bdep name="rzsz" notmeta="1" version="0.12.21~rc" release="1001.3.1" arch="x86_64" project="SUSE:SLE-12-SP4:GA" repository="SLES"/>
+  <bdep name="pam-modules" notmeta="1" version="12.1" release="23.12" arch="x86_64" project="SUSE:SLE-12-SP4:GA" repository="SLES"/>
+  <bdep name="build-mkbaselibs" notmeta="1" version="20171128" release="9.3.2" arch="noarch" project="SUSE:SLE-12-SP4:GA" repository="SDK"/>
+  <bdep name="brp-check-suse" notmeta="1" version="13.2+git20150521.971ea2f" release="5.1" arch="x86_64" project="SUSE:SLE-12-SP4:GA" repository="SDK"/>
+  <bdep name="post-build-checks" notmeta="1" version="13.2+git20140318.f24deaf" release="1.13" arch="noarch" project="SUSE:SLE-12-SP4:GA" repository="SDK"/>
+  <bdep name="rpmlint-Factory" notmeta="1" version="1.0" release="85.14" arch="noarch" project="SUSE:SLE-12-SP4:GA" repository="SDK"/>
+  <bdep name="build-compare" notmeta="1" version="20160104T085658.0b929c8" release="5.87" arch="noarch" project="SUSE:SLE-12-SP4:GA" repository="SDK"/>
+  <bdep name="brp-extract-appdata" notmeta="1" version="2012.02.13" release="4.1" arch="noarch" project="SUSE:SLE-12-SP4:GA" repository="SDK"/>
+  <bdep name="syslog-service" notmeta="1" version="2.0" release="778.1" arch="noarch" project="SUSE:SLE-12-SP4:GA" repository="SLES"/>
+  <bdep name="libpython2_7-1_0" notmeta="1" version="2.7.13" release="28.11.2" arch="x86_64" project="SUSE:SLE-12-SP4:GA" repository="SLES"/>
+  <bdep name="python-base" notmeta="1" version="2.7.13" release="28.11.2" arch="x86_64" project="SUSE:SLE-12-SP4:GA" repository="SLES"/>
+  <bdep name="libguile-2_0-22" notmeta="1" version="2.0.9" release="8.3" arch="x86_64" project="SUSE:SLE-12-SP4:GA" repository="SLES"/>
+  <bdep name="libunwind" notmeta="1" version="1.1" release="9.8" arch="x86_64" project="SUSE:SLE-12-SP4:GA" repository="SLES"/>
+  <bdep name="aaa_base-malloccheck" notmeta="1" version="13.2+git20140911.61c1681" release="38.8.1" arch="x86_64" project="SUSE:SLE-12-SP4:GA" repository="SDK"/>
+  <bdep name="rpmlint-mini" notmeta="1" version="1.8" release="2.9.3" arch="x86_64" project="SUSE:SLE-12-SP4:GA" repository="SDK"/>
+  <bdep name="wicked-service" notmeta="1" version="0.6.50" release="1.6" arch="x86_64" project="SUSE:SLE-12-SP4:GA" repository="SLES"/>
+  <bdep name="libgc1" notmeta="1" version="7.2d" release="5.1" arch="x86_64" project="SUSE:SLE-12-SP4:GA" repository="SLES"/>
+  <bdep name="libunistring0" notmeta="1" version="0.9.3" release="20.1" arch="x86_64" project="SUSE:SLE-12-SP4:GA" repository="SLES"/>
+  <bdep name="guile-modules-2_0" notmeta="1" version="2.0.9" release="8.3" arch="x86_64" project="SUSE:SLE-12-SP4:GA" repository="SLES"/>
+  <bdep name="sysconfig" notmeta="1" version="0.84.0" release="13.1" arch="x86_64" project="SUSE:SLE-12-SP4:GA" repository="SLES"/>
+  <bdep name="wicked" notmeta="1" version="0.6.50" release="1.6" arch="x86_64" project="SUSE:SLE-12-SP4:GA" repository="SLES"/>
+  <bdep name="sysconfig-netconfig" notmeta="1" version="0.84.0" release="13.1" arch="x86_64" project="SUSE:SLE-12-SP4:GA" repository="SLES"/>
+  <bdep name="libdbus-1-3" notmeta="1" version="1.8.22" release="29.10.2" arch="x86_64" project="SUSE:SLE-12-SP4:GA" repository="SLES"/>
+  <bdep name="libwicked-0-6" notmeta="1" version="0.6.50" release="1.6" arch="x86_64" project="SUSE:SLE-12-SP4:GA" repository="SLES"/>
+  <bdep name="util-linux-systemd" notmeta="1" version="2.29.2" release="7.7" arch="x86_64" project="SUSE:SLE-12-SP4:GA" repository="SLES"/>
+  <bdep name="libnl3-200" notmeta="1" version="3.2.23" release="2.21" arch="x86_64" project="SUSE:SLE-12-SP4:GA" repository="SLES"/>
+  <bdep name="libnl-config" notmeta="1" version="3.2.23" release="2.21" arch="noarch" project="SUSE:SLE-12-SP4:GA" repository="SLES"/>
+  <bdep name="rsyslog" notmeta="1" version="8.2004.0" release="44.1" arch="x86_64" project="home:rainergerhards:branches:home:rgerhards" repository="SLE_12_SP4"/>
+  <path project="home:rainergerhards:branches:home:rgerhards" repository="SLE_12_SP4" url="https://download.opensuse.org/repositories/home:/rainergerhards:/branches:/home:/rgerhards/SLE_12_SP4/"/>
+  <path project="home:rgerhards" repository="SLE_12_SP4" url="https://download.opensuse.org/repositories/home:/rgerhards/SLE_12_SP4/"/>
+  <path project="SUSE:SLE-12-SP4:GA" repository="standard"/>
+  <path project="SUSE:SLE-12-SP4:GA" repository="HPC"/>
+  <path project="SUSE:SLE-12-SP4:GA" repository="HA_GEO"/>
+  <path project="SUSE:SLE-12-SP4:GA" repository="HA"/>
+  <path project="SUSE:SLE-12-SP4:GA" repository="WE"/>
+  <path project="SUSE:SLE-12-SP4:GA" repository="SDK"/>
+  <path project="SUSE:SLE-12-SP4:GA" repository="SLES"/>
+  <path project="SUSE:SLE-12-SP4:GA" repository="SLED"/>
+  <path project="SUSE:SLE-12:SLE-Module-Web-Scripting" repository="standard"/>
+  <path project="SUSE:SLE-12:SLE-Module-Toolchain" repository="standard"/>
+  <path project="SUSE:SLE-12:SLE-Module-Public-Cloud" repository="standard"/>
+  <path project="SUSE:SLE-12:SLE-Module-Legacy" repository="standard"/>
+  <path project="SUSE:SLE-12:SLE-Module-Containers" repository="standard"/>
+  <path project="SUSE:SLE-12:SLE-Module-Adv-Systems-Management" repository="standard"/>
+</buildinfo>

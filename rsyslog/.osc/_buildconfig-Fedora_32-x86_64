@@ -1,0 +1,122 @@
+%define _project home:rainergerhards:branches:home:rgerhards
+
+### from Fedora:32
+%define _repository standard
+
+Macros:
+%vendor obs://build.opensuse.org/home:rainergerhards
+%_download_url http://download.opensuse.org/repositories
+%_project home:rainergerhards:branches:home:rgerhards
+
+### from Fedora:32
+
+%_repository standard
+:Macros
+
+
+Preinstall: acl attr bash bzip2 coreutils device-mapper-libs diffutils
+Preinstall: filesystem glibc grep libacl libattr
+Preinstall: libgcc m4 ncurses pam nspr libzstd
+Preinstall: popt readline ncurses-libs rpm rpm-sign sed tar zlib
+Preinstall: rpm-libs pcre pcre2 info libselinux sqlite
+Preinstall: elfutils-libelf findutils openssl krb5-libs
+Preinstall: e2fsprogs-libs expat bzip2-libs libstdc++ setup libsepol
+Preinstall: libcap libcap-ng libdb file-libs lua-libs audit-libs
+Preinstall: shadow-utils alternatives util-linux
+Preinstall: xz-libs filesystem libxcrypt openssl-libs
+Preinstall: nss nss-util nss-softokn-freebl nss-softokn sqlite-libs
+Preinstall: perl-Exporter perl-Data-Dumper
+Preinstall: perl-interpreter perl-libs perl-constant perl-Getopt-Long perl-Carp perl-Digest-MD5
+
+#Runscripts: setup
+
+Order: filesystem:glibc
+Order: filesystem:vim-filesystem
+Order: filesystem:emacs-filesystem
+Order: filesystem:acl
+Order: filesystem:attr
+Order: filesystem:libgcc
+Order: filesystem:setup
+
+# for osc local builds only
+Substitute: obs:cli_debug_packages gdb vim strace lrzsz
+# There is also boost169-regex, leading to choice errors of local builds
+Prefer: boost-regex
+
+VMinstall: device-mapper libblkid libuuid libmount libsmartcols
+
+Substitute: mock:chroot_setup_cmd install bash bzip2 coreutils cpio diffutils fedora-release findutils gawk gcc gcc-c++ grep gzip info make patch redhat-rpm-config rpm-build sed shadow-utils tar unzip util-linux which xz
+
+FileProvides: /usr/bin/fipscheck  fipscheck
+FileProvides: /usr/bin/db_stat    libdb-utils
+FileProvides: /usr/bin/gdb-add-index gdb-minimal
+FileProvides: /usr/bin/gpg2 gnupg2
+FileProvides: /usr/bin/ruby       rubypick
+FileProvides: /usr/bin/python python-unversioned-command
+FileProvides: /usr/bin/python2 python2
+FileProvides: /usr/bin/python3 python3
+
+Required: autoconf automake binutils bzip2 gcc gdbm gettext glibc
+Required: libtool ncurses nss-softokn-freebl perl rpm zlib rpm-build
+
+Ignore: generic-release-common:fedora-repos(32)
+Ignore: generic-release-common:fedora-repos(31)
+Ignore: generic-release-common:fedora-repos(30)
+Ignore: generic-release-common:fedora-repos(29)
+Ignore: generic-release-common:fedora-repos(28)
+Ignore: generic-release-common:fedora-repos(27)
+Ignore: generic-release-common:fedora-repos
+Ignore: fedora-repos:system-release(32)
+Ignore: fedora-repos:system-release(31)
+Ignore: fedora-repos:system-release(30)
+Ignore: fedora-repos:system-release(29)
+Ignore: fedora-repos:system-release(28)
+
+Ignore: glibc:glibc-langpack
+Ignore: httpd:system-logos-httpd
+
+Prefer: fontconfig:bitmap-console-fonts
+Prefer: -compat-lua
+Prefer: fonts-filesystem
+
+#
+# Defined as minimum requires by Fedora
+# http://fedoraproject.org/wiki/Packaging:Guidelines#PreReq
+#
+Required: gcc-c++
+
+Support: bind-libs bind-utils bison cpp cracklib cvs cpio
+Support: e2fsprogs file findutils flex gawk gdbm-devel gettext-devel
+Support: glibc-devel gpm groff gzip info less
+Support: make man-db kmod which
+Support: ncurses-devel net-tools openssl
+Support: patch procinfo procps psmisc rcs strace
+Support: texinfo unzip util-linux zlib-devel vim-enhanced
+Support: bzip2-devel shadow-utils
+Support: redhat-rpm-config perl-Digest-MD5
+
+Prefer: -fedora-release generic-release:generic-release-nonproduct
+Prefer: generic-release
+Prefer: -coreutils-single -libcrypt-nss -compat-openssl10-devel
+Prefer: libcurl-minimal curl-minimal
+Prefer: libwayland-egl
+
+# for dependency solving
+%define fedora_version 32
+%define fedora 32
+%define fc32 1
+
+Macros:
+%fedora_version 32
+%fedora 32
+%_vendor redhat
+:Macros
+
+
+Macros:
+
+%distribution home:rainergerhards:branches:home:rgerhards / Fedora_32
+%_project home:rainergerhards:branches:home:rgerhards
+
+### from home:rainergerhards:branches:home:rgerhards
+%_repository Fedora_32

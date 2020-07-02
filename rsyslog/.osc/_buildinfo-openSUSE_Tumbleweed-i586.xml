@@ -1,0 +1,285 @@
+<buildinfo project="home:rainergerhards:branches:home:rgerhards" repository="openSUSE_Tumbleweed" package="rsyslog" downloadurl="https://download.opensuse.org/repositories">
+  <arch>i586</arch>
+  <debuginfo>1</debuginfo>
+  <subpack>rsyslog</subpack>
+  <subpack>rsyslog-diag-tools</subpack>
+  <subpack>rsyslog-doc</subpack>
+  <subpack>rsyslog-module-dbi</subpack>
+  <subpack>rsyslog-module-elasticsearch</subpack>
+  <subpack>rsyslog-module-gcrypt</subpack>
+  <subpack>rsyslog-module-gssapi</subpack>
+  <subpack>rsyslog-module-gtls</subpack>
+  <subpack>rsyslog-module-mmnormalize</subpack>
+  <subpack>rsyslog-module-mysql</subpack>
+  <subpack>rsyslog-module-omhttpfs</subpack>
+  <subpack>rsyslog-module-omtcl</subpack>
+  <subpack>rsyslog-module-openssl</subpack>
+  <subpack>rsyslog-module-pgsql</subpack>
+  <subpack>rsyslog-module-relp</subpack>
+  <subpack>rsyslog-module-snmp</subpack>
+  <subpack>rsyslog-module-udpspoof</subpack>
+  <bdep name="liblua5_3-5" preinstall="1" notmeta="1" version="5.3.5" release="2.4" arch="i586" project="openSUSE:Tumbleweed" repository="standard"/>
+  <bdep name="aaa_base" preinstall="1" notmeta="1" version="84.87+git20200507.e2243a4" release="2.1" arch="i586" project="openSUSE:Tumbleweed" repository="standard"/>
+  <bdep name="attr" preinstall="1" notmeta="1" version="2.4.48" release="3.4" arch="i586" project="openSUSE:Tumbleweed" repository="standard"/>
+  <bdep name="bash" preinstall="1" notmeta="1" version="5.0.11" release="7.1" arch="i586" project="openSUSE:Tumbleweed" repository="standard"/>
+  <bdep name="coreutils" preinstall="1" notmeta="1" version="8.32" release="2.1" arch="i586" project="openSUSE:Tumbleweed" repository="standard"/>
+  <bdep name="diffutils" preinstall="1" notmeta="1" version="3.7" release="3.3" arch="i586" project="openSUSE:Tumbleweed" repository="standard"/>
+  <bdep name="filesystem" preinstall="1" notmeta="1" version="15.5" release="29.1" arch="i586" project="openSUSE:Tumbleweed" repository="standard"/>
+  <bdep name="fillup" preinstall="1" notmeta="1" version="1.42" release="275.1" arch="i586" project="openSUSE:Tumbleweed" repository="standard"/>
+  <bdep name="glibc" preinstall="1" notmeta="1" version="2.31" release="4.1" arch="i686" project="openSUSE:Tumbleweed" repository="standard"/>
+  <bdep name="grep" preinstall="1" notmeta="1" version="3.4" release="1.5" arch="i586" project="openSUSE:Tumbleweed" repository="standard"/>
+  <bdep name="libbz2-1" preinstall="1" notmeta="1" version="1.0.8" release="2.2" arch="i586" project="openSUSE:Tumbleweed" repository="standard"/>
+  <bdep name="libgcc_s1" preinstall="1" notmeta="1" version="10.1.1+git40" release="1.3" arch="i586" project="openSUSE:Tumbleweed" repository="standard"/>
+  <bdep name="libncurses6" preinstall="1" notmeta="1" version="6.2.20200502" release="4.1" arch="i586" project="openSUSE:Tumbleweed" repository="standard"/>
+  <bdep name="pam" preinstall="1" notmeta="1" version="1.3.1+git20190923.ea78d67" release="5.1" arch="i586" project="openSUSE:Tumbleweed" repository="standard"/>
+  <bdep name="permissions" preinstall="1" notmeta="1" version="20200506.1550" release="14.1" arch="i586" project="openSUSE:Tumbleweed" repository="standard"/>
+  <bdep name="rpm" preinstall="1" notmeta="1" version="4.15.1" release="5.1" arch="i586" project="openSUSE:Tumbleweed" repository="standard"/>
+  <bdep name="rpm-config-SUSE" preinstall="1" notmeta="1" version="0.g56" release="1.1" arch="noarch" project="openSUSE:Tumbleweed" repository="standard"/>
+  <bdep name="sed" preinstall="1" notmeta="1" version="4.8" release="1.3" arch="i586" project="openSUSE:Tumbleweed" repository="standard"/>
+  <bdep name="tar" preinstall="1" notmeta="1" version="1.32" release="3.2" arch="i586" project="openSUSE:Tumbleweed" repository="standard"/>
+  <bdep name="libz1" preinstall="1" notmeta="1" version="1.2.11" release="13.1" arch="i586" project="openSUSE:Tumbleweed" repository="standard"/>
+  <bdep name="libselinux1" preinstall="1" notmeta="1" version="3.0" release="1.1" arch="i586" project="openSUSE:Tumbleweed" repository="standard"/>
+  <bdep name="libgcrypt20" preinstall="1" notmeta="1" version="1.8.5" release="3.1" arch="i586" project="openSUSE:Tumbleweed" repository="standard"/>
+  <bdep name="libgpg-error0" preinstall="1" notmeta="1" version="1.37" release="1.1" arch="i586" project="openSUSE:Tumbleweed" repository="standard"/>
+  <bdep name="liblzma5" preinstall="1" notmeta="1" version="5.2.5" release="1.1" arch="i586" project="openSUSE:Tumbleweed" repository="standard"/>
+  <bdep name="libcap2" preinstall="1" notmeta="1" version="2.32" release="1.1" arch="i586" project="openSUSE:Tumbleweed" repository="standard"/>
+  <bdep name="libacl1" preinstall="1" notmeta="1" version="2.2.53" release="3.7" arch="i586" project="openSUSE:Tumbleweed" repository="standard"/>
+  <bdep name="libattr1" preinstall="1" notmeta="1" version="2.4.48" release="3.4" arch="i586" project="openSUSE:Tumbleweed" repository="standard"/>
+  <bdep name="libpopt0" preinstall="1" notmeta="1" version="1.16" release="32.1" arch="i586" project="openSUSE:Tumbleweed" repository="standard"/>
+  <bdep name="libelf1" preinstall="1" notmeta="1" version="0.179" release="1.1" arch="i586" project="openSUSE:Tumbleweed" repository="standard"/>
+  <bdep name="libpcre1" preinstall="1" notmeta="1" version="8.44" release="1.1" arch="i586" project="openSUSE:Tumbleweed" repository="standard"/>
+  <bdep name="libzstd1" preinstall="1" notmeta="1" version="1.4.4" release="1.2" arch="i586" project="openSUSE:Tumbleweed" repository="standard"/>
+  <bdep name="libreadline8" preinstall="1" notmeta="1" version="8.0" release="4.2" arch="i586" project="openSUSE:Tumbleweed" repository="standard"/>
+  <bdep name="util-linux" vminstall="1" version="2.35.1" release="1.1" arch="i586" project="openSUSE:Tumbleweed" repository="standard"/>
+  <bdep name="libmount1" vminstall="1" version="2.35.1" release="1.1" arch="i586" project="openSUSE:Tumbleweed" repository="standard"/>
+  <bdep name="perl-base" vminstall="1" version="5.30.1" release="3.2" arch="i586" project="openSUSE:Tumbleweed" repository="standard"/>
+  <bdep name="libdb-4_8" vminstall="1" version="4.8.30" release="38.4" arch="i586" project="openSUSE:Tumbleweed" repository="standard"/>
+  <bdep name="libsepol1" vminstall="1" version="3.0" release="2.1" arch="i586" project="openSUSE:Tumbleweed" repository="standard"/>
+  <bdep name="libblkid1" vminstall="1" version="2.35.1" release="1.1" arch="i586" project="openSUSE:Tumbleweed" repository="standard"/>
+  <bdep name="libuuid1" vminstall="1" version="2.35.1" release="1.1" arch="i586" project="openSUSE:Tumbleweed" repository="standard"/>
+  <bdep name="libsmartcols1" vminstall="1" version="2.35.1" release="1.1" arch="i586" project="openSUSE:Tumbleweed" repository="standard"/>
+  <bdep name="libcrypt1" vminstall="1" version="4.4.15" release="1.2" arch="i586" project="openSUSE:Tumbleweed" repository="standard"/>
+  <bdep name="kernel-obs-build" vminstall="1" notmeta="1" version="5.6.12" release="1.3" arch="i586" project="openSUSE:Tumbleweed" repository="standard"/>
+  <bdep name="iproute2" vminstall="1" notmeta="1" version="5.6.0" release="3.1" arch="i586" project="openSUSE:Tumbleweed" repository="standard"/>
+  <bdep name="libmnl0" vminstall="1" notmeta="1" version="1.0.4" release="2.1" arch="i586" project="openSUSE:Tumbleweed" repository="standard"/>
+  <bdep name="autoconf" version="2.69" release="17.1" arch="noarch" project="openSUSE:Tumbleweed" repository="standard"/>
+  <bdep name="automake" version="1.16.1" release="5.1" arch="noarch" project="openSUSE:Tumbleweed" repository="standard"/>
+  <bdep name="libtool" version="2.4.6" release="8.5" arch="i586" project="openSUSE:Tumbleweed" repository="standard"/>
+  <bdep name="bison" version="3.6.2" release="1.1" arch="i586" project="openSUSE:Tumbleweed" repository="standard"/>
+  <bdep name="flex" version="2.6.4" release="4.3" arch="i586" project="openSUSE:Tumbleweed" repository="standard"/>
+  <bdep name="pcre-devel" version="8.44" release="1.1" arch="i586" project="openSUSE:Tumbleweed" repository="standard"/>
+  <bdep name="zlib-devel" version="1.2.11" release="13.1" arch="i586" project="openSUSE:Tumbleweed" repository="standard"/>
+  <bdep name="krb5-devel" version="1.18.1" release="1.1" arch="i586" project="openSUSE:Tumbleweed" repository="standard"/>
+  <bdep name="libgnutls-devel" version="3.6.13" release="1.4" arch="i586" project="openSUSE:Tumbleweed" repository="standard"/>
+  <bdep name="libgcrypt-devel" version="1.8.5" release="3.1" arch="i586" project="openSUSE:Tumbleweed" repository="standard"/>
+  <bdep name="libdbi-devel" version="0.9.0.g33" release="3.2" arch="i586" project="openSUSE:Tumbleweed" repository="standard"/>
+  <bdep name="net-snmp-devel" version="5.8" release="4.2" arch="i586" project="openSUSE:Tumbleweed" repository="standard"/>
+  <bdep name="postgresql-devel" version="12" release="1.6" arch="noarch" project="openSUSE:Tumbleweed" repository="standard"/>
+  <bdep name="libnet-devel" version="1.2~rc3" release="5.13" arch="i586" project="openSUSE:Tumbleweed" repository="standard"/>
+  <bdep name="rpm-build" version="4.15.1" release="5.1" arch="i586" project="openSUSE:Tumbleweed" repository="standard"/>
+  <bdep name="gcc-PIE" version="9" release="1.7" arch="i586" project="openSUSE:Tumbleweed" repository="standard"/>
+  <bdep name="systemd" version="245" release="4.1" arch="i586" project="openSUSE:Tumbleweed" repository="standard"/>
+  <bdep name="systemd-devel" version="245" release="4.1" arch="i586" project="openSUSE:Tumbleweed" repository="standard"/>
+  <bdep name="libopenssl-devel" version="1.1.1g" release="1.1" arch="noarch" project="openSUSE:Tumbleweed" repository="standard"/>
+  <bdep name="pkgconf-pkg-config" version="1.6.3" release="1.2" arch="i586" project="openSUSE:Tumbleweed" repository="standard"/>
+  <bdep name="liblogging-devel" version="1.0.6" release="10.12" arch="i586" project="home:rgerhards" repository="openSUSE_Tumbleweed"/>
+  <bdep name="libcurl-devel" version="7.70.0" release="1.1" arch="i586" project="openSUSE:Tumbleweed" repository="standard"/>
+  <bdep name="libmariadb-devel" version="3.1.7" release="1.1" arch="i586" project="openSUSE:Tumbleweed" repository="standard"/>
+  <bdep name="librelp-devel" version="1.6.0" release="2.1" arch="i586" project="home:rainergerhards:branches:home:rgerhards" repository="openSUSE_Tumbleweed"/>
+  <bdep name="liblognorm-devel" version="2.0.6" release="3.1" arch="i586" project="home:rainergerhards:branches:home:rgerhards" repository="openSUSE_Tumbleweed"/>
+  <bdep name="libestr-devel" version="0.1.11" release="3.1" arch="i586" project="home:rainergerhards:branches:home:rgerhards" repository="openSUSE_Tumbleweed"/>
+  <bdep name="libfastjson-devel" version="0.99.8" release="5.1" arch="i586" project="home:rainergerhards:branches:home:rgerhards" repository="openSUSE_Tumbleweed"/>
+  <bdep name="libuuid-devel" version="2.35.1" release="1.1" arch="i586" project="openSUSE:Tumbleweed" repository="standard"/>
+  <bdep name="tcl-devel" version="8.6.10" release="1.3" arch="i586" project="openSUSE:Tumbleweed" repository="standard"/>
+  <bdep name="m4" version="1.4.18" release="5.1" arch="i586" project="openSUSE:Tumbleweed" repository="standard"/>
+  <bdep name="libltdl7" version="2.4.6" release="8.5" arch="i586" project="openSUSE:Tumbleweed" repository="standard"/>
+  <bdep name="libfl-devel" version="2.6.4" release="4.3" arch="i586" project="openSUSE:Tumbleweed" repository="standard"/>
+  <bdep name="libstdc++-devel" version="9" release="1.7" arch="i586" project="openSUSE:Tumbleweed" repository="standard"/>
+  <bdep name="libpcre16-0" version="8.44" release="1.1" arch="i586" project="openSUSE:Tumbleweed" repository="standard"/>
+  <bdep name="libpcrecpp0" version="8.44" release="1.1" arch="i586" project="openSUSE:Tumbleweed" repository="standard"/>
+  <bdep name="libpcreposix0" version="8.44" release="1.1" arch="i586" project="openSUSE:Tumbleweed" repository="standard"/>
+  <bdep name="glibc-devel" version="2.31" release="4.1" arch="i686" project="openSUSE:Tumbleweed" repository="standard"/>
+  <bdep name="libcom_err-devel" version="1.45.6" release="1.1" arch="i586" project="openSUSE:Tumbleweed" repository="standard"/>
+  <bdep name="libverto-devel" version="0.2.6" release="7.16" arch="i586" project="openSUSE:Tumbleweed" repository="standard"/>
+  <bdep name="keyutils-devel" version="1.6" release="1.4" arch="i586" project="openSUSE:Tumbleweed" repository="standard"/>
+  <bdep name="krb5" version="1.18.1" release="1.1" arch="i586" project="openSUSE:Tumbleweed" repository="standard"/>
+  <bdep name="libnettle-devel" version="3.6" release="1.1" arch="i586" project="openSUSE:Tumbleweed" repository="standard"/>
+  <bdep name="p11-kit-devel" version="0.23.20" release="1.1" arch="i586" project="openSUSE:Tumbleweed" repository="standard"/>
+  <bdep name="libtasn1-devel" version="4.16.0" release="1.4" arch="i586" project="openSUSE:Tumbleweed" repository="standard"/>
+  <bdep name="libgnutls30" version="3.6.13" release="1.4" arch="i586" project="openSUSE:Tumbleweed" repository="standard"/>
+  <bdep name="libgpg-error-devel" version="1.37" release="1.1" arch="i586" project="openSUSE:Tumbleweed" repository="standard"/>
+  <bdep name="libdbi3" version="0.9.0.g33" release="3.2" arch="i586" project="openSUSE:Tumbleweed" repository="standard"/>
+  <bdep name="tcpd-devel" version="7.6" release="891.3" arch="i586" project="openSUSE:Tumbleweed" repository="standard"/>
+  <bdep name="rpm-devel" version="4.15.1" release="5.1" arch="i586" project="openSUSE:Tumbleweed" repository="standard"/>
+  <bdep name="libsensors4-devel" version="3.6.0" release="2.1" arch="i586" project="openSUSE:Tumbleweed" repository="standard"/>
+  <bdep name="perl-SNMP" version="5.8" release="4.2" arch="i586" project="openSUSE:Tumbleweed" repository="standard"/>
+  <bdep name="libsnmp30" version="5.8" release="4.2" arch="i586" project="openSUSE:Tumbleweed" repository="standard"/>
+  <bdep name="libnet9" version="1.2~rc3" release="5.13" arch="i586" project="openSUSE:Tumbleweed" repository="standard"/>
+  <bdep name="findutils" version="4.7.0" release="2.4" arch="i586" project="openSUSE:Tumbleweed" repository="standard"/>
+  <bdep name="gcc" version="9" release="1.7" arch="i586" project="openSUSE:Tumbleweed" repository="standard"/>
+  <bdep name="xz" version="5.2.5" release="1.1" arch="i586" project="openSUSE:Tumbleweed" repository="standard"/>
+  <bdep name="gawk" version="5.1.0" release="1.2" arch="i586" project="openSUSE:Tumbleweed" repository="standard"/>
+  <bdep name="file" version="5.38" release="4.1" arch="i586" project="openSUSE:Tumbleweed" repository="standard"/>
+  <bdep name="gzip" version="1.10" release="3.6" arch="i586" project="openSUSE:Tumbleweed" repository="standard"/>
+  <bdep name="make" version="4.3" release="2.1" arch="i586" project="openSUSE:Tumbleweed" repository="standard"/>
+  <bdep name="bzip2" version="1.0.8" release="2.2" arch="i586" project="openSUSE:Tumbleweed" repository="standard"/>
+  <bdep name="cpio" version="2.12" release="9.2" arch="i586" project="openSUSE:Tumbleweed" repository="standard"/>
+  <bdep name="binutils" version="2.34" release="1.3" arch="i586" project="openSUSE:Tumbleweed" repository="standard"/>
+  <bdep name="libdw1" version="0.179" release="1.1" arch="i586" project="openSUSE:Tumbleweed" repository="standard"/>
+  <bdep name="glibc-locale" version="2.31" release="4.1" arch="i586" project="openSUSE:Tumbleweed" repository="standard"/>
+  <bdep name="patch" version="2.7.6" release="3.14" arch="i586" project="openSUSE:Tumbleweed" repository="standard"/>
+  <bdep name="which" version="2.21" release="4.16" arch="i586" project="openSUSE:Tumbleweed" repository="standard"/>
+  <bdep name="gettext-tools" version="0.20.2" release="1.1" arch="i586" project="openSUSE:Tumbleweed" repository="standard"/>
+  <bdep name="librpmbuild9" version="4.15.1" release="5.1" arch="i586" project="openSUSE:Tumbleweed" repository="standard"/>
+  <bdep name="systemd-rpm-macros" version="4" release="2.7" arch="noarch" project="openSUSE:Tumbleweed" repository="standard"/>
+  <bdep name="dwz" version="0.13" release="6.1" arch="i586" project="openSUSE:Tumbleweed" repository="standard"/>
+  <bdep name="rpm-build-perl" version="4.15.1" release="5.1" arch="i586" project="openSUSE:Tumbleweed" repository="standard"/>
+  <bdep name="liblz4-1" version="1.9.2" release="1.6" arch="i586" project="openSUSE:Tumbleweed" repository="standard"/>
+  <bdep name="libseccomp2" version="2.4.2" release="3.1" arch="i586" project="openSUSE:Tumbleweed" repository="standard"/>
+  <bdep name="libpcre2-8-0" version="10.34" release="2.1" arch="i586" project="openSUSE:Tumbleweed" repository="standard"/>
+  <bdep name="libnss_usrfiles2" version="2.27" release="2.2" arch="i586" project="openSUSE:Tumbleweed" repository="standard"/>
+  <bdep name="libkmod2" version="26" release="1.5" arch="i586" project="openSUSE:Tumbleweed" repository="standard"/>
+  <bdep name="libapparmor1" version="2.13.4" release="3.2" arch="i586" project="openSUSE:Tumbleweed" repository="standard"/>
+  <bdep name="libqrencode4" version="4.0.2" release="1.3" arch="i586" project="openSUSE:Tumbleweed" repository="standard"/>
+  <bdep name="libcryptsetup12" version="2.3.1" release="1.1" arch="i586" project="openSUSE:Tumbleweed" repository="standard"/>
+  <bdep name="sysvinit-tools" version="2.96" release="1.1" arch="i586" project="openSUSE:Tumbleweed" repository="standard"/>
+  <bdep name="system-group-hardware" version="20170617" release="11.1" arch="noarch" project="openSUSE:Tumbleweed" repository="standard"/>
+  <bdep name="netcfg" version="11.6" release="7.1" arch="noarch" project="openSUSE:Tumbleweed" repository="standard"/>
+  <bdep name="libsystemd0" version="245" release="4.1" arch="i586" project="openSUSE:Tumbleweed" repository="standard"/>
+  <bdep name="libopenssl1_1" version="1.1.1g" release="2.1" arch="i586" project="openSUSE:Tumbleweed" repository="standard"/>
+  <bdep name="libopenssl-1_1-devel" version="1.1.1g" release="2.1" arch="i586" project="openSUSE:Tumbleweed" repository="standard"/>
+  <bdep name="openssl" version="1.1.1g" release="1.1" arch="noarch" project="openSUSE:Tumbleweed" repository="standard"/>
+  <bdep name="pkgconf" version="1.6.3" release="1.2" arch="i586" project="openSUSE:Tumbleweed" repository="standard"/>
+  <bdep name="pkgconf-m4" version="1.6.3" release="1.2" arch="noarch" project="openSUSE:Tumbleweed" repository="standard"/>
+  <bdep name="liblogging0" version="1.0.6" release="10.12" arch="i586" project="home:rgerhards" repository="openSUSE_Tumbleweed"/>
+  <bdep name="libcurl4" version="7.70.0" release="1.1" arch="i586" project="openSUSE:Tumbleweed" repository="standard"/>
+  <bdep name="libmariadb3" version="3.1.7" release="1.1" arch="i586" project="openSUSE:Tumbleweed" repository="standard"/>
+  <bdep name="librelp0" version="1.6.0" release="2.1" arch="i586" project="home:rainergerhards:branches:home:rgerhards" repository="openSUSE_Tumbleweed"/>
+  <bdep name="liblognorm5" version="2.0.6" release="3.1" arch="i586" project="home:rainergerhards:branches:home:rgerhards" repository="openSUSE_Tumbleweed"/>
+  <bdep name="libestr0" version="0.1.11" release="3.1" arch="i586" project="home:rainergerhards:branches:home:rgerhards" repository="openSUSE_Tumbleweed"/>
+  <bdep name="libfastjson4" version="0.99.8" release="5.1" arch="i586" project="home:rainergerhards:branches:home:rgerhards" repository="openSUSE_Tumbleweed"/>
+  <bdep name="tcl" version="8.6.10" release="1.3" arch="i586" project="openSUSE:Tumbleweed" repository="standard"/>
+  <bdep name="libgdbm6" version="1.18.1" release="3.2" arch="i586" project="openSUSE:Tumbleweed" repository="standard"/>
+  <bdep name="libgdbm_compat4" version="1.18.1" release="3.2" arch="i586" project="openSUSE:Tumbleweed" repository="standard"/>
+  <bdep name="libfl2" version="2.6.4" release="4.3" arch="i586" project="openSUSE:Tumbleweed" repository="standard"/>
+  <bdep name="libstdc++6-devel-gcc9" version="9.3.1+git1296" release="1.7" arch="i586" project="openSUSE:Tumbleweed" repository="standard"/>
+  <bdep name="linux-glibc-devel" version="5.6" release="1.1" arch="i586" project="openSUSE:Tumbleweed" repository="standard"/>
+  <bdep name="libxcrypt-devel" version="4.4.15" release="1.2" arch="i586" project="openSUSE:Tumbleweed" repository="standard"/>
+  <bdep name="libcom_err2" version="1.45.6" release="1.1" arch="i586" project="openSUSE:Tumbleweed" repository="standard"/>
+  <bdep name="libverto1" version="0.2.6" release="7.16" arch="i586" project="openSUSE:Tumbleweed" repository="standard"/>
+  <bdep name="libkeyutils1" version="1.6" release="1.4" arch="i586" project="openSUSE:Tumbleweed" repository="standard"/>
+  <bdep name="gmp-devel" version="6.2.0" release="2.2" arch="i586" project="openSUSE:Tumbleweed" repository="standard"/>
+  <bdep name="libhogweed6" version="3.6" release="1.1" arch="i586" project="openSUSE:Tumbleweed" repository="standard"/>
+  <bdep name="libnettle8" version="3.6" release="1.1" arch="i586" project="openSUSE:Tumbleweed" repository="standard"/>
+  <bdep name="libp11-kit0" version="0.23.20" release="1.1" arch="i586" project="openSUSE:Tumbleweed" repository="standard"/>
+  <bdep name="libtasn1-6" version="4.16.0" release="1.4" arch="i586" project="openSUSE:Tumbleweed" repository="standard"/>
+  <bdep name="libgmp10" version="6.2.0" release="2.2" arch="i586" project="openSUSE:Tumbleweed" repository="standard"/>
+  <bdep name="libunistring2" version="0.9.10" release="2.6" arch="i586" project="openSUSE:Tumbleweed" repository="standard"/>
+  <bdep name="libidn2-0" version="2.3.0" release="2.1" arch="i586" project="openSUSE:Tumbleweed" repository="standard"/>
+  <bdep name="info" version="6.7" release="1.3" arch="i586" project="openSUSE:Tumbleweed" repository="standard"/>
+  <bdep name="libwrap0" version="7.6" release="891.3" arch="i586" project="openSUSE:Tumbleweed" repository="standard"/>
+  <bdep name="popt-devel" version="1.16" release="32.1" arch="i586" project="openSUSE:Tumbleweed" repository="standard"/>
+  <bdep name="libzstd-devel" version="1.4.4" release="1.2" arch="i586" project="openSUSE:Tumbleweed" repository="standard"/>
+  <bdep name="libsensors4" version="3.6.0" release="2.1" arch="i586" project="openSUSE:Tumbleweed" repository="standard"/>
+  <bdep name="net-snmp" version="5.8" release="4.2" arch="i586" project="openSUSE:Tumbleweed" repository="standard"/>
+  <bdep name="snmp-mibs" version="5.8" release="4.2" arch="i586" project="openSUSE:Tumbleweed" repository="standard"/>
+  <bdep name="libaudit1" version="2.8.5" release="1.2" arch="i586" project="openSUSE:Tumbleweed" repository="standard"/>
+  <bdep name="libcap-ng0" version="0.7.10" release="1.1" arch="i586" project="openSUSE:Tumbleweed" repository="standard"/>
+  <bdep name="libutempter0" version="1.2.0" release="1.1" arch="i586" project="openSUSE:Tumbleweed" repository="standard"/>
+  <bdep name="libeconf0" version="0.3.5+git20200203.3144b69" release="1.1" arch="i586" project="openSUSE:Tumbleweed" repository="standard"/>
+  <bdep name="libfdisk1" version="2.35.1" release="1.1" arch="i586" project="openSUSE:Tumbleweed" repository="standard"/>
+  <bdep name="shadow" version="4.8.1" release="1.1" arch="i586" project="openSUSE:Tumbleweed" repository="standard"/>
+  <bdep name="gcc9" version="9.3.1+git1296" release="1.7" arch="i586" project="openSUSE:Tumbleweed" repository="standard"/>
+  <bdep name="cpp" version="9" release="1.7" arch="i586" project="openSUSE:Tumbleweed" repository="standard"/>
+  <bdep name="update-alternatives" version="1.19.0.5" release="5.2" arch="i586" project="openSUSE:Tumbleweed" repository="standard"/>
+  <bdep name="libmagic1" version="5.38" release="4.1" arch="i586" project="openSUSE:Tumbleweed" repository="standard"/>
+  <bdep name="libctf-nobfd0" version="2.34" release="1.3" arch="i586" project="openSUSE:Tumbleweed" repository="standard"/>
+  <bdep name="libctf0" version="2.34" release="1.3" arch="i586" project="openSUSE:Tumbleweed" repository="standard"/>
+  <bdep name="glibc-locale-base" version="2.31" release="4.1" arch="i586" project="openSUSE:Tumbleweed" repository="standard"/>
+  <bdep name="libxml2-2" version="2.9.10" release="3.1" arch="i586" project="openSUSE:Tumbleweed" repository="standard"/>
+  <bdep name="libtextstyle0" version="0.20.2" release="1.1" arch="i586" project="openSUSE:Tumbleweed" repository="standard"/>
+  <bdep name="gettext-runtime" version="0.20.2" release="1.1" arch="i586" project="openSUSE:Tumbleweed" repository="standard"/>
+  <bdep name="libtirpc3" version="1.2.6" release="1.1" arch="i586" project="openSUSE:Tumbleweed" repository="standard"/>
+  <bdep name="libnsl2" version="1.2.0" release="2.15" arch="i586" project="openSUSE:Tumbleweed" repository="standard"/>
+  <bdep name="libcrack2" version="2.9.6" release="2.15" arch="i586" project="openSUSE:Tumbleweed" repository="standard"/>
+  <bdep name="system-user-root" version="20190513" release="1.6" arch="noarch" project="openSUSE:Tumbleweed" repository="standard"/>
+  <bdep name="libjson-c4" version="0.13.1" release="1.7" arch="i586" project="openSUSE:Tumbleweed" repository="standard"/>
+  <bdep name="libdevmapper1_03" version="1.02.163" release="10.1" arch="i586" project="openSUSE:Tumbleweed" repository="standard"/>
+  <bdep name="libargon2-1" version="0.0+git20190520.62358ba" release="1.1" arch="i586" project="openSUSE:Tumbleweed" repository="standard"/>
+  <bdep name="blog" version="2.20" release="1.1" arch="i586" project="openSUSE:Tumbleweed" repository="standard"/>
+  <bdep name="libblogger2" version="2.20" release="1.1" arch="i586" project="openSUSE:Tumbleweed" repository="standard"/>
+  <bdep name="sysuser-shadow" version="3.0" release="3.1" arch="noarch" project="openSUSE:Tumbleweed" repository="standard"/>
+  <bdep name="openssl-1_1" version="1.1.1g" release="2.1" arch="i586" project="openSUSE:Tumbleweed" repository="standard"/>
+  <bdep name="libpkgconf3" version="1.6.3" release="1.2" arch="i586" project="openSUSE:Tumbleweed" repository="standard"/>
+  <bdep name="libldap-2_4-2" version="2.4.50" release="52.1" arch="i586" project="openSUSE:Tumbleweed" repository="standard"/>
+  <bdep name="libssh4" version="0.9.4" release="1.1" arch="i586" project="openSUSE:Tumbleweed" repository="standard"/>
+  <bdep name="libnghttp2-14" version="1.40.0" release="1.2" arch="i586" project="openSUSE:Tumbleweed" repository="standard"/>
+  <bdep name="libpsl5" version="0.21.0" release="2.3" arch="i586" project="openSUSE:Tumbleweed" repository="standard"/>
+  <bdep name="libgmpxx4" version="6.2.0" release="2.2" arch="i586" project="openSUSE:Tumbleweed" repository="standard"/>
+  <bdep name="libffi8" version="3.3.git30" release="1.2" arch="i586" project="openSUSE:Tumbleweed" repository="standard"/>
+  <bdep name="libtasn1" version="4.16.0" release="1.4" arch="i586" project="openSUSE:Tumbleweed" repository="standard"/>
+  <bdep name="libzio1" version="1.06" release="4.9" arch="i586" project="openSUSE:Tumbleweed" repository="standard"/>
+  <bdep name="logrotate" version="3.16.0" release="2.1" arch="i586" project="openSUSE:Tumbleweed" repository="standard"/>
+  <bdep name="perl-Term-ReadKey" version="2.38" release="1.3" arch="i586" project="openSUSE:Tumbleweed" repository="standard"/>
+  <bdep name="terminfo-base" version="6.2.20200502" release="4.1" arch="i586" project="openSUSE:Tumbleweed" repository="standard"/>
+  <bdep name="libsemanage1" version="3.0" release="1.1" arch="i586" project="openSUSE:Tumbleweed" repository="standard"/>
+  <bdep name="chkstat" version="1550_20200506" release="14.1" arch="i586" project="openSUSE:Tumbleweed" repository="standard"/>
+  <bdep name="permissions-config" version="1550_20200506" release="14.1" arch="i586" project="openSUSE:Tumbleweed" repository="standard"/>
+  <bdep name="libmpfr6" version="4.0.2" release="3.1" arch="i586" project="openSUSE:Tumbleweed" repository="standard"/>
+  <bdep name="libmpc3" version="1.1.0" release="2.5" arch="i586" project="openSUSE:Tumbleweed" repository="standard"/>
+  <bdep name="libisl22" version="0.22.1" release="1.1" arch="i586" project="openSUSE:Tumbleweed" repository="standard"/>
+  <bdep name="cpp9" version="9.3.1+git1296" release="1.7" arch="i586" project="openSUSE:Tumbleweed" repository="standard"/>
+  <bdep name="libasan5" version="9.3.1+git1296" release="1.7" arch="i586" project="openSUSE:Tumbleweed" repository="standard"/>
+  <bdep name="file-magic" version="5.38" release="4.1" arch="noarch" project="openSUSE:Tumbleweed" repository="standard"/>
+  <bdep name="libtirpc-netconfig" version="1.2.6" release="1.1" arch="i586" project="openSUSE:Tumbleweed" repository="standard"/>
+  <bdep name="cracklib" version="2.9.6" release="2.15" arch="i586" project="openSUSE:Tumbleweed" repository="standard"/>
+  <bdep name="libudev1" version="245" release="4.1" arch="i586" project="openSUSE:Tumbleweed" repository="standard"/>
+  <bdep name="libsasl2-3" version="2.1.27" release="3.2" arch="i586" project="openSUSE:Tumbleweed" repository="standard"/>
+  <bdep name="libssh-config" version="0.9.4" release="1.1" arch="i586" project="openSUSE:Tumbleweed" repository="standard"/>
+  <bdep name="libstdc++6" version="10.1.1+git40" release="1.3" arch="i586" project="openSUSE:Tumbleweed" repository="standard"/>
+  <bdep name="libgomp1" version="10.1.1+git40" release="1.3" arch="i586" project="openSUSE:Tumbleweed" repository="standard"/>
+  <bdep name="libatomic1" version="10.1.1+git40" release="1.3" arch="i586" project="openSUSE:Tumbleweed" repository="standard"/>
+  <bdep name="libitm1" version="10.1.1+git40" release="1.3" arch="i586" project="openSUSE:Tumbleweed" repository="standard"/>
+  <bdep name="libubsan1" version="10.1.1+git40" release="1.3" arch="i586" project="openSUSE:Tumbleweed" repository="standard"/>
+  <bdep name="postgresql12-devel" version="12.2" release="2.1" arch="i586" project="openSUSE:Tumbleweed" repository="standard"/>
+  <bdep name="libpq5" version="12.2" release="2.1" arch="i586" project="openSUSE:Tumbleweed" repository="standard"/>
+  <bdep name="libecpg6" version="12.2" release="2.1" arch="i586" project="openSUSE:Tumbleweed" repository="standard"/>
+  <bdep name="gdb" notmeta="1" version="8.3.1" release="10.1" arch="i586" project="openSUSE:Tumbleweed" repository="standard"/>
+  <bdep name="vim" notmeta="1" version="8.2.0701" release="2.1" arch="i586" project="openSUSE:Tumbleweed" repository="standard"/>
+  <bdep name="strace" notmeta="1" version="5.6" release="1.1" arch="i586" project="openSUSE:Tumbleweed" repository="standard"/>
+  <bdep name="less" notmeta="1" version="557" release="1.1" arch="i586" project="openSUSE:Tumbleweed" repository="standard"/>
+  <bdep name="rzsz" notmeta="1" version="0.12.21~rc" release="3.1" arch="i586" project="openSUSE:Tumbleweed" repository="standard"/>
+  <bdep name="perl" notmeta="1" version="5.30.1" release="3.2" arch="i586" project="openSUSE:Tumbleweed" repository="standard"/>
+  <bdep name="build-mkbaselibs" notmeta="1" version="20200131" release="1.2" arch="noarch" project="openSUSE:Tumbleweed" repository="standard"/>
+  <bdep name="brp-check-suse" notmeta="1" version="84.87+git20200510.8ff16cf" release="1.1" arch="i586" project="openSUSE:Tumbleweed" repository="standard"/>
+  <bdep name="post-build-checks" notmeta="1" version="84.87+git20200323.45c6eba" release="1.1" arch="noarch" project="openSUSE:Tumbleweed" repository="standard"/>
+  <bdep name="rpmlint-Factory" notmeta="1" version="1.0" release="98.1" arch="noarch" project="openSUSE:Tumbleweed" repository="standard"/>
+  <bdep name="hostname" notmeta="1" version="3.21" release="3.1" arch="i586" project="openSUSE:Tumbleweed" repository="standard"/>
+  <bdep name="build-compare" notmeta="1" version="20200514T095116.be3487c" release="1.1" arch="noarch" project="openSUSE:Tumbleweed" repository="standard"/>
+  <bdep name="syslog-service" notmeta="1" version="2.0" release="791.1" arch="noarch" project="openSUSE:Tumbleweed" repository="standard"/>
+  <bdep name="system-user-news" notmeta="1" version="20170617" release="11.1" arch="noarch" project="openSUSE:Tumbleweed" repository="standard"/>
+  <bdep name="libexpat1" notmeta="1" version="2.2.9" release="1.2" arch="i586" project="openSUSE:Tumbleweed" repository="standard"/>
+  <bdep name="libpython3_8-1_0" notmeta="1" version="3.8.3" release="1.3" arch="i586" project="openSUSE:Tumbleweed" repository="standard"/>
+  <bdep name="python3-base" notmeta="1" version="3.8.3" release="1.3" arch="i586" project="openSUSE:Tumbleweed" repository="standard"/>
+  <bdep name="vim-data-common" notmeta="1" version="8.2.0701" release="2.1" arch="noarch" project="openSUSE:Tumbleweed" repository="standard"/>
+  <bdep name="ncurses-utils" notmeta="1" version="6.2.20200502" release="4.1" arch="i586" project="openSUSE:Tumbleweed" repository="standard"/>
+  <bdep name="aaa_base-malloccheck" notmeta="1" version="84.87+git20200507.e2243a4" release="2.1" arch="i586" project="openSUSE:Tumbleweed" repository="standard"/>
+  <bdep name="rpmlint-mini" notmeta="1" version="1.10" release="17.7" arch="i586" project="openSUSE:Tumbleweed" repository="standard"/>
+  <bdep name="rpm-build-python" notmeta="1" version="4.15.1" release="5.1" arch="i586" project="openSUSE:Tumbleweed" repository="standard"/>
+  <bdep name="wicked-service" notmeta="1" version="0.6.63" release="1.1" arch="i586" project="openSUSE:Tumbleweed" repository="standard"/>
+  <bdep name="python-rpm-macros" notmeta="1" version="20200207.5feb6c1" release="2.1" arch="noarch" project="openSUSE:Tumbleweed" repository="standard"/>
+  <bdep name="sysconfig" notmeta="1" version="0.85.4" release="1.1" arch="i586" project="openSUSE:Tumbleweed" repository="standard"/>
+  <bdep name="wicked" notmeta="1" version="0.6.63" release="1.1" arch="i586" project="openSUSE:Tumbleweed" repository="standard"/>
+  <bdep name="sysconfig-netconfig" notmeta="1" version="0.85.4" release="1.1" arch="i586" project="openSUSE:Tumbleweed" repository="standard"/>
+  <bdep name="libdbus-1-3" notmeta="1" version="1.12.16" release="2.2" arch="i586" project="openSUSE:Tumbleweed" repository="standard"/>
+  <bdep name="libnl3-200" notmeta="1" version="3.5.0" release="1.2" arch="i586" project="openSUSE:Tumbleweed" repository="standard"/>
+  <bdep name="util-linux-systemd" notmeta="1" version="2.35.1" release="1.1" arch="i586" project="openSUSE:Tumbleweed" repository="standard"/>
+  <bdep name="libnl-config" notmeta="1" version="3.5.0" release="1.2" arch="noarch" project="openSUSE:Tumbleweed" repository="standard"/>
+  <bdep name="syslogd" notmeta="1" version="1.4.1" release="791.1" arch="i586" project="openSUSE:Tumbleweed" repository="standard"/>
+  <bdep name="klogd" notmeta="1" version="1.4.1" release="791.1" arch="i586" project="openSUSE:Tumbleweed" repository="standard"/>
+  <path project="home:rainergerhards:branches:home:rgerhards" repository="openSUSE_Tumbleweed" url="https://download.opensuse.org/repositories/home:/rainergerhards:/branches:/home:/rgerhards/openSUSE_Tumbleweed/"/>
+  <path project="home:rgerhards" repository="openSUSE_Tumbleweed" url="https://download.opensuse.org/repositories/home:/rgerhards/openSUSE_Tumbleweed/"/>
+  <path project="openSUSE:Factory" repository="snapshot"/>
+  <path project="openSUSE:Tumbleweed" repository="standard"/>
+  <path project="openSUSE:Factory" repository="ports"/>
+</buildinfo>
