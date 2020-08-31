@@ -1,12 +1,12 @@
 Format: 3.0 (quilt)
 Source: rsyslog
-Binary: rsyslog, rsyslog-doc, rsyslog-mysql, rsyslog-pgsql, rsyslog-mongodb, rsyslog-czmq, rsyslog-omclickhouse, rsyslog-relp, rsyslog-elasticsearch, rsyslog-mmjsonparse, rsyslog-imptcp, rsyslog-mmnormalize, rsyslog-mmanon, rsyslog-mmfields, rsyslog-mmgrok, rsyslog-omrabbitmq, rsyslog-imdocker, rsyslog-improg, rsyslog-imkmsg, rsyslog-mmutf8fix, rsyslog-gnutls, rsyslog-openssl, rsyslog-pmnormalize, rsyslog-utils, rsyslog-mmrm1stspace, rsyslog-kafka, rsyslog-redis, rsyslog-omstdout, rsyslog-fmhttp, rsyslog-fmhash, rsyslog-mmkubernetes
+Binary: rsyslog, rsyslog-doc, rsyslog-impcap, rsyslog-mysql, rsyslog-pgsql, rsyslog-mongodb, rsyslog-czmq, rsyslog-omclickhouse, rsyslog-relp, rsyslog-elasticsearch, rsyslog-mmjsonparse, rsyslog-imptcp, rsyslog-mmnormalize, rsyslog-mmanon, rsyslog-mmfields, rsyslog-mmgrok, rsyslog-omrabbitmq, rsyslog-imdocker, rsyslog-improg, rsyslog-imkmsg, rsyslog-mmutf8fix, rsyslog-gnutls, rsyslog-openssl, rsyslog-pmnormalize, rsyslog-utils, rsyslog-mmrm1stspace, rsyslog-kafka, rsyslog-redis, rsyslog-omstdout, rsyslog-fmhttp, rsyslog-fmhash, rsyslog-mmkubernetes
 Architecture: any all
-Version: 8.2006.0-0adiscon2groovy1
+Version: 8.2008.0-0adiscon1groovy1
 Maintainer: Andre Lorbach <alorbach@adiscon.com>
 Homepage: http://www.rsyslog.com/
 Standards-Version: 3.9.2
-Build-Depends: debhelper (>= 12), dpkg-dev (>= 1.6.1), autotools-dev (>= 20100122.1), dh-autoreconf, librabbitmq-dev, librabbitmq4, libczmq-dev (>= 4.0.0), zlib1g-dev, libmysqlclient-dev, libpq-dev, libgrok-dev, libgrok1, libmongoc-dev, librelp-dev (>= 1.2.17), libestr-dev (>= 0.1.2), liblognorm-dev (>= 1.0.0), libfastjson-dev (>= 0.99.7), libglib2.0-dev, uuid-dev, libkrb5-dev, libgnutls28-dev, pkg-config, dh-apparmor, dh-systemd (>= 1.4), libcurl4-gnutls-dev, bison, libgcrypt-dev, python3-docutils, libsystemd-dev (>= 209) [linux-any], librdkafka-dev, liblz4-dev, libsasl2-dev, libssl-dev, libhiredis-dev
+Build-Depends: debhelper (>= 12), dpkg-dev (>= 1.6.1), autotools-dev (>= 20100122.1), dh-autoreconf, librabbitmq-dev, librabbitmq4, libczmq-dev (>= 4.0.0), zlib1g-dev, libmysqlclient-dev, libpq-dev, libgrok-dev, libgrok1, libmongoc-dev, librelp-dev (>= 1.2.17), libestr-dev (>= 0.1.2), liblognorm-dev (>= 1.0.0), libfastjson-dev (>= 0.99.7), libglib2.0-dev, libpcap-dev, uuid-dev, libkrb5-dev, libgnutls28-dev, pkg-config, dh-apparmor, dh-systemd (>= 1.4), libcurl4-gnutls-dev, bison, libgcrypt-dev, python3-docutils, libsystemd-dev (>= 209) [linux-any], librdkafka-dev, liblz4-dev, libsasl2-dev, libssl-dev, libhiredis-dev
 Package-List:
  rsyslog deb admin important arch=any
  rsyslog-czmq deb admin optional arch=any
@@ -17,6 +17,7 @@ Package-List:
  rsyslog-gnutls deb admin extra arch=any
  rsyslog-imdocker deb admin extra arch=any
  rsyslog-imkmsg deb admin extra arch=any
+ rsyslog-impcap deb admin extra arch=any
  rsyslog-improg deb admin extra arch=any
  rsyslog-imptcp deb admin extra arch=any
  rsyslog-kafka deb admin extra arch=any
@@ -40,15 +41,15 @@ Package-List:
  rsyslog-relp deb admin extra arch=any
  rsyslog-utils deb admin extra arch=any
 Checksums-Sha1:
- ad165d9e70cb9b70ee060fda25df458914df3a16 3047140 rsyslog_8.2006.0.orig.tar.gz
- dced64397e0a6ab22b927e2b0d13c9d4f6c3866b 20324 rsyslog_8.2006.0-0adiscon2groovy1.debian.tar.xz
+ 4c7364dbcd6683fe238fbac54a3293960a700ebd 3051049 rsyslog_8.2008.0.orig.tar.gz
+ ad31d476d5189d36b496b8ab0b6798b23c00145c 20352 rsyslog_8.2008.0-0adiscon1groovy1.debian.tar.xz
 Checksums-Sha256:
- d9589e64866f2fdc5636af4cae9d60ebf1e3257bb84b81ee953ede6a05878e97 3047140 rsyslog_8.2006.0.orig.tar.gz
- 891848929f0ea1c668a64da5aab801c73ee31d457f587a3c2ed3c77881e8d27b 20324 rsyslog_8.2006.0-0adiscon2groovy1.debian.tar.xz
+ 09d2b6c8bc2f016598aed2bb719e03f822bb01d720c61e4d6e725e00dca1b650 3051049 rsyslog_8.2008.0.orig.tar.gz
+ f37eb8abfcc90719aa05fd1272740502d09a0bf4186f6e87672318ca9cdab844 20352 rsyslog_8.2008.0-0adiscon1groovy1.debian.tar.xz
 Files:
- 33de768941953ceeca9d1a437b47891b 3047140 rsyslog_8.2006.0.orig.tar.gz
- b067c77e06a42da9c8bd418b2f93c21f 20324 rsyslog_8.2006.0-0adiscon2groovy1.debian.tar.xz
+ 9b6ae1a517231764ad4fbd68181cc23e 3051049 rsyslog_8.2008.0.orig.tar.gz
+ c0fa3ec684222207da7e4d38a7ed8963 20352 rsyslog_8.2008.0-0adiscon1groovy1.debian.tar.xz
 Original-Maintainer: Michael Biebl <biebl@debian.org>
 Original-Vcs-Browser: http://git.debian.org/?p=collab-maint/rsyslog.git;a=summary
 Original-Vcs-Git: git://git.debian.org/git/collab-maint/rsyslog.git
-DEBTRANSFORM-TAR: rsyslog-8.2006.0.tar.gz\n
+DEBTRANSFORM-TAR: rsyslog-8.2008.0.tar.gz\n

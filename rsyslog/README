@@ -1,0 +1,21 @@
+Steps to update debian'ish release
+----------------------------------
+
+1. requires rsyslog-pkg-ubuntu git project
+2. update CURR_VERSION
+3. rm old release *xz *orig* files
+4. in rsyslog-pkg-ubuntu update changelog file version (see edit_file.sh there)
+5. run ./build-ubuntu.sh (also prepares debian!)
+6. osc add *xz *orig* files (should have new version number now)
+7. consider local build via osc build ... [osc repos for what is supported]
+8. upload to obs (osc commit)
+--- when all well ---
+
+IMPORTANT: OBS defintions are mirrored via git (because OBS otherwise
+rate-limits our CI). The github mirror is used in CI. So make sure you
+commit final changes to git as well. This can also be used in the
+interim when an actual osc commit is not desired for whatever reason.
+
+submit PR to rsyslog-pkg-ubuntu
+
+Note: in-version usually changes only require changes to rsyslog-pkg-ubuntu

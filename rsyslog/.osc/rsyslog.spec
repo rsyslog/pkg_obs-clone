@@ -74,7 +74,7 @@ Name:           rsyslog
 Summary:        The enhanced syslogd for Linux and Unix
 License:        (GPL-3.0+ and Apache-2.0)
 Group:          System/Daemons
-Version: 8.2006.0
+Version: 8.2008.0
 Release:        3
 
 %if 0%{?rhel_version} || 0%{?suse_version} || 0%{?centos_version}
@@ -343,18 +343,15 @@ Source8:        module-snmp
 Source9:        module-udpspoof
 Source14:       http://www.rsyslog.com/files/download/rsyslog/rsyslog-doc-%{version}.tar.gz
 Source15:       rsyslog.firewall
+Source16: rsyslog.service.suse
 Source22: rsyslog.conf.fedora
 Source23: rsyslog.sysconfig.fedora28
 Source24: rsyslog.log.fedora28
+Source26: rsyslog.service.fedora
 # source 3 are CentOS
+Source36: rsyslog.service.centos
 Source37: rsyslog.conf.centos7
 
-%if 0%{?fedora}
-Patch0: rsyslog-service-fedora.patch
-%endif
-%if 0%{?rhel_version} || 0%{?centos_version}
-Patch0: rsyslog-service-centos-rhel.patch
-%endif
 
 # PATCH-FIX-OPENSUSE rsyslog-unit.patch crrodriguez@opensuse.org Customize upstream systemd unit for openSUSE needs.
 %if 0%{?suse_version} > 1320
@@ -764,17 +761,9 @@ This module provides an output module for TCL.
 %prep
 %setup -q -a 14
 #
-%if %{with systemd}
-for file in rsyslog-service-prepare; do
-	sed \
-	-e 's;RUN_DIR;%{rsyslog_rundir};g' \
-	-e 's;ADDITIONAL_SOCKETS;%{rsyslog_sockets_cfg};g' \
-	"%{_sourcedir}/${file}.in" > "${file}"
-done
-%endif
 
 %if 0%{?fedora} || 0%{?rhel_version} || 0%{?centos_version}
-%patch0 -p1 -b .service
+#%patch0 -p1 -b .service
 %endif
 
 %build
@@ -925,6 +914,24 @@ make %{?_smp_mflags:%{_smp_mflags}} V=1
 
 %install
 make install DESTDIR="%{buildroot}"  V=1
+%if %{with systemd}
+%if 0%{?suse_version}
+    install -D -m 644 %{SOURCE16} %{buildroot}%{_unitdir}/rsyslog.service
+%else
+  %if 0%{?fedora}
+    install -D -m 644 %{SOURCE26} %{buildroot}%{_unitdir}/rsyslog.service
+  %else
+    install -D -m 644 %{SOURCE36} %{buildroot}%{_unitdir}/rsyslog.service
+  %endif
+%endif
+for file in rsyslog-service-prepare; do
+	sed \
+	-e 's;RUN_DIR;%{rsyslog_rundir};g' \
+	-e 's;ADDITIONAL_SOCKETS;%{rsyslog_sockets_cfg};g' \
+	"%{_sourcedir}/${file}.in" > "${file}"
+	ls -l %{buildroot}%{_unitdir}/rsyslog.service
+done
+%endif
 #
 rm -f %{buildroot}%{rsyslog_module_dir_nodeps}/*.la
 #
@@ -1077,7 +1084,9 @@ chmod 644 %{buildroot}%{rsyslog_sockets_cfg}
   %endif
 
 # firewall config
-install -m 644 -D %{SOURCE15} %{buildroot}/%{_sysconfdir}/sysconfig/SuSEfirewall2.d/services/%{name}
+%if 0%{?suse_version} <= 1500
+  install -m 644 -D %{SOURCE15} %{buildroot}/%{_sysconfdir}/sysconfig/SuSEfirewall2.d/services/%{name}
+%endif
 %endif
 
 %clean
@@ -1324,7 +1333,9 @@ fi
 %if 0%{?suse_version}
 %{APPARMOR_PROFILE_PATH_DIR_COMMANDS}
 %config %{APPARMOR_PROFILE_PATH}/usr.sbin.rsyslogd
+%if 0%{?suse_version} <= 1500
 %config(noreplace) %attr(0644,root,root) %{_sysconfdir}/sysconfig/SuSEfirewall2.d/services/%{name}
+%endif
 %endif
 
 %files doc
@@ -1505,6 +1516,9 @@ fi
 %endif
 
 %changelog
+* Tue Aug 25 2020 Rainer Gerhards <rgerhards@adiscon.com> - 8.2008.0-1
+  new upstream release
+
 * Tue Jun 23 2020 Rainer Gerhards <rgerhards@adiscon.com> - 8.2006.0-1
   new upstream release
 

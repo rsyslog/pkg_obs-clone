@@ -1,12 +1,12 @@
 Format: 3.0 (quilt)
 Source: rsyslog
-Binary: rsyslog, rsyslog-doc, rsyslog-mysql, rsyslog-pgsql, rsyslog-omclickhouse, rsyslog-relp, rsyslog-elasticsearch, rsyslog-mmjsonparse, rsyslog-imptcp, rsyslog-mmnormalize, rsyslog-mmanon, rsyslog-mmfields, rsyslog-omrabbitmq, rsyslog-improg, rsyslog-imkmsg, rsyslog-mmutf8fix, rsyslog-gnutls, rsyslog-udpspoof, rsyslog-openssl, rsyslog-utils, rsyslog-mmrm1stspace, rsyslog-kafka, rsyslog-omstdout, rsyslog-fmhttp, rsyslog-fmhash, rsyslog-mmkubernetes
+Binary: rsyslog, rsyslog-doc, rsyslog-mysql, rsyslog-pgsql, rsyslog-omclickhouse, rsyslog-relp, rsyslog-elasticsearch, rsyslog-mmjsonparse, rsyslog-imptcp, rsyslog-mmnormalize, rsyslog-mmanon, rsyslog-mmfields, rsyslog-omrabbitmq, rsyslog-improg, rsyslog-imkmsg, rsyslog-impcap, rsyslog-mmutf8fix, rsyslog-gnutls, rsyslog-udpspoof, rsyslog-openssl, rsyslog-utils, rsyslog-mmrm1stspace, rsyslog-kafka, rsyslog-omstdout, rsyslog-fmhttp, rsyslog-fmhash, rsyslog-mmkubernetes
 Architecture: any all
-Version: 8.2006.0-0adiscon2trusty1
+Version: 8.2008.0-0adiscon1trusty1
 Maintainer: Andre Lorbach <alorbach@adiscon.com>
 Homepage: http://www.rsyslog.com/
 Standards-Version: 3.9.2
-Build-Depends: debhelper (>= 8), dpkg-dev (>= 1.6.1), autotools-dev (>= 20100122.1), dh-autoreconf, librabbitmq-dev, librabbitmq1, zlib1g-dev, libmysqlclient-dev, libpq-dev, librelp-dev (>= 1.2.17), libestr-dev (>= 0.1.2), liblognorm-dev (>= 1.0.0), libfastjson-dev (>= 0.99.7), libglib2.0-dev, uuid-dev, libkrb5-dev, libgnutls-dev, pkg-config, dh-apparmor, libcurl4-gnutls-dev, bison, python-docutils, libsasl2-dev, libssl-dev, libnet-dev
+Build-Depends: debhelper (>= 8), dpkg-dev (>= 1.6.1), autotools-dev (>= 20100122.1), dh-autoreconf, libpcap-dev, librabbitmq-dev, librabbitmq1, zlib1g-dev, libmysqlclient-dev, libpq-dev, librelp-dev (>= 1.2.17), libestr-dev (>= 0.1.2), liblognorm-dev (>= 1.0.0), libfastjson-dev (>= 0.99.7), libglib2.0-dev, uuid-dev, libkrb5-dev, libgnutls-dev, pkg-config, dh-apparmor, libcurl4-gnutls-dev, bison, python-docutils, libsasl2-dev, libssl-dev, libnet-dev
 Package-List:
  rsyslog deb admin important arch=any
  rsyslog-doc deb doc extra arch=all
@@ -15,6 +15,7 @@ Package-List:
  rsyslog-fmhttp deb admin extra arch=any
  rsyslog-gnutls deb admin extra arch=any
  rsyslog-imkmsg deb admin extra arch=any
+ rsyslog-impcap deb admin extra arch=any
  rsyslog-improg deb admin extra arch=any
  rsyslog-imptcp deb admin extra arch=any
  rsyslog-kafka deb admin extra arch=any
@@ -35,15 +36,15 @@ Package-List:
  rsyslog-udpspoof deb admin extra arch=any
  rsyslog-utils deb admin extra arch=any
 Checksums-Sha1:
- ad165d9e70cb9b70ee060fda25df458914df3a16 3047140 rsyslog_8.2006.0.orig.tar.gz
- 25278a44ec62ac006ff00267b55d39d3ff63b053 33160 rsyslog_8.2006.0-0adiscon2trusty1.debian.tar.xz
+ 4c7364dbcd6683fe238fbac54a3293960a700ebd 3051049 rsyslog_8.2008.0.orig.tar.gz
+ 0d97f580284733be05147692a448a240b1af9a22 33220 rsyslog_8.2008.0-0adiscon1trusty1.debian.tar.xz
 Checksums-Sha256:
- d9589e64866f2fdc5636af4cae9d60ebf1e3257bb84b81ee953ede6a05878e97 3047140 rsyslog_8.2006.0.orig.tar.gz
- 9076d3f41dbbbee0fdf4b626a280ef4a86871ee3f74a54fd5b3d48d7261d385f 33160 rsyslog_8.2006.0-0adiscon2trusty1.debian.tar.xz
+ 09d2b6c8bc2f016598aed2bb719e03f822bb01d720c61e4d6e725e00dca1b650 3051049 rsyslog_8.2008.0.orig.tar.gz
+ 9859648e0561908ac0c77baef05e820e9f4b5d8ce56477433ba7860b2ae8bf48 33220 rsyslog_8.2008.0-0adiscon1trusty1.debian.tar.xz
 Files:
- 33de768941953ceeca9d1a437b47891b 3047140 rsyslog_8.2006.0.orig.tar.gz
- fa54636ef757d9143af13ab66c9beb47 33160 rsyslog_8.2006.0-0adiscon2trusty1.debian.tar.xz
+ 9b6ae1a517231764ad4fbd68181cc23e 3051049 rsyslog_8.2008.0.orig.tar.gz
+ 8523a229968d75812fad88866334737d 33220 rsyslog_8.2008.0-0adiscon1trusty1.debian.tar.xz
 Original-Maintainer: Michael Biebl <biebl@debian.org>
 Original-Vcs-Browser: http://git.debian.org/?p=collab-maint/rsyslog.git;a=summary
 Original-Vcs-Git: git://git.debian.org/git/collab-maint/rsyslog.git
-DEBTRANSFORM-TAR: rsyslog-8.2006.0.tar.gz\n
+DEBTRANSFORM-TAR: rsyslog-8.2008.0.tar.gz\n
