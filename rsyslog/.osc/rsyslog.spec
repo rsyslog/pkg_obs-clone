@@ -37,6 +37,7 @@
   %define pkgname_mmnormalize module-mmnormalize
   %define pkgname_mongodb module-mongodb
   %define pkgname_mysql module-mysql
+  %define pkgname_mysql module-imhttp
   %define pkgname_omhttpfs module-omhttpfs
   %define pkgname_omhttp module-omhttp
   %define pkgname_omtcl module-omtcl
@@ -60,6 +61,7 @@
   %define pkgname_mmsnmptrapd mmsnmptrapd
   %define pkgname_mongodb mongodb
   %define pkgname_mysql mysql
+  %define pkgname_mysql imghttp
   %define pkgname_omhttpfs omhttpfs
   %define pkgname_omhttp omhttp
   %define pkgname_omtcl omtcl
@@ -74,7 +76,7 @@ Name:           rsyslog
 Summary:        The enhanced syslogd for Linux and Unix
 License:        (GPL-3.0+ and Apache-2.0)
 Group:          System/Daemons
-Version: 8.2008.0
+Version: 8.2106.0
 Release:        3
 
 %if 0%{?rhel_version} || 0%{?suse_version} || 0%{?centos_version}
@@ -128,6 +130,12 @@ Release:        3
 %bcond_with     systemv
 %else
 %bcond_without  systemv
+%endif
+# Keep this in the spec, but so far it does not work, so disable until further notice
+%if 0%{?suse_version} >= 1700
+  %bcond_without imhttp
+%else
+  %bcond_with    imhttp
 %endif
 %if 0%{?suse_version} > 1230 || 0%{?fedora} || 0%{?centos_version} >= 700
 %bcond_without  journal
@@ -274,6 +282,9 @@ BuildRequires:  libgnutls-devel
 %endif
 %if %{with gcrypt}
 BuildRequires:  libgcrypt-devel
+%endif
+%if %{with imhttp}
+BuildRequires:  civetweb-devel
 %endif
 %if %{with mysql}
   %if 0%{?centos_version} >= 800
@@ -458,6 +469,20 @@ package.
 This module provides the support to receive syslog messages from the
 network protected via Kerberos 5 encryption and authentication.
 
+%endif
+
+%if %{with imhttp}
+%package %pkgname_imhttp
+Requires:       %{name} = %{version}
+Summary:        imhttp input module
+Group:          System/Daemons
+
+%description %pkgname_imhttp
+Rsyslog is an enhanced multi-threaded syslog daemon. See rsyslog
+package.
+
+This package provides the imhttp input module to accept log messages
+via http protocol.
 %endif
 
 %if %{with mysql}
@@ -808,6 +833,9 @@ autoreconf -fiv
 %endif
 %if %{with dbi}
 	--enable-libdbi		\
+%endif
+%if %{with imhttp}
+	--enable-imhttp		\
 %endif
 %if %{with mysql}
 	--enable-mysql		\
@@ -1516,6 +1544,21 @@ fi
 %endif
 
 %changelog
+* Tue Jun 15 2021 Rainer Gerhards <rgerhards@adiscon.com> - 8.2106.0-1
+  new upstream release
+
+* Mon Apr 19 2021 Rainer Gerhards <rgerhards@adiscon.com> - 8.2104.0-1
+  new upstream release
+
+* Mon Feb 15 2021 Rainer Gerhards <rgerhards@adiscon.com> - 8.2102.0-1
+  new upstream release
+
+* Mon Jan 11 2021 Rainer Gerhards <rgerhards@adiscon.com> - 8.2012.0-1
+  new upstream release
+
+* Tue Oct 20 2020 Rainer Gerhards <rgerhards@adiscon.com> - 8.2010.0-1
+  new upstream release
+
 * Tue Aug 25 2020 Rainer Gerhards <rgerhards@adiscon.com> - 8.2008.0-1
   new upstream release
 

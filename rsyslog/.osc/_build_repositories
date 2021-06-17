@@ -1,6 +1,6 @@
+xUbuntu_20.10 x86_64
 xUbuntu_20.04 x86_64
 xUbuntu_19.10 x86_64
-xUbuntu_19.04 x86_64
 xUbuntu_18.04 x86_64
 xUbuntu_16.04 i586
 xUbuntu_16.04 x86_64
@@ -15,6 +15,7 @@ openSUSE_Leap_15.1_ARM aarch64
 openSUSE_Leap_15.1_ARM armv7l
 openSUSE_Leap_15.1 x86_64
 openSUSE_Leap_15.0 x86_64
+SLE_15_SP3 x86_64
 SLE_15_SP1 x86_64
 SLE_15 x86_64
 SLE_12_SP5 x86_64
@@ -23,9 +24,11 @@ SLE_12_SP3 x86_64
 SLE_12 x86_64
 Raspbian_9.0 armv7l
 Raspbian_10 armv7l
-RHEL_7 x86_64
-RHEL_7 ppc64
 Fedora_Rawhide x86_64
+Fedora_33 x86_64
+Fedora_33 armv7l
+Fedora_33 aarch64
+Fedora_33 ppc64le
 Fedora_32 x86_64
 Fedora_32 armv7l
 Fedora_32 aarch64

@@ -8,12 +8,16 @@ fi
 export VERSION="$(cat CURR_VERSION)"
 echo processing version $VERSION
 
+if [ ! -f rsyslog-$VERSION.tar.gz ]; then
+    echo "tarball rsyslog-$VERSION.tar.gz does not exist!"
+    echo "Do you need to update the CURR_VERSION file?"
+    exit
+fi
 # setup
 cp rsyslog-$VERSION.tar.gz rsyslog_$VERSION.orig.tar.gz # once!
 
 # build platforms
-if false; then
-for PLATFORM in trusty xenial bionic eoan focal groovy Debian
+for PLATFORM in trusty xenial bionic eoan focal groovy #Debian
 do
 	# cleanup
 	rm -r $VERSION
@@ -45,7 +49,6 @@ do
 	cat >> rsyslog-$OBS_NAME.dsc <<< "DEBTRANSFORM-TAR: rsyslog-$VERSION.tar.gz\n"
 	sed -i 's/adisconhelperlrdk-dev/librdkafka-dev/' rsyslog-$OBS_NAME.dsc
 done
-fi # REMOVE ME - comment out
 
 # We handle Debian a bit differently
 rm -r $VERSION
@@ -58,6 +61,8 @@ dpkg-source -b $VERSION
 mv rsyslog_$RELEASE.dsc rsyslog.dsc
 cat >> rsyslog.dsc <<< "DEBTRANSFORM-TAR: rsyslog-$VERSION.tar.gz\n"
 #sed -i 's/adisconhelperlrdk-dev/librdkafka-dev/' rsyslog-$OBS_NAME.dsc
+
+printf '\n\nfix file names and hashes in rsyslog.dsc!!!!\n\n'
 
 
 exit
