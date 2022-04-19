@@ -3,7 +3,8 @@ Steps to update debian'ish release
 
 1. requires rsyslog-pkg-ubuntu git project
 2. update CURR_VERSION
-3a. rm old release *xz *orig* files
+3a. #DONE by STEP 3b AS WELL# rm old release *xz *orig* files
+3b1 osc rm *xz *orig*
 3b. git rm *xz *xz *orig*
 4. in rsyslog-pkg-ubuntu update changelog file version
    (see editfile.sh there: cd rsyslog; ./editfile.sh changelog)
