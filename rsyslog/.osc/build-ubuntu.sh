@@ -32,6 +32,7 @@ do
 		eoan)	OBS_NAME=xUbuntu_19.10 ;;
 		focal)	OBS_NAME=xUbuntu_20.04 ;;
 		groovy)	OBS_NAME=xUbuntu_20.10 ;;
+		jammy)	OBS_NAME=xUbuntu_22.04 ;;
 	esac
 	RELEASE="$(head -n1 $PKG_PROJ/$PROJECT/$PLATFORM/v8-stable/debian/changelog |grep -o '8\.*[a-z0-9.-]*')"
 	cp -r $PKG_PROJ/$PROJECT/$PLATFORM/v8-stable/debian $VERSION
