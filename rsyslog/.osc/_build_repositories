@@ -1,4 +1,6 @@
-xUbuntu_20.10 x86_64
+xUbuntu_22.04 x86_64
+xUbuntu_21.10 x86_64
+xUbuntu_21.04 x86_64
 xUbuntu_20.04 x86_64
 xUbuntu_19.10 x86_64
 xUbuntu_18.04 x86_64
@@ -23,8 +25,17 @@ SLE_12_SP4 x86_64
 SLE_12_SP3 x86_64
 SLE_12 x86_64
 Raspbian_9.0 armv7l
+Raspbian_11 armv7l
 Raspbian_10 armv7l
 Fedora_Rawhide x86_64
+Fedora_36 aarch64
+Fedora_36 armv7l
+Fedora_36 ppc64le
+Fedora_36 x86_64
+Fedora_35 aarch64
+Fedora_35 armv7l
+Fedora_35 ppc64le
+Fedora_35 x86_64
 Fedora_33 x86_64
 Fedora_33 armv7l
 Fedora_33 aarch64
@@ -54,9 +65,10 @@ Debian_9.0 x86_64
 Debian_9.0 armv7l
 Debian_8.0 i586
 Debian_8.0 x86_64
+Debian_11 i586
+Debian_11 x86_64
 Debian_10 i586
 Debian_10 x86_64
-CentOS_8_Stream x86_64
 CentOS_8 x86_64
 CentOS_7 x86_64
 CentOS_6 i586
