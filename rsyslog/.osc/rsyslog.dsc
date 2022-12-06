@@ -2,7 +2,7 @@ Format: 3.0 (quilt)
 Source: rsyslog
 Binary: rsyslog, rsyslog-doc, rsyslog-mysql, rsyslog-dbi, rsyslog-pgsql, rsyslog-omclickhouse, rsyslog-relp, rsyslog-mmdblookup, rsyslog-elasticsearch, rsyslog-mmjsonparse, rsyslog-imptcp, rsyslog-mmnormalize, rsyslog-mmanon, rsyslog-omhttp, rsyslog-fmhttp, rsyslog-fmhash, rsyslog-mmkubernetes, rsyslog-omstdout, rsyslog-mmfields, rsyslog-mmutf8fix, rsyslog-utils, rsyslog-gnutls, rsyslog-openssl, rsyslog-mmrm1stspace, rsyslog-kafka, rsyslog-redis
 Architecture: any all
-Version: 8.2210.0-1
+Version: 8.2212.0-1
 Maintainer: Rainer Gerhards <rgerhards@adiscon.com>
 Homepage: http://www.rsyslog.com/
 Standards-Version: 3.9.2
@@ -35,15 +35,15 @@ Package-List:
  rsyslog-relp deb admin extra arch=any
  rsyslog-utils deb admin extra arch=any
 Checksums-Sha1:
- d995fe0f68669e018a707b3de2990743076fb69a 3266727 rsyslog_8.2210.0.orig.tar.gz
- 5a525e0fa2e33fce08f1fdfbf186f298ae3e2125 19560 rsyslog_8.2210.0-1.debian.tar.xz
+ 35be6908a3017ede6ff8d40e4962aeeadac05f9c 3268012 rsyslog_8.2212.0.orig.tar.gz
+ e29eb699560e3d5117ebafe2cc68de53cd4b26d1 19560 rsyslog_8.2212.0-1.debian.tar.xz
 Checksums-Sha256:
- 643ee279139d694a07c9ff3ff10dc5213bdf874983d27d373525e95e05fa094d 3266727 rsyslog_8.2210.0.orig.tar.gz
- d76b7abff48be1b39f33dea61511d9d72a292a55048b35076f5c97616dff2d2d 19560 rsyslog_8.2210.0-1.debian.tar.xz
+ 53b59a872e3dc7384cdc149abe9744916776f7057d905f3df6722d2eb1b04f35 3268012 rsyslog_8.2212.0.orig.tar.gz
+ 0e94137c505b41e68a791770bd7d4c3a735b583c0c06229a0d7a59323c9190d8 19560 rsyslog_8.2212.0-1.debian.tar.xz
 Files:
- 23239f609af189b0814f8adc95ad9c02 3266727 rsyslog_8.2210.0.orig.tar.gz
- 3995f95b09a60a10bdd73b97b88de24a 19560 rsyslog_8.2210.0-1.debian.tar.xz
+ 583d7c3952ecb7f536ea7f2b1ddc8336 3268012 rsyslog_8.2212.0.orig.tar.gz
+ f69079c05cc9b52808c9b8051bf968fa 19560 rsyslog_8.2212.0-1.debian.tar.xz
 Original-Maintainer: Michael Biebl <biebl@debian.org>
 Original-Vcs-Browser: http://git.debian.org/?p=collab-maint/rsyslog.git;a=summary
 Original-Vcs-Git: git://git.debian.org/git/collab-maint/rsyslog.git
-DEBTRANSFORM-TAR: rsyslog-8.2210.0.tar.gz\n
+DEBTRANSFORM-TAR: rsyslog-8.2212.0.tar.gz\n

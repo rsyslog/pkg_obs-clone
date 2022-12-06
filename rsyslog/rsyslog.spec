@@ -76,7 +76,7 @@ Name:           rsyslog
 Summary:        The enhanced syslogd for Linux and Unix
 License:        (GPL-3.0+ and Apache-2.0)
 Group:          System/Daemons
-Version: 8.2210.0
+Version: 8.2212.0
 Release:        3
 
 %if 0%{?rhel_version} || 0%{?suse_version} || 0%{?centos_version}
@@ -191,6 +191,7 @@ Url:            https://www.rsyslog.com/
 Requires:	libfastjson-devel >= 0.99.8
 
 %if 0%{?fedora} || 0%{?rhel_version} || 0%{?centos_version}
+BuildRequires: util-linux
 BuildRequires: systemd-devel >= 204-8
 Requires(post): systemd
 Requires(preun): systemd
@@ -1544,6 +1545,9 @@ fi
 %endif
 
 %changelog
+* Thu Dec 06 2022 Rainer Gerhards <rgerhards@adiscon.com> - 8.2212.0-1
+  new upstream release
+
 * Thu Oct 18 2022 Rainer Gerhards <rgerhards@adiscon.com> - 8.2210.0-1
   new upstream release
 
