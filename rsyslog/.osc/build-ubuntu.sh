@@ -17,7 +17,7 @@ fi
 cp rsyslog-$VERSION.tar.gz rsyslog_$VERSION.orig.tar.gz # once!
 
 # build platforms
-for PLATFORM in trusty xenial bionic eoan focal groovy #Debian
+for PLATFORM in trusty xenial bionic eoan focal groovy jammy #Debian
 do
 	# cleanup
 	rm -r $VERSION
