@@ -2,7 +2,7 @@ Format: 3.0 (quilt)
 Source: rsyslog
 Binary: rsyslog, rsyslog-doc, rsyslog-impcap, rsyslog-mysql, rsyslog-pgsql, rsyslog-mongodb, rsyslog-omclickhouse, rsyslog-relp, rsyslog-elasticsearch, rsyslog-mmjsonparse, rsyslog-imptcp, rsyslog-mmnormalize, rsyslog-mmanon, rsyslog-mmfields, rsyslog-mmgrok, rsyslog-omrabbitmq, rsyslog-imdocker, rsyslog-improg, rsyslog-imkmsg, rsyslog-mmutf8fix, rsyslog-gnutls, rsyslog-openssl, rsyslog-pmnormalize, rsyslog-utils, rsyslog-mmrm1stspace, rsyslog-kafka, rsyslog-redis, rsyslog-omstdout, rsyslog-fmhttp, rsyslog-fmhash, rsyslog-mmkubernetes
 Architecture: any all
-Version: 8.2302.0-0adiscon1xenial1
+Version: 8.2304.0-0adiscon1xenial1
 Maintainer: Andre Lorbach <alorbach@adiscon.com>
 Homepage: http://www.rsyslog.com/
 Standards-Version: 3.9.2
@@ -40,15 +40,15 @@ Package-List:
  rsyslog-relp deb admin extra arch=any
  rsyslog-utils deb admin extra arch=any
 Checksums-Sha1:
- 8d3b57c0c8f38e618ee2e49790dcfc26b27c40d5 3273655 rsyslog_8.2302.0.orig.tar.gz
- 69f9c52ae5c69f0f24db2d34bd65d4285e55c86e 23928 rsyslog_8.2302.0-0adiscon1xenial1.debian.tar.xz
+ 7b9795c50eded8658b856080ae375722e576f3f5 3274047 rsyslog_8.2304.0.orig.tar.gz
+ e83de4c59d92d9e55757a6c614c49af5a42e0c67 23952 rsyslog_8.2304.0-0adiscon1xenial1.debian.tar.xz
 Checksums-Sha256:
- 25415f85b662615ce3c83077d53758029e8743cb5929044bfd3564e3d626a3b9 3273655 rsyslog_8.2302.0.orig.tar.gz
- 7b8808dd1cf85bdbdd1b50709c3c0b14c82b922ec1d31c057e560eeae80e5538 23928 rsyslog_8.2302.0-0adiscon1xenial1.debian.tar.xz
+ d090e90283eb4b80de8b43e5ffc6e4b59c4e3970f2aa91e63beef0a11720d74d 3274047 rsyslog_8.2304.0.orig.tar.gz
+ 6472dd17c902386532068948d6545ce215048a5fc3f9309e15e57b8ec2e4cf8b 23952 rsyslog_8.2304.0-0adiscon1xenial1.debian.tar.xz
 Files:
- 2ab62877bbf45050251e2e2ba80eaf79 3273655 rsyslog_8.2302.0.orig.tar.gz
- 2a4f772faf888a8878417e3227a60c14 23928 rsyslog_8.2302.0-0adiscon1xenial1.debian.tar.xz
+ 622d3195b6a89bacf492a88f8ec8aa15 3274047 rsyslog_8.2304.0.orig.tar.gz
+ 8592ade7f8fe4eace145a86c4e59e383 23952 rsyslog_8.2304.0-0adiscon1xenial1.debian.tar.xz
 Original-Maintainer: Michael Biebl <biebl@debian.org>
 Original-Vcs-Browser: http://git.debian.org/?p=collab-maint/rsyslog.git;a=summary
 Original-Vcs-Git: git://git.debian.org/git/collab-maint/rsyslog.git
-DEBTRANSFORM-TAR: rsyslog-8.2302.0.tar.gz\n
+DEBTRANSFORM-TAR: rsyslog-8.2304.0.tar.gz\n
