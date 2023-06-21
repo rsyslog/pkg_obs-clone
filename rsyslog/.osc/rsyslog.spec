@@ -76,7 +76,7 @@ Name:           rsyslog
 Summary:        The enhanced syslogd for Linux and Unix
 License:        (GPL-3.0+ and Apache-2.0)
 Group:          System/Daemons
-Version: 8.2304.0
+Version: 8.2306.0
 Release:        3
 
 %if 0%{?rhel_version} || 0%{?suse_version} || 0%{?centos_version}
@@ -1545,6 +1545,9 @@ fi
 %endif
 
 %changelog
+* Thu Jun 20 2023 Rainer Gerhards <rgerhards@adiscon.com> - 8.2306.0-1
+  new upstream release
+
 * Thu Apr 18 2023 Rainer Gerhards <rgerhards@adiscon.com> - 8.2304.0-1
   new upstream release
 
