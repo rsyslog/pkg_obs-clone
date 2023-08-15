@@ -19,7 +19,7 @@
 
 Summary: Enhanced system logging and kernel message trapping daemon
 Name: rsyslog
-Version: 8.2306.0
+Version: 8.2308.0
 Release: 5%{?dist}
 License: (GPLv3+ and ASL 2.0)
 Group: System Environment/Daemons
@@ -710,7 +710,7 @@ mv /var/lock/subsys/rsyslogd /var/lock/subsys/rsyslog
 %endif # if rhel >= 6
 
 %changelog
-* Thu Jun 20 2023 Rainer Gerhards <rgerhards@adiscon.com> - 8.2306.0-1
+* Thu Aug 15 2023 Rainer Gerhards <rgerhards@adiscon.com> - 8.2308.0-1
   new upstream release
 
 * Thu Apr 18 2023 Rainer Gerhards <rgerhards@adiscon.com> - 8.2304.0-1

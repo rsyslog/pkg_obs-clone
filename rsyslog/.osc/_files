@@ -1,7 +1,7 @@
-<directory name="rsyslog" rev="dc4fb1a31957ffe7de4ad18b076269f2" srcmd5="dc4fb1a31957ffe7de4ad18b076269f2">
-  <linkinfo project="home:rgerhards" package="rsyslog" srcmd5="274cfa4259385c93882037711ed02883" baserev="274cfa4259385c93882037711ed02883" lsrcmd5="9c39e071b3efd2684c221f87ad0773fc" />
+<directory name="rsyslog" rev="ba96aaa58cb81701ad3b0eb6671e2b7d" srcmd5="ba96aaa58cb81701ad3b0eb6671e2b7d">
+  <linkinfo project="home:rgerhards" package="rsyslog" srcmd5="c1d048c09f761201f65dc002705929e8" baserev="c1d048c09f761201f65dc002705929e8" lsrcmd5="c752efd9204811c4892b6ca525c72e82" />
   <entry name="0001-imgssapi-fix-compiler-warnings.patch" md5="9b5dad2057e2df888cb3e9ac236100c7" size="5069" mtime="1510673640" />
-  <entry name="CURR_VERSION" md5="4582607e45bed1b1b7aecbbfc35a316d" size="9" mtime="1687246486" />
+  <entry name="CURR_VERSION" md5="9612a7287dbc2226c72d2a129c90d6f4" size="9" mtime="1692092416" />
   <entry name="SIGNKEY_PUSH" md5="8888f360e94f1f99de351f1debcbe08d" size="137" mtime="1583327850" />
   <entry name="build-ubuntu.sh" md5="287cc404e879bcf8f36d4cf68fea4a88" size="3351" mtime="1676889716" />
   <entry name="centos7-rsyslog-8.37.0-sd-service.patch" md5="1a0b5fe9482c9340e58fa6f0c4e91c18" size="581" mtime="1534946032" />
@@ -11,18 +11,20 @@
   <entry name="module-udpspoof" md5="3c93041d2aa10168cd063f9469edf95b" size="100" mtime="1401279236" />
   <entry name="remove-rsyslog.service.patch" md5="ceee0cabf43f1220d9187a192e4e2cf2" size="7494" mtime="1593336232" />
   <entry name="rsyslog-8.2306.0.tar.gz" md5="01ab6d504b85baaad1eb8c64490af2be" size="3293380" mtime="1687246487" />
+  <entry name="rsyslog-8.2308.0.tar.gz" md5="63727475fa155c00c40375e90dfe3ba9" size="3346424" mtime="1692092417" />
   <entry name="rsyslog-8.34.0-sd-service.patch" md5="555a60fa15179551f7664dfd92bff6d2" size="482" mtime="1535532623" />
-  <entry name="rsyslog-CentOS_6.spec" md5="161904488c25a4219fc480cdddcda044" size="29422" mtime="1687246487" />
+  <entry name="rsyslog-CentOS_6.spec" md5="ab886639b28271efae018d8517aa3f91" size="29422" mtime="1692092417" />
   <entry name="rsyslog-doc-8.2306.0.tar.gz" md5="09a8cb9e97a0256eb8df8a9df440d44f" size="6637017" mtime="1687246489" />
+  <entry name="rsyslog-doc-8.2308.0.tar.gz" md5="028734b77e94b443cc08731b6735f263" size="6668327" mtime="1692092418" />
   <entry name="rsyslog-service-centos-rhel.patch" md5="d8c02b1fc05afa159072aa66222aed37" size="718" mtime="1592896316" />
   <entry name="rsyslog-service-fedora.patch" md5="4fcdd75c6dd56252df0bb5b576b570a2" size="709" mtime="1592896316" />
   <entry name="rsyslog-service-prepare.in" md5="4912cbec3f856ebf87887a4d3b898592" size="728" mtime="1413665142" />
-  <entry name="rsyslog-xUbuntu_14.04.dsc" md5="efe700b974443578bad61d1b0abd3f98" size="3128" mtime="1687246489" />
-  <entry name="rsyslog-xUbuntu_16.04.dsc" md5="23004e1c7df4f9946c1b4ff97329c679" size="3576" mtime="1687246489" />
-  <entry name="rsyslog-xUbuntu_18.04.dsc" md5="825946bf44b6ef0238ddaae9a51269aa" size="3648" mtime="1687246489" />
-  <entry name="rsyslog-xUbuntu_19.10.dsc" md5="52bf706fa89e8b7a99aa292bf9fe1434" size="3567" mtime="1687246489" />
-  <entry name="rsyslog-xUbuntu_20.04.dsc" md5="7fa509039d8c8190140fcb5b3020753d" size="3662" mtime="1687246490" />
-  <entry name="rsyslog-xUbuntu_20.10.dsc" md5="d6049fcabf4651c6b9aec862d6c038bd" size="3536" mtime="1687246490" />
+  <entry name="rsyslog-xUbuntu_14.04.dsc" md5="76ac5b0af531e3b04687a95ab7eeef02" size="3128" mtime="1692092418" />
+  <entry name="rsyslog-xUbuntu_16.04.dsc" md5="f4834d58742e1759ef6e747c63da4e6c" size="3576" mtime="1692092419" />
+  <entry name="rsyslog-xUbuntu_18.04.dsc" md5="c698a9802ee22246f13aa244d675e171" size="3648" mtime="1692092419" />
+  <entry name="rsyslog-xUbuntu_19.10.dsc" md5="94d46cdda6640fa818c84cbd111fe179" size="3567" mtime="1692092419" />
+  <entry name="rsyslog-xUbuntu_20.04.dsc" md5="90d887cc91a13d28d01aa50e1dfd992d" size="3662" mtime="1692092419" />
+  <entry name="rsyslog-xUbuntu_20.10.dsc" md5="a63acbaefb7b649c4cc5f9849d9b0048" size="3536" mtime="1692092419" />
   <entry name="rsyslog.changes" md5="cb2ee9a04af465c5d43282ef8649209d" size="121572" mtime="1511444441" />
   <entry name="rsyslog.conf" md5="0dd94a0c285fb32f41fa5b226e83c26b" size="3232" mtime="1516876334" />
   <entry name="rsyslog.conf.centos7" md5="0dd94a0c285fb32f41fa5b226e83c26b" size="3232" mtime="1592153460" />
@@ -30,7 +32,7 @@
   <entry name="rsyslog.conf.fedora28" md5="e0ab5f93c204ee1c2f10ba7cab107c27" size="3194" mtime="1535531157" />
   <entry name="rsyslog.conf.in" md5="b5f49fb905aed62b3cfbb2f21578b03c" size="4469" mtime="1400309976" />
   <entry name="rsyslog.d.remote.conf.in" md5="b9e56b6da3f9039b3c4054fd924f8cd6" size="3260" mtime="1329740837" />
-  <entry name="rsyslog.dsc" md5="be1a6d9c4b33b0eb4166b734d6540173" size="3012" mtime="1687246490" />
+  <entry name="rsyslog.dsc" md5="f5687f366ea1c99a8fb01bcdeeca8e86" size="3012" mtime="1692092420" />
   <entry name="rsyslog.firewall" md5="6c90f5a20217bec88af6e9e32d94462c" size="721" mtime="1411000154" />
   <entry name="rsyslog.init.epel6" md5="2a465e83e3fc4674bd922009ae7bbec1" size="1958" mtime="1535529782" />
   <entry name="rsyslog.log" md5="79d4bbb4dc7a5b5ff0b1b1ebd06c2b0b" size="224" mtime="1516877222" />
@@ -39,19 +41,19 @@
   <entry name="rsyslog.service.centos" md5="11f8923e98647c127378fe69f1f947e3" size="602" mtime="1598373267" />
   <entry name="rsyslog.service.fedora" md5="94c7e51f6dab6386eaa33913b0581566" size="499" mtime="1598439933" />
   <entry name="rsyslog.service.suse" md5="870f1bb8c25a1f44d8bcd04d98da45c6" size="549" mtime="1598439933" />
-  <entry name="rsyslog.spec" md5="fbd2fada2cc29e25ee16b538c1f1d3f8" size="43107" mtime="1687246490" />
+  <entry name="rsyslog.spec" md5="0c6911009c60c05254fffc83eeb7f0c4" size="43202" mtime="1692092420" />
   <entry name="rsyslog.sysconfig" md5="bac711f14d2d380d02b10fe2cafce917" size="502" mtime="1352741035" />
   <entry name="rsyslog.sysconfig.epel6" md5="2dd909cb96f91060d206c4936dac51ee" size="196" mtime="1535530153" />
   <entry name="rsyslog.sysconfig.fedora28" md5="2dd909cb96f91060d206c4936dac51ee" size="196" mtime="1535531158" />
-  <entry name="rsyslog_8.2306.0-0adiscon1bionic1.debian.tar.xz" md5="eeb868d595566295895f8b2d24fc8642" size="21320" mtime="1687246490" />
-  <entry name="rsyslog_8.2306.0-0adiscon1eoan1.debian.tar.xz" md5="662c5fd9ab675cdde5c2f2a96433a9b6" size="20456" mtime="1687246490" />
-  <entry name="rsyslog_8.2306.0-0adiscon1focal1.debian.tar.xz" md5="fd981d8d9b837cd474388aebce51686f" size="20904" mtime="1687246490" />
-  <entry name="rsyslog_8.2306.0-0adiscon1groovy1.debian.tar.xz" md5="3c92e33b82cfb5b2904631439196e3c6" size="20616" mtime="1687246491" />
-  <entry name="rsyslog_8.2306.0-0adiscon1trusty1.debian.tar.xz" md5="9bf79f9fe6bb9ee37bba07bb122d63e7" size="33460" mtime="1687246491" />
-  <entry name="rsyslog_8.2306.0-0adiscon1xenial1.debian.tar.xz" md5="114d120cfefd7b889fef86aea79a7a41" size="23984" mtime="1687246491" />
-  <entry name="rsyslog_8.2306.0-0adiscon3jammy1.debian.tar.xz" md5="9ca8f3ef049602f97ed91704854b3df4" size="20500" mtime="1687246491" />
-  <entry name="rsyslog_8.2306.0-2.debian.tar.xz" md5="c72df9f45a46364893c5bc19cbce2f6b" size="19640" mtime="1687246491" />
-  <entry name="rsyslog_8.2306.0.orig.tar.gz" md5="01ab6d504b85baaad1eb8c64490af2be" size="3293380" mtime="1687246492" />
+  <entry name="rsyslog_8.2308.0-0adiscon1bionic1.debian.tar.xz" md5="f80556bd41a5128d2bcde7db13c077db" size="21336" mtime="1692092420" />
+  <entry name="rsyslog_8.2308.0-0adiscon1eoan1.debian.tar.xz" md5="462df601a418bf31f670ebbd42de1d2a" size="20472" mtime="1692092420" />
+  <entry name="rsyslog_8.2308.0-0adiscon1focal1.debian.tar.xz" md5="d43fe395bf22e458c3a1dd5d3bf661e3" size="20912" mtime="1692092420" />
+  <entry name="rsyslog_8.2308.0-0adiscon1groovy1.debian.tar.xz" md5="4ce425e9c8cb07894b6f1ea87111d409" size="20632" mtime="1692092420" />
+  <entry name="rsyslog_8.2308.0-0adiscon1trusty1.debian.tar.xz" md5="5c07a56fbc5ae9f6db77b97213bd9f66" size="33440" mtime="1692092420" />
+  <entry name="rsyslog_8.2308.0-0adiscon1xenial1.debian.tar.xz" md5="715ca00e1f0d5153281da8d21185409b" size="24008" mtime="1692092421" />
+  <entry name="rsyslog_8.2308.0-0adiscon3jammy1.debian.tar.xz" md5="012fd95b51a41ae703bf43544f75e7d7" size="20516" mtime="1692092421" />
+  <entry name="rsyslog_8.2308.0-1.debian.tar.xz" md5="c939f6a355787c53981cc140de81f6b8" size="19652" mtime="1692092421" />
+  <entry name="rsyslog_8.2308.0.orig.tar.gz" md5="63727475fa155c00c40375e90dfe3ba9" size="3346424" mtime="1692092422" />
   <entry name="rsyslog_v7.conf" md5="dccf91849e79e61dc30c922fa0d5e369" size="3340" mtime="1535530516" />
   <entry name="usr.sbin.rsyslogd" md5="a8112724b6f16a66d3bcd70921d61051" size="1454" mtime="1430394096" />
 </directory>
