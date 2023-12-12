@@ -10,11 +10,11 @@ Steps to update debian'ish release
    (see editfile.sh there: cd rsyslog; ./editfile.sh changelog)
 4.b edit *.spec files
 5. run ./build-ubuntu.sh (also prepares debian!)
-6. osc add *xz *orig* *tar* files (should have new version number now)
+6. osc add *xz *orig* *tar* *gz files (should have new version number now)
 7. consider local build via osc build ... [osc repos for what is supported]
 8. upload to obs (osc commit)
 --- when all well ---
-9. git add *xz *xz *orig*
+9. git add *xz *xz *orig* *gz
 10. git commit -a -S   # We need git for CI integration -- obs rate-limits pulls
 
 IMPORTANT: OBS defintions are mirrored via git (because OBS otherwise
