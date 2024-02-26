@@ -2,7 +2,7 @@ Format: 3.0 (quilt)
 Source: rsyslog
 Binary: rsyslog, rsyslog-doc, rsyslog-impcap, rsyslog-mysql, rsyslog-pgsql, rsyslog-mongodb, rsyslog-czmq, rsyslog-omclickhouse, rsyslog-relp, rsyslog-elasticsearch, rsyslog-mmjsonparse, rsyslog-imptcp, rsyslog-mmnormalize, rsyslog-mmanon, rsyslog-mmfields, rsyslog-omrabbitmq, rsyslog-imdocker, rsyslog-improg, rsyslog-imkmsg, rsyslog-mmutf8fix, rsyslog-gnutls, rsyslog-openssl, rsyslog-pmnormalize, rsyslog-utils, rsyslog-mmrm1stspace, rsyslog-kafka, rsyslog-redis, rsyslog-omstdout, rsyslog-fmhttp, rsyslog-fmhash, rsyslog-mmkubernetes
 Architecture: any all
-Version: 8.2312.0-0adiscon1groovy1
+Version: 8.2402.0-0adiscon1groovy1
 Maintainer: Andre Lorbach <alorbach@adiscon.com>
 Homepage: http://www.rsyslog.com/
 Standards-Version: 3.9.2
@@ -40,15 +40,15 @@ Package-List:
  rsyslog-relp deb admin extra arch=any
  rsyslog-utils deb admin extra arch=any
 Checksums-Sha1:
- 908645e482717d0784112aec45ea613e1970b9d6 3358109 rsyslog_8.2312.0.orig.tar.gz
- 9ecc569e82fb5b13f6a87008912e687e3efe16d7 20644 rsyslog_8.2312.0-0adiscon1groovy1.debian.tar.xz
+ 1980d0288d039ef07b0c46e10adee0cd53ee0ad4 3404026 rsyslog_8.2402.0.orig.tar.gz
+ ca3b15d79acadb2c6f8c19a25eb44e6a51941556 20672 rsyslog_8.2402.0-0adiscon1groovy1.debian.tar.xz
 Checksums-Sha256:
- 774032006128a896437f5913e132aa27dbfb937cd8847e449522d5a12d63d03e 3358109 rsyslog_8.2312.0.orig.tar.gz
- aea55c8c2c5f612736d590640e904a7676a59ad15d0d4c424b1d58877ae0616e 20644 rsyslog_8.2312.0-0adiscon1groovy1.debian.tar.xz
+ acbdd8579489df36b4a383dc6909a61b7623807f0aff54c062115f2de7ea85ba 3404026 rsyslog_8.2402.0.orig.tar.gz
+ d800cd04bad43beab86dce07da72c492c8fe4d20ccfddc0cdc4069d645d361f4 20672 rsyslog_8.2402.0-0adiscon1groovy1.debian.tar.xz
 Files:
- 632381aead68840967c74fbb564436cc 3358109 rsyslog_8.2312.0.orig.tar.gz
- ac002a857cfe6dc4a034025e2f8d0ae5 20644 rsyslog_8.2312.0-0adiscon1groovy1.debian.tar.xz
+ 422b7d457f184134a872a5a519d3884e 3404026 rsyslog_8.2402.0.orig.tar.gz
+ a9b7b618b6e0ca01507abc1a7ddf5fdf 20672 rsyslog_8.2402.0-0adiscon1groovy1.debian.tar.xz
 Original-Maintainer: Michael Biebl <biebl@debian.org>
 Original-Vcs-Browser: http://git.debian.org/?p=collab-maint/rsyslog.git;a=summary
 Original-Vcs-Git: git://git.debian.org/git/collab-maint/rsyslog.git
-DEBTRANSFORM-TAR: rsyslog-8.2312.0.tar.gz\n
+DEBTRANSFORM-TAR: rsyslog-8.2402.0.tar.gz\n
