@@ -4,8 +4,8 @@ Steps to update debian'ish release
 1. requires rsyslog-pkg-ubuntu git project
 2. update CURR_VERSION
 3a. #DONE by STEP 3b AS WELL# rm old release *xz *orig* files
-3b1 osc rm *xz *orig*
-3b. git rm *xz *xz *orig*
+3b1 osc rm *xz *orig* *tar.gz
+3b. git rm *xz *xz *orig* *tar.gz
 4. in rsyslog-pkg-ubuntu update changelog file version
    (see editfile.sh there: cd rsyslog; ./editfile.sh changelog)
 4.b edit *.spec files
@@ -13,6 +13,7 @@ Steps to update debian'ish release
 6. osc add *xz *orig* *tar* *gz files (should have new version number now)
 7. consider local build via osc build ... [osc repos for what is supported]
 8. upload to obs (osc commit)
+   Bei auth Problems: osc --config ~/.config/osc/oscrc.rainergerhards commit
 --- when all well ---
 9. git add *xz *xz *orig* *gz
 10. git commit -a -S   # We need git for CI integration -- obs rate-limits pulls

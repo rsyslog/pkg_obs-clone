@@ -52,3 +52,4 @@ Original-Maintainer: Michael Biebl <biebl@debian.org>
 Original-Vcs-Browser: http://git.debian.org/?p=collab-maint/rsyslog.git;a=summary
 Original-Vcs-Git: git://git.debian.org/git/collab-maint/rsyslog.git
 DEBTRANSFORM-TAR: rsyslog-8.2404.0.tar.gz\n
+DEBTRANSFORM-TAR: rsyslog-8.2408.0.tar.gz\n

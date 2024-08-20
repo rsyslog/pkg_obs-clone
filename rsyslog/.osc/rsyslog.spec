@@ -29,6 +29,7 @@
   %define pkgname_dbi module-dbi
   %define pkgname_elasticsearch module-elasticsearch
   %define pkgname_gcrypt module-gcrypt
+  %define pkgname_osslcrypt module-osslcrypt
   %define pkgname_gssapi module-gssapi
   %define pkgname_gtls module-gtls
   %define pkgname_hiredis module-hiredis
@@ -50,6 +51,7 @@
   %define pkgname_dbi libdbi
   %define pkgname_elasticsearch elasticsearch
   %define pkgname_gcrypt crypto
+  %define pkgname_osslcrypt osslcrypto
   %define pkgname_gssapi gssapi
   %define pkgname_gtls gnutls
   %define pkgname_hiredis hiredis
@@ -76,7 +78,7 @@ Name:           rsyslog
 Summary:        The enhanced syslogd for Linux and Unix
 License:        (GPL-3.0+ and Apache-2.0)
 Group:          System/Daemons
-Version: 8.2404.0
+Version: 8.2408.0
 Release:        3
 
 %if 0%{?rhel_version} || 0%{?suse_version} || 0%{?centos_version}
@@ -1091,7 +1093,7 @@ install -m644 plugins/ommysql/createDB.sql \
 %endif
 %if %{with pgsql}
 install -m644 plugins/ompgsql/createDB.sql \
-	%{buildroot}%{rsyslogdocdir}/pgsql-createDB.sql
+ 	%{buildroot}%{rsyslogdocdir}/pgsql-createDB.sql
 %endif
 # create ghosts
 install -d -m0755 %{buildroot}%{rsyslog_rundir}
@@ -1545,6 +1547,9 @@ fi
 %endif
 
 %changelog
+* Thu Aug 20 2024 Rainer Gerhards <rgerhards@adiscon.com> - 8.2408.0-1
+  new upstream release
+
 * Thu Apr 02 2024 Rainer Gerhards <rgerhards@adiscon.com> - 8.2404.0-1
   new upstream release
 
