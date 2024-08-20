@@ -1,8 +1,7 @@
-#
 # spec file for package rsyslog
 #
 # Copyright (c) 2017 SUSE LINUX GmbH, Nuernberg, Germany.
-# Copyright (c) 2020 Rainer Gerhards
+# Copyright (c) 2024 Rainer Gerhards
 #
 # All modifications and additions to the file contributed by third parties
 # remain the property of their copyright owners, unless otherwise agreed
@@ -300,7 +299,11 @@ BuildRequires:  mysql-devel
 BuildRequires:  net-snmp-devel
 %endif
 %if %{with pgsql}
+%if 0%{?fedora} >= 40
+BuildRequires: libpq-devel
+%else
 BuildRequires:  postgresql-devel
+%endif
 %endif
 %if %{with relp}
 # RELP support

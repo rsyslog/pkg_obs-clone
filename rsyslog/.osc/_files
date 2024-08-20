@@ -1,5 +1,5 @@
-<directory name="rsyslog" rev="2b08fcbf0498095e31c81feb0185ceaa" srcmd5="2b08fcbf0498095e31c81feb0185ceaa">
-  <linkinfo project="home:rgerhards" package="rsyslog" srcmd5="9b47271ce736e669cd8d86de5896005a" baserev="9b47271ce736e669cd8d86de5896005a" lsrcmd5="01d0c19fc60f7327d8da8edee8f5f374" />
+<directory name="rsyslog" rev="e77dbe8d301092894a78072cd8e37bf3" srcmd5="e77dbe8d301092894a78072cd8e37bf3">
+  <linkinfo project="home:rgerhards" package="rsyslog" srcmd5="07040b90ca49c9c4747539d52020ad51" baserev="07040b90ca49c9c4747539d52020ad51" lsrcmd5="4b7c75bcccc1150be92ae8c8e880663d" />
   <entry name="0001-imgssapi-fix-compiler-warnings.patch" md5="9b5dad2057e2df888cb3e9ac236100c7" size="5069" mtime="1510673640" />
   <entry name="CURR_VERSION" md5="3bfc3f1761a3caf4bb0dea21cf643827" size="9" mtime="1724081593" />
   <entry name="SIGNKEY_PUSH" md5="c2f747366c1a49fa7383bf53650f65cc" size="137" mtime="1721633765" />
@@ -39,7 +39,7 @@
   <entry name="rsyslog.service.centos" md5="11f8923e98647c127378fe69f1f947e3" size="602" mtime="1598373267" />
   <entry name="rsyslog.service.fedora" md5="94c7e51f6dab6386eaa33913b0581566" size="499" mtime="1598439933" />
   <entry name="rsyslog.service.suse" md5="870f1bb8c25a1f44d8bcd04d98da45c6" size="549" mtime="1598439933" />
-  <entry name="rsyslog.spec" md5="dd6aed0b08273c81292d6bbedc19e01b" size="43762" mtime="1724091410" />
+  <entry name="rsyslog.spec" md5="4cf4a6cbf88041dc2299f29c7ffa44b0" size="43822" mtime="1724155013" />
   <entry name="rsyslog.sysconfig" md5="bac711f14d2d380d02b10fe2cafce917" size="502" mtime="1352741035" />
   <entry name="rsyslog.sysconfig.epel6" md5="2dd909cb96f91060d206c4936dac51ee" size="196" mtime="1535530153" />
   <entry name="rsyslog.sysconfig.fedora28" md5="2dd909cb96f91060d206c4936dac51ee" size="196" mtime="1535531158" />
