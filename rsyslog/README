@@ -12,6 +12,7 @@ Steps to update debian'ish release
 5. run ./build-ubuntu.sh (also prepares debian!)
 6. osc add *xz *orig* *tar* *gz files (should have new version number now)
 7. consider local build via osc build ... [osc repos for what is supported]
+   NOTE: on public key errors, you can use "osc build --no-verify ..."
 8. upload to obs (osc commit)
    Bei auth Problems: osc --config ~/.config/osc/oscrc.rainergerhards commit
 --- when all well ---

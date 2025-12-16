@@ -1,7 +1,7 @@
 # spec file for package rsyslog
 #
 # Copyright (c) 2017 SUSE LINUX GmbH, Nuernberg, Germany.
-# Copyright (c) 2024 Rainer Gerhards
+# Copyright (c) 2024-2025 Rainer Gerhards
 #
 # All modifications and additions to the file contributed by third parties
 # remain the property of their copyright owners, unless otherwise agreed
@@ -77,7 +77,7 @@ Name:           rsyslog
 Summary:        The enhanced syslogd for Linux and Unix
 License:        (GPL-3.0+ and Apache-2.0)
 Group:          System/Daemons
-Version: 8.2408.0
+Version: 8.2512.0
 Release:        3
 
 %if 0%{?rhel_version} || 0%{?suse_version} || 0%{?centos_version}
@@ -122,7 +122,7 @@ Release:        3
 %else
 %bcond_with     pkgconfig
 %endif
-%if 0%{?suse_version} >= 1210 || 0%{?fedora} || 0%{?centos_version} >= 700
+%if 0%{?suse_version} >= 1210 || 0%{?fedora} || 0%{?centos_version} >= 700 || 0%{?openeuler_version}
 %bcond_without  systemd
 %else
 %bcond_with     systemd
@@ -138,7 +138,7 @@ Release:        3
 %else
   %bcond_with    imhttp
 %endif
-%if 0%{?suse_version} > 1230 || 0%{?fedora} || 0%{?centos_version} >= 700
+%if 0%{?suse_version} > 1230 || 0%{?fedora} || 0%{?centos_version} >= 700 || 0%{?openeuler_version}
 %bcond_without  journal
 %else
 %bcond_with     journal
@@ -158,7 +158,7 @@ Release:        3
 %bcond_without  snmp
 %bcond_without  diagtools
 %bcond_without  mmnormalize
-%if 0%{?fedora} || 0%{?rhel_version} || 0%{?centos_version}
+%if 0%{?fedora} || 0%{?rhel_version} || 0%{?centos_version} || 0%{?openeuler_version}
 	%bcond_without  mmsnmptrapd
 	%bcond_without  mmjsonparse
 	%bcond_without  mmaudit
@@ -178,7 +178,6 @@ Release:        3
 # note: these parameters are from SUSE and may need to be adapted to
 # other environments. However, so far we found no indication that they
 # do not properly match. -- rgerhards, 2020-06-07
-%define         rsyslogdocdir               %{_docdir}/%{name}
 %if %{defined _rundir}
   %define         rsyslog_rundir              %{_rundir}/rsyslog
 %else
@@ -191,9 +190,10 @@ Url:            https://www.rsyslog.com/
 
 Requires:	libfastjson-devel >= 0.99.8
 
-%if 0%{?fedora} || 0%{?rhel_version} || 0%{?centos_version}
+%if 0%{?fedora} || 0%{?rhel_version} || 0%{?centos_version} || 0%{?openeuler_version}
 BuildRequires: util-linux
 BuildRequires: systemd-devel >= 204-8
+BuildRequires: perl(Digest::SHA)
 Requires(post): systemd
 Requires(preun): systemd
 Requires(postun): systemd
@@ -277,7 +277,7 @@ BuildRequires:  czmq-devel >= 1.1.0
 %if %{with gssapi}
 BuildRequires:  krb5-devel
 %endif
-%if 0%{?fedora} || 0%{?rhel_version} || 0%{?centos_version}
+%if 0%{?fedora} || 0%{?rhel_version} || 0%{?centos_version} || 0%{?openeuler_version}
 BuildRequires:  gnutls-devel
 %else
 BuildRequires:  libgnutls-devel
@@ -358,7 +358,6 @@ Source6:        usr.sbin.rsyslogd
 Source7:        module-mysql
 Source8:        module-snmp
 Source9:        module-udpspoof
-Source14:       http://www.rsyslog.com/files/download/rsyslog/rsyslog-doc-%{version}.tar.gz
 Source15:       rsyslog.firewall
 Source16: rsyslog.service.suse
 Source22: rsyslog.conf.fedora
@@ -790,7 +789,7 @@ This module provides an output module for TCL.
 %endif
 
 %prep
-%setup -q -a 14
+%setup -q
 #
 
 %if 0%{?fedora} || 0%{?rhel_version} || 0%{?centos_version}
@@ -952,7 +951,7 @@ make install DESTDIR="%{buildroot}"  V=1
 %if 0%{?suse_version}
     install -D -m 644 %{SOURCE16} %{buildroot}%{_unitdir}/rsyslog.service
 %else
-  %if 0%{?fedora}
+  %if 0%{?fedora} || 0%{?openeuler_version}
     install -D -m 644 %{SOURCE26} %{buildroot}%{_unitdir}/rsyslog.service
   %else
     install -D -m 644 %{SOURCE36} %{buildroot}%{_unitdir}/rsyslog.service
@@ -1041,7 +1040,9 @@ rm -f $RPM_BUILD_ROOT%{_sbindir}/zpipe
 		fi
 	%endif
 %else
-	sed -i '/^Alias/s/^/;/;/^Requires=syslog.socket/s/^/;/' %{buildroot}%{_unitdir}/rsyslog.service
+	if [ -f %{buildroot}%{_unitdir}/rsyslog.service ]; then
+		sed -i '/^Alias/s/^/;/;/^Requires=syslog.socket/s/^/;/' %{buildroot}%{_unitdir}/rsyslog.service
+	fi
 %endif
 #
 install -d -m0755 %{buildroot}%{_sysconfdir}/rsyslog.d
@@ -1083,21 +1084,6 @@ install -d -m0755 %{buildroot}%{_fillupdir}
 install    -m0600 %{_sourcedir}/rsyslog.sysconfig \
                   %{buildroot}%{_fillupdir}/sysconfig.syslog-rsyslog
 #
-rm -f doc/Makefile*
-install -d -m0755 %{buildroot}%{rsyslogdocdir}/html/
-find ChangeLog README AUTHORS COPYING*  \
-	\( -type d -exec install -m755 -d   %{buildroot}%{rsyslogdocdir}/\{\} \; \) \
-     -o \( -type f -exec install -m644 \{\} %{buildroot}%{rsyslogdocdir}/\{\} \; \)
-cp -av build/* %{buildroot}%{rsyslogdocdir}/html/
-#
-%if %{with mysql}
-install -m644 plugins/ommysql/createDB.sql \
-	%{buildroot}%{rsyslogdocdir}/mysql-createDB.sql
-%endif
-%if %{with pgsql}
-install -m644 plugins/ompgsql/createDB.sql \
- 	%{buildroot}%{rsyslogdocdir}/pgsql-createDB.sql
-%endif
 # create ghosts
 install -d -m0755 %{buildroot}%{rsyslog_rundir}
 touch %{buildroot}%{rsyslog_sockets_cfg}
@@ -1345,11 +1331,6 @@ fi
 %dir %{rsyslog_module_dir_withdeps}
 %{_mandir}/man5/rsyslog.conf.5*
 %{_mandir}/man8/rsyslogd.8*
-%dir %{rsyslogdocdir}
-%doc %{rsyslogdocdir}/ChangeLog
-%doc %{rsyslogdocdir}/README
-%doc %{rsyslogdocdir}/AUTHORS
-%doc %{rsyslogdocdir}/COPYING*
 %dir %{_localstatedir}/spool/rsyslog
 %{_fillupdir}/sysconfig.syslog-rsyslog
 %attr(0755,root,root) %dir %ghost %{rsyslog_rundir}
@@ -1374,8 +1355,6 @@ fi
 
 %files doc
 %defattr(-,root,root)
-%dir %{rsyslogdocdir}/
-%doc %{rsyslogdocdir}/html/
 
 %if %{with diagtools}
 
@@ -1398,7 +1377,6 @@ fi
 %if %{with mysql}
 %files %pkgname_mysql
 %defattr(-,root,root)
-%doc %{rsyslogdocdir}/mysql-createDB.sql
 %{rsyslog_module_dir_withdeps}/ommysql.so
 %if 0%{?suse_version}
 %config %{APPARMOR_PROFILE_PATH}/rsyslog.d/module-mysql
@@ -1408,7 +1386,6 @@ fi
 %if %{with pgsql}
 %files %pkgname_pgsql
 %defattr(-,root,root)
-%doc %{rsyslogdocdir}/pgsql-createDB.sql
 %{rsyslog_module_dir_withdeps}/ompgsql.so
 %endif
 
@@ -1455,6 +1432,7 @@ fi
 %files %pkgname_mmnormalize
 %defattr(-,root,root)
 %{rsyslog_module_dir_withdeps}/mmnormalize.so
+%{rsyslog_module_dir_withdeps}/mmleefparse.so
 %if 0%{?suse_version}
 %{rsyslog_module_dir_withdeps}/mmjsonparse.so
 %{rsyslog_module_dir_withdeps}/mmaudit.so
@@ -1550,6 +1528,9 @@ fi
 %endif
 
 %changelog
+* Thu Dec 15 2025 Rainer Gerhards <rgerhards@adiscon.com> - 8.2512.0-1
+  new upstream release
+
 * Thu Aug 20 2024 Rainer Gerhards <rgerhards@adiscon.com> - 8.2408.0-1
   new upstream release
 

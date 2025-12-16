@@ -1,12 +1,12 @@
 Format: 3.0 (quilt)
 Source: rsyslog
-Binary: rsyslog, rsyslog-doc, rsyslog-mysql, rsyslog-pgsql, rsyslog-mongodb, rsyslog-czmq, rsyslog-omclickhouse, rsyslog-relp, rsyslog-elasticsearch, rsyslog-mmjsonparse, rsyslog-imptcp, rsyslog-mmnormalize, rsyslog-mmanon, rsyslog-mmfields, rsyslog-mmgrok, rsyslog-omrabbitmq, rsyslog-imdocker, rsyslog-improg, rsyslog-imkmsg, rsyslog-mmutf8fix, rsyslog-gnutls, rsyslog-udpspoof, rsyslog-openssl, rsyslog-pmnormalize, rsyslog-utils, rsyslog-mmrm1stspace, rsyslog-kafka, rsyslog-impcap, rsyslog-redis, rsyslog-omstdout, rsyslog-fmhttp, rsyslog-fmhash, rsyslog-mmkubernetes, rsyslog-mmdblookup
+Binary: rsyslog, rsyslog-doc, rsyslog-mysql, rsyslog-pgsql, rsyslog-mongodb, rsyslog-czmq, rsyslog-omclickhouse, rsyslog-relp, rsyslog-elasticsearch, rsyslog-mmjsonparse, rsyslog-imptcp, rsyslog-mmnormalize, rsyslog-mmanon, rsyslog-mmfields, rsyslog-omrabbitmq, rsyslog-improg, rsyslog-imkmsg, rsyslog-mmutf8fix, rsyslog-gnutls, rsyslog-udpspoof, rsyslog-openssl, rsyslog-pmnormalize, rsyslog-utils, rsyslog-mmrm1stspace, rsyslog-kafka, rsyslog-impcap, rsyslog-imdocker, rsyslog-redis, rsyslog-omstdout, rsyslog-fmhttp, rsyslog-fmhash, rsyslog-mmkubernetes, rsyslog-mmdblookup, rsyslog-omsendertrack, rsyslog-omhttp
 Architecture: any all
-Version: 8.2408.0-0adiscon1focal1
+Version: 8.2512.0-0adiscon1focal1
 Maintainer: Andre Lorbach <alorbach@adiscon.com>
 Homepage: http://www.rsyslog.com/
 Standards-Version: 3.9.2
-Build-Depends: debhelper (>= 12), dpkg-dev (>= 1.6.1), autotools-dev (>= 20100122.1), libczmq-dev (>= 4.0.0), dh-autoreconf, librabbitmq-dev, librabbitmq4, zlib1g-dev, libgrok-dev, libmysqlclient-dev, libpq-dev, libmongoc-dev, librelp-dev (>= 1.2.17), libestr-dev (>= 0.1.2), liblognorm-dev (>= 1.0.0), libfastjson-dev (>= 0.99.7), libglib2.0-dev, libpcap-dev, uuid-dev, libkrb5-dev, libgnutls28-dev, pkg-config, dh-apparmor, libcurl4-gnutls-dev, bison, libgcrypt-dev, python3-docutils, libsystemd-dev (>= 209) [linux-any], librdkafka-dev, liblz4-dev, libsasl2-dev, libssl-dev, libhiredis-dev, util-linux, libnet-dev, libmaxminddb-dev
+Build-Depends: debhelper (>= 12), dpkg-dev (>= 1.6.1), autotools-dev (>= 20100122.1), libczmq-dev (>= 4.0.0), dh-autoreconf, librabbitmq-dev, librabbitmq4, zlib1g-dev, libmysqlclient-dev, libpq-dev, libmongoc-dev, librelp-dev (>= 1.2.17), libestr-dev (>= 0.1.2), liblognorm-dev (>= 1.0.0), libfastjson-dev (>= 0.99.7), libglib2.0-dev, libpcap-dev, uuid-dev, libkrb5-dev, libgnutls28-dev, pkg-config, dh-apparmor, libcurl4-openssl-dev, bison, libgcrypt-dev, python3-docutils, libsystemd-dev (>= 209) [linux-any], librdkafka-dev, liblz4-dev, libsasl2-dev, libssl-dev, libhiredis-dev, util-linux, libnet-dev, libmaxminddb-dev
 Package-List:
  rsyslog deb admin important arch=any
  rsyslog-czmq deb admin optional arch=any
@@ -24,7 +24,6 @@ Package-List:
  rsyslog-mmanon deb admin extra arch=any
  rsyslog-mmdblookup deb admin extra arch=any
  rsyslog-mmfields deb admin extra arch=any
- rsyslog-mmgrok deb admin extra arch=any
  rsyslog-mmjsonparse deb admin extra arch=any
  rsyslog-mmkubernetes deb admin extra arch=any
  rsyslog-mmnormalize deb admin extra arch=any
@@ -33,7 +32,9 @@ Package-List:
  rsyslog-mongodb deb admin extra arch=any
  rsyslog-mysql deb admin extra arch=any
  rsyslog-omclickhouse deb admin extra arch=any
+ rsyslog-omhttp deb admin extra arch=any
  rsyslog-omrabbitmq deb admin extra arch=any
+ rsyslog-omsendertrack deb admin extra arch=any
  rsyslog-omstdout deb admin extra arch=any
  rsyslog-openssl deb admin extra arch=any
  rsyslog-pgsql deb admin extra arch=any
@@ -43,15 +44,15 @@ Package-List:
  rsyslog-udpspoof deb admin extra arch=any
  rsyslog-utils deb admin extra arch=any
 Checksums-Sha1:
- 67cc249de4c1ecfaf5be3ddbe0287c9d3cb11a66 3436561 rsyslog_8.2408.0.orig.tar.gz
- 3265696f123bf40602e58c60a06ee8b44f9095f6 21008 rsyslog_8.2408.0-0adiscon1focal1.debian.tar.xz
+ 596b067c1a637c9fa7ff4c472b72dc0ed7bbc685 6768847 rsyslog_8.2512.0.orig.tar.gz
+ 4fbc3fd1e96325f0092814bcc3a45f07e2b89319 21368 rsyslog_8.2512.0-0adiscon1focal1.debian.tar.xz
 Checksums-Sha256:
- 0b114743d5ac619729c29cc016c9ef45aad300a9ca7b1f666f71afe43dc102d2 3436561 rsyslog_8.2408.0.orig.tar.gz
- a52b2d7c966119490bbee14e8a1366a98c66e9658d312a71d48037e47f2944da 21008 rsyslog_8.2408.0-0adiscon1focal1.debian.tar.xz
+ 93c50025d90b6c795fa350d56a3d832bfce45043ea9bd68240d9c2a9394bc629 6768847 rsyslog_8.2512.0.orig.tar.gz
+ 7fc659ff3a60fb81072c16dde452775f4b52f3d269e2cadac049451bf6316727 21368 rsyslog_8.2512.0-0adiscon1focal1.debian.tar.xz
 Files:
- 29652852f01b3b721faeae5743322d97 3436561 rsyslog_8.2408.0.orig.tar.gz
- 1f53ab746cc821f54100b67118928894 21008 rsyslog_8.2408.0-0adiscon1focal1.debian.tar.xz
+ 744e44c74f9ecd97ee800c78dc8271d3 6768847 rsyslog_8.2512.0.orig.tar.gz
+ a29b48658e5bc285908976ab5e8124f2 21368 rsyslog_8.2512.0-0adiscon1focal1.debian.tar.xz
 Original-Maintainer: Michael Biebl <biebl@debian.org>
 Original-Vcs-Browser: http://git.debian.org/?p=collab-maint/rsyslog.git;a=summary
 Original-Vcs-Git: git://git.debian.org/git/collab-maint/rsyslog.git
-DEBTRANSFORM-TAR: rsyslog-8.2408.0.tar.gz\n
+DEBTRANSFORM-TAR: rsyslog-8.2512.0.tar.gz\n
