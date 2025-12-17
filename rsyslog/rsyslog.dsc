@@ -6,7 +6,7 @@ Version: 8.2512.0-1
 Maintainer: Rainer Gerhards <rgerhards@adiscon.com>
 Homepage: http://www.rsyslog.com/
 Standards-Version: 3.9.2
-Build-Depends: debhelper (>= 8), dpkg-dev (>= 1.6.1), autotools-dev (>= 20100122.1), dh-autoreconf, zlib1g-dev, libpq-dev, default-libmysqlclient-dev | libmysqlclient-dev, librdkafka-dev, librelp-dev (>= 1.0.2), libestr-dev (>= 0.1.9), liblognorm-dev (>= 1.0.0), libfastjson-dev (>= 0.99.8), libglib2.0-dev, uuid-dev, libgnutls-dev | libgnutls30-dev | libgnutls28-dev, libkrb5-dev, pkg-config, libssl1-dev | libssl-dev, libcurl4-gnutls-dev, bison, libsystemd-dev
+Build-Depends: debhelper (>= 8), dpkg-dev (>= 1.6.1), autotools-dev (>= 20100122.1), dh-autoreconf, zlib1g-dev, libpq-dev, default-libmysqlclient-dev | libmysqlclient-dev, librdkafka-dev, librelp-dev (>= 1.0.2), libestr-dev (>= 0.1.9), liblognorm-dev (>= 1.0.0), libfastjson-dev (>= 0.99.8), libglib2.0-dev, uuid-dev, libgnutls-dev | libgnutls30-dev | libgnutls28-dev, libkrb5-dev, pkg-config, libssl1-dev | libssl-dev, libcurl4-openssl-dev, bison, libsystemd-dev
 Package-List:
  rsyslog deb admin important arch=any
  rsyslog-dbi deb admin extra arch=any
@@ -36,14 +36,14 @@ Package-List:
  rsyslog-utils deb admin extra arch=any
 Checksums-Sha1:
  596b067c1a637c9fa7ff4c472b72dc0ed7bbc685 6768847 rsyslog_8.2512.0.orig.tar.gz
- d8c2bd767b734a0d9cd7ef4553baa5cf52529bcd 19716 rsyslog_8.2512.0-1.debian.tar.xz
+ 6cdba67790f9dd04f0e4187b1936bca19fb597b1 19724 rsyslog_8.2512.0-1.debian.tar.xz
 Checksums-Sha256:
  93c50025d90b6c795fa350d56a3d832bfce45043ea9bd68240d9c2a9394bc629 6768847 rsyslog_8.2512.0.orig.tar.gz
- dc7d33a2c699f695c9cf83129df069143ef38a6d92402fc3544d07ef7041bcd3 19716 rsyslog_8.2512.0-1.debian.tar.xz
+ f2570c6ec171bad3462893a7422a88a74a6ce7025761e4df8bfde045c2fce94d 19724 rsyslog_8.2512.0-1.debian.tar.xz
 Files:
  744e44c74f9ecd97ee800c78dc8271d3 6768847 rsyslog_8.2512.0.orig.tar.gz
- 5b7a2dd55cac7212a43d9f5a91bd49e3 19716 rsyslog_8.2512.0-1.debian.tar.xz
+ 3f1f50f02921df9a96b87133c8cbc240 19724 rsyslog_8.2512.0-1.debian.tar.xz
 Original-Maintainer: Michael Biebl <biebl@debian.org>
 Original-Vcs-Browser: http://git.debian.org/?p=collab-maint/rsyslog.git;a=summary
 Original-Vcs-Git: git://git.debian.org/git/collab-maint/rsyslog.git
-DEBTRANSFORM-TAR: rsyslog-8.2512.0.tar.gz\n
+DEBTRANSFORM-TAR: rsyslog-8.2512.0.tar.gz

@@ -1,4 +1,6 @@
 xUbuntu_24.04 x86_64
+xUbuntu_24.04 armv6l
+xUbuntu_24.04 armv7l
 xUbuntu_22.04 x86_64
 xUbuntu_20.04 x86_64
 xUbuntu_18.04 x86_64
@@ -12,6 +14,7 @@ openSUSE_Leap_15.1_ARM aarch64
 openSUSE_Leap_15.1_ARM armv7l
 openEuler_24.03 aarch64
 openEuler_24.03 x86_64
+openEuler_24.03 loongarch64
 SLE_15_SP3 x86_64
 SLE_15 x86_64
 SLE_12_SP4 x86_64

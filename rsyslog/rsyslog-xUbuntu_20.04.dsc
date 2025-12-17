@@ -45,14 +45,14 @@ Package-List:
  rsyslog-utils deb admin extra arch=any
 Checksums-Sha1:
  596b067c1a637c9fa7ff4c472b72dc0ed7bbc685 6768847 rsyslog_8.2512.0.orig.tar.gz
- 4fbc3fd1e96325f0092814bcc3a45f07e2b89319 21368 rsyslog_8.2512.0-0adiscon1focal1.debian.tar.xz
+ 3989a7ac5cefe1bd144330994926812a922ab42b 21348 rsyslog_8.2512.0-0adiscon1focal1.debian.tar.xz
 Checksums-Sha256:
  93c50025d90b6c795fa350d56a3d832bfce45043ea9bd68240d9c2a9394bc629 6768847 rsyslog_8.2512.0.orig.tar.gz
- 7fc659ff3a60fb81072c16dde452775f4b52f3d269e2cadac049451bf6316727 21368 rsyslog_8.2512.0-0adiscon1focal1.debian.tar.xz
+ 42945349c21911d5b6906e2c336c9f9fa62bf2d7cab3ff2d432df2ba8b318032 21348 rsyslog_8.2512.0-0adiscon1focal1.debian.tar.xz
 Files:
  744e44c74f9ecd97ee800c78dc8271d3 6768847 rsyslog_8.2512.0.orig.tar.gz
- a29b48658e5bc285908976ab5e8124f2 21368 rsyslog_8.2512.0-0adiscon1focal1.debian.tar.xz
+ 24b6c1f4e2d865651d6972ac1de35416 21348 rsyslog_8.2512.0-0adiscon1focal1.debian.tar.xz
 Original-Maintainer: Michael Biebl <biebl@debian.org>
 Original-Vcs-Browser: http://git.debian.org/?p=collab-maint/rsyslog.git;a=summary
 Original-Vcs-Git: git://git.debian.org/git/collab-maint/rsyslog.git
-DEBTRANSFORM-TAR: rsyslog-8.2512.0.tar.gz\n
+DEBTRANSFORM-TAR: rsyslog-8.2512.0.tar.gz
